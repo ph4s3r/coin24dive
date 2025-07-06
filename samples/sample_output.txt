@@ -1,0 +1,155 @@
+& 'c:\dev\coingecko\.venv\Scripts\python.exe' 'c:\Users\element\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\libs\debugpy\launcher' '62318' '--' 'main.py' 
+******************** COINGECKO MARKET SCANNER ********************
+
+TASK: [DAILY MARKET SCANNING] ************************************************************************************************************
+
+TASK: [WE DON'T HAVE DATA FOR TODAY, GETTING COINS] **************************************************************************************
+coins so far: 250 (page1)
+coins so far: 500 (page2)
+coins so far: 750 (page3)
+coins so far: 1000 (page4)
+coins so far: 1250 (page5)
+coins so far: 1500 (page6)
+coins so far: 1750 (page7)
+coins so far: 2000 (page8)
+coins so far: 2250 (page9)
+coins so far: 2500 (page10)
+coins so far: 2750 (page11)
+coins so far: 3000 (page12)
+coins so far: 3250 (page13)
+coins so far: 3500 (page14)
+coins so far: 3750 (page15)
+coins so far: 4000 (page16)
+coins so far: 4250 (page17)
+coins so far: 4500 (page18)
+coins so far: 4750 (page19)
+coins so far: 5000 (page20)
+coins so far: 5250 (page21)
+coins so far: 5500 (page22)
+coins so far: 5750 (page23)
+coins so far: 6000 (page24)
+coins so far: 6250 (page25)
+coins so far: 6500 (page26)
+coins so far: 6750 (page27)
+coins so far: 7000 (page28)
+coins so far: 7250 (page29)
+coins so far: 7500 (page30)
+rate limit hit. sleeping for 1 seconds.
+rate limit hit. sleeping for 2 seconds.
+rate limit hit. sleeping for 5 seconds.
+coins so far: 7750 (page31)
+coins so far: 8000 (page32)
+coins so far: 8250 (page33)
+coins so far: 8500 (page34)
+coins so far: 8750 (page35)
+coins so far: 9000 (page36)
+coins so far: 9250 (page37)
+coins so far: 9500 (page38)
+coins so far: 9750 (page39)
+coins so far: 10000 (page40)
+coins so far: 10250 (page41)
+coins so far: 10500 (page42)
+coins so far: 10750 (page43)
+coins so far: 11000 (page44)
+coins so far: 11250 (page45)
+coins so far: 11500 (page46)
+coins so far: 11750 (page47)
+coins so far: 12000 (page48)
+coins so far: 12250 (page49)
+coins so far: 12500 (page50)
+coins so far: 12750 (page51)
+coins so far: 13000 (page52)
+coins so far: 13250 (page53)
+coins so far: 13500 (page54)
+coins so far: 13750 (page55)
+coins so far: 14000 (page56)
+coins so far: 14250 (page57)
+coins so far: 14500 (page58)
+coins so far: 14750 (page59)
+coins so far: 15000 (page60)
+rate limit hit. sleeping for 1 seconds.
+rate limit hit. sleeping for 2 seconds.
+rate limit hit. sleeping for 4 seconds.
+coins so far: 15250 (page61)
+coins so far: 15500 (page62)
+coins so far: 15750 (page63)
+coins so far: 16000 (page64)
+coins so far: 16250 (page65)
+coins so far: 16500 (page66)
+coins so far: 16750 (page67)
+coins so far: 17000 (page68)
+coins so far: 17250 (page69)
+coins so far: 17500 (page70)
+coins so far: 17750 (page71)
+finished gathering coins :)
+success writing coin list into a file data/coins20250706.json
+
+TASK: [SEARCHING FOR COINS WITH SPECIFIC CRITERIA] ***************************************************************************************
+info: criteria: coins dropped at least 45% in the last 24h
+ok: found 61 coins matching the criteria. returning only the top 20
+ok: success writing top 20 dives list into a file dives/dives20250706.json
+
+TASK: [GETTING COIN EXCHANGE INFORMATION FOR EACH COIN] **********************************************************************************
+ok: saved exchange info of multichain-bridged-busd-moonriver to file coindata/multichain-bridged-busd-moonriver.json
+ok: saved exchange info of mini-donald to file coindata/mini-donald.json
+ok: brat: coindata already exist, and refresh is not set, loading from file.
+ok: saved exchange info of catex to file coindata/catex.json
+ok: saved exchange info of 1ex to file coindata/1ex.json
+ok: saved exchange info of 9mm to file coindata/9mm.json
+ok: saved exchange info of amazon-xstock to file coindata/amazon-xstock.json
+ok: saved exchange info of america-party to file coindata/america-party.json
+ok: saved exchange info of elon-s-cat to file coindata/elon-s-cat.json
+ok: saved exchange info of this-is-a-farm to file coindata/this-is-a-farm.json
+ok: saved exchange info of binancedog-2 to file coindata/binancedog-2.json
+ok: saved exchange info of economycoin to file coindata/economycoin.json
+ok: saved exchange info of boringdao-[old] to file coindata/boringdao-[old].json
+ok: saved exchange info of blazr to file coindata/blazr.json
+ok: saved exchange info of titan-blaze to file coindata/titan-blaze.json
+
+TASK: [RESULTS] **************************************************************************************************************************
+info:    id           |  symbol  |     chg_%_24h     |  exchanges-traded-on
+multichain-bridged-busd-moonriver busd                    -97% ['Solarbeam']
+mini-donald              barron                  -61% ['KCEX', 'Uniswap V2 (Ethereum)']
+brat                     brat                    -54% ['Uniswap V2 (Base)', 'AscendEX (BitMax)']
+catex                    catex                   -75% ['PancakeSwap (v2)']
+1ex                      1ex                     -62% ['BingX']
+multichain-bridged-busd-moonriver busd                    -97% ['Solarbeam']
+mini-donald              barron                  -61% ['KCEX', 'Uniswap V2 (Ethereum)']
+brat                     brat                    -54% ['Uniswap V2 (Base)', 'AscendEX (BitMax)']
+catex                    catex                   -75% ['PancakeSwap (v2)']
+1ex                      1ex                     -62% ['BingX']
+9mm                      9mm                     -66% ['9mm V3 (Sonic)', '9mm V3 (Pulsechain)', '9mm V3 (Base)']
+amazon-xstock            amznx                   -51% ['Gate', 'Orca', 'Raydium (CLMM)']
+america-party            ap                      -77% ['Orca', 'Raydium (CLMM)', 'PumpSwap', 'Meteora']
+elon-s-cat               catme                   -93% ['PancakeSwap (v2)']
+this-is-a-farm           farm                    -47% ['PumpSwap', 'Meteora']
+binancedog-2             binancedog                  -45% ['PancakeSwap (v2)', 'OrangeX']
+economycoin              economy                  -57% ['PumpSwap', 'Meteora']
+boringdao-[old]          bor                     -59% ['PancakeSwap (v2)', 'Sushiswap', 'PancakeSwap V1 (BSC)']
+blazr                    blazr                   -46% ['PumpSwap']
+multichain-bridged-busd-moonriver busd                    -97% ['Solarbeam']
+mini-donald              barron                  -61% ['KCEX', 'Uniswap V2 (Ethereum)']
+brat                     brat                    -54% ['Uniswap V2 (Base)', 'AscendEX (BitMax)']
+catex                    catex                   -75% ['PancakeSwap (v2)']
+1ex                      1ex                     -62% ['BingX']
+9mm                      9mm                     -66% ['9mm V3 (Sonic)', '9mm V3 (Pulsechain)', '9mm V3 (Base)']
+amazon-xstock            amznx                   -51% ['Gate', 'Orca', 'Raydium (CLMM)']
+america-party            ap                      -77% ['Orca', 'Raydium (CLMM)', 'PumpSwap', 'Meteora']
+elon-s-cat               catme                   -93% ['PancakeSwap (v2)']
+this-is-a-farm           farm                    -47% ['PumpSwap', 'Meteora']
+multichain-bridged-busd-moonriver busd                    -97% ['Solarbeam']
+mini-donald              barron                  -61% ['KCEX', 'Uniswap V2 (Ethereum)']
+brat                     brat                    -54% ['Uniswap V2 (Base)', 'AscendEX (BitMax)']
+catex                    catex                   -75% ['PancakeSwap (v2)']
+1ex                      1ex                     -62% ['BingX']
+9mm                      9mm                     -66% ['9mm V3 (Sonic)', '9mm V3 (Pulsechain)', '9mm V3 (Base)']
+9mm                      9mm                     -66% ['9mm V3 (Sonic)', '9mm V3 (Pulsechain)', '9mm V3 (Base)']
+amazon-xstock            amznx                   -51% ['Gate', 'Orca', 'Raydium (CLMM)']
+america-party            ap                      -77% ['Orca', 'Raydium (CLMM)', 'PumpSwap', 'Meteora']
+elon-s-cat               catme                   -93% ['PancakeSwap (v2)']
+this-is-a-farm           farm                    -47% ['PumpSwap', 'Meteora']
+binancedog-2             binancedog                  -45% ['PancakeSwap (v2)', 'OrangeX']
+economycoin              economy                  -57% ['PumpSwap', 'Meteora']
+boringdao-[old]          bor                     -59% ['PancakeSwap (v2)', 'Sushiswap', 'PancakeSwap V1 (BSC)']     
+blazr                    blazr                   -46% ['PumpSwap']
+titan-blaze              blaze                   -93% ['Uniswap V2 (Ethereum)', 'Uniswap V3 (Ethereum)']
