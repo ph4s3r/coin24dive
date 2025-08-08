@@ -1,0 +1,21 @@
+image: python:3.13
+
+stages:
+  - run
+
+before_script:
+  # - apt-get update && apt-get install -y git curl
+  - curl -LsSf https://astral.sh/uv/install.sh | sh -s -- -q
+  - export PATH="/root/.local/bin:$PATH"
+  - export UV_LINK_MODE=copy
+
+run-main:
+  stage: run
+  script:
+    - uv run main.py
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: manual
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: always
+    - when: never
