@@ -38,7 +38,7 @@ def main():
             log_fail(f":( could not read coins from file: {e.args[0]}")
 
     if len(coins) > 0:
-        top_divers = diver.diver(fname_dives, coins, min_dive_percentage=-45)
+        top_divers = diver.diver(fname_dives, coins, min_dive_percentage=-75)
 
     log_task("Getting coin exchange information for each coin")
 
