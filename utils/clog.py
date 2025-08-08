@@ -12,7 +12,10 @@ import click
 # built-in
 import os
 
-TERMWIDTH: int = os.get_terminal_size().columns
+try:
+    TERMWIDTH = os.get_terminal_size().columns
+except OSError:
+    TERMWIDTH = 80  # Default width for non-interactive environments
 
 
 def log_info(text: str) -> None:
