@@ -6,11 +6,13 @@ import requests
 from typing import Dict, List
 from dotenv import dotenv_values
 from datetime import datetime, timezone
+from tenacity import retry, stop_after_attempt, wait_random_exponential, retry_if_exception_type
 
 from utils.clog import log_info, log_fail, log_ok
 
 config = dotenv_values(".env")
 
+@retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60),retry=retry_if_exception_type(RateLimitError))
 def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, List[str]]:
     """
     get exchange info about a symbol
