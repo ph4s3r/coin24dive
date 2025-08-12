@@ -51,7 +51,7 @@ class notificationsClass:
             tls = [str(t) for t in tl]
             # every tuple (symbol, drop, etc) is first converted to a string like symbol|drop|etc, and a newline is added.
             # then this line-string is concatenated to one, which will be returned
-            txt += '|'.join(tls) + '\n'
+            txt += ' | '.join(tls) + '\n'
 
         return txt
 
