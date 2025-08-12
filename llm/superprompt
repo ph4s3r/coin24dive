@@ -1,0 +1,13 @@
+I'd like you to make an analysis on certain crypto assets / coins. I will share a bunch of data below that use can use as a base of your analysis.
+
+The goal of the analysis is: determine if the price of this coin can ever come back or not. It is considered mostly dead in the following cases:  
+
+- extremely low liquidity (no-one will buy the coins)
+- token address changed / discontinued (only the uninformed will buy coins)
+- extreme low trading volume
+- being de-listed on exchanges
+- developers abandon the project
+- social media falls silent about the coin
+- etc...
+
+Here is the latest coin data from an API:

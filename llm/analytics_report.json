@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "array",
+      "description": "Coin Analytics",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_ticker": {
+            "type": "string",
+            "description": "Ticker symbol of the asset (e.g., BTC)"
+          },
+          "dead_rating": {
+            "type": "number",
+            "description": "0: totally okay, 10: absolute dead"
+          },
+          "analysis": {
+            "type": "string",
+            "description": "full textual analysis"
+          }
+        },
+        "required": [
+          "asset_ticker",
+          "dead_rating",
+          "analysis"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "result"
+  ],
+  "additionalProperties": false
+}
