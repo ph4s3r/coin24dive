@@ -15,12 +15,32 @@
 import os
 import json
 import requests
+from pathlib import Path
 from dotenv import dotenv_values
+from jsonschema import validate, ValidationError, SchemaError
 
 class OpenLLM:
 
     config = dotenv_values(".env")
     openrouter_api_key = config.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
+
+    superprompt_path = Path("llm/superprompt")
+    llm_response_schema_path = Path("llm/analytics_report.json")   
+
+    with open(superprompt_path, encoding="utf-8") as f:
+        superprompt = f.read()
+
+    with open(llm_response_schema_path, encoding="utf-8") as f:
+        llm_response_schema = json.load(f)
+
+    structured_output = {
+        "format": {
+            "type": "json_schema",
+            "name": "asset_drop_report",
+            "schema": llm_response_schema,
+            "strict": True,
+        }
+    }
 
     url = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -47,13 +67,11 @@ class OpenLLM:
         "qwen/qwen3-30b-a3b",                   # 40,960 context $0.02/M input tokens $0.08/M output tokens
         # "switchpoint/router",                 # need to test this later...
         "mistralai/magistral-medium-2506:thinking", # 40,960 context $2/M input tokens $5/M output tokens
-
-
     ]
 
     @classmethod
-    def prompt(cls, prompt: str):
-        """Send a prompt to the API using only class variables."""
+    def analyze_asset_prompt(cls, asset_data_json: dict):
+        prompt = str(cls.superprompt) + "\r\n" + str(asset_data_json)
         payload = {
             "models": cls.models,
             "messages": [
@@ -61,13 +79,34 @@ class OpenLLM:
             ]
         }
 
-        response = requests.post(cls.url, headers=cls.headers, json=payload)
+        response = requests.post(cls.url, headers=cls.headers, json=payload, text=cls.structured_output)
 
         if response.status_code == 200:
-            return response.json()
+            pass
         else:
             raise Exception(f"Error {response.status_code}: {response.text}")
         
+        response_json = response.json()
 
-result = OpenLLM.prompt("If you built the world's tallest skyscraper, what would you name it?")
+        try:
+            validate(instance=response_json, schema=cls.llm_response_schema)
+            return response_json
+        except ValidationError as ve:
+            print(f"Validation failed: {ve.message}")
+            print(f"Location in instance: {list(ve.path)}")
+            print(f"Schema path: {list(ve.schema_path)}")
+            print(f"Invalid value: {ve.instance}")
+        except SchemaError as se:
+            print(f"The schema {cls.llm_response_schema_path} seems to be bad, error: {se.message}")
+        
+
+
+asset_data_json = dict()
+
+# test 
+
+with open(Path("coindata/catex.json"), encoding="utf-8") as f:
+    asset_data_json = json.load(f.read())
+
+result = OpenLLM.analyze_asset_prompt(asset_data_json)
 print(json.dumps(result, indent=2))
