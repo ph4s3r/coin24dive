@@ -34,9 +34,9 @@ class OpenLLM:
         llm_response_schema = json.load(f)
 
     structured_output = {
-        "format": {
+        "response_format": {
             "type": "json_schema",
-            "name": "asset_drop_report",
+            "name": "asset_analytics_report",
             "schema": llm_response_schema,
             "strict": True,
         }
@@ -52,21 +52,22 @@ class OpenLLM:
     # models supporting structured outs
     # https://openrouter.ai/models?order=newest&supported_parameters=structured_outputs
     models = [
+        # max 3 models are alllowed
         # OpenAI requires bringing your own API key to use GPT-5 over the API. Set up here: https://openrouter.ai/settings/integrations
-        "openai/gpt-5",                         # 400,000 context $1.25/M input tokens $10/M output tokens
-        "openai/o4-mini-high",                  # 200,000 context $1.10/M input tokens $4.40/M output tokens $0.842/K input imgs
-        "openai/o3",                            # 200,000 context $2/M input tokens $8/M output tokens
-        "openai/gpt-oss-120b",                  # 131,072 context $0.073/M input tokens $0.29/M output tokens
+        # "openai/gpt-5",                         # 400,000 context $1.25/M input tokens $10/M output tokens
+        # "openai/o4-mini-high",                  # 200,000 context $1.10/M input tokens $4.40/M output tokens $0.842/K input imgs
+        # "openai/o3",                            # 200,000 context $2/M input tokens $8/M output tokens
+        # "openai/gpt-oss-120b",                  # 131,072 context $0.073/M input tokens $0.29/M output tokens
 
-        "x-ai/grok-4",                          # 256,000 context $3/M input tokens   $15/M output tokens
-        "google/gemini-2.5-pro"                 # 1M context      $1.25/M input tokens   $10/M output tokens
-        "google/gemini-2.5-flash"               # 1,048,576 context $0.30/M input tokens $2.50/M output tokens
+        # "x-ai/grok-4",                          # 256,000 context $3/M input tokens   $15/M output tokens
+        # "google/gemini-2.5-pro"                 # 1M context      $1.25/M input tokens   $10/M output tokens
+        # "google/gemini-2.5-flash",               # 1,048,576 context $0.30/M input tokens $2.50/M output tokens
         # "anthropic/claude-opus-4.1",          # does not support structured output
         
         "qwen/qwen3-235b-a22b-2507",            # 262,144 context $0.078/M input tokens $0.312/M output tokens
         "qwen/qwen3-30b-a3b",                   # 40,960 context $0.02/M input tokens $0.08/M output tokens
         # "switchpoint/router",                 # need to test this later...
-        "mistralai/magistral-medium-2506:thinking", # 40,960 context $2/M input tokens $5/M output tokens
+        # "mistralai/magistral-medium-2506:thinking", # 40,960 context $2/M input tokens $5/M output tokens
     ]
 
     @classmethod
@@ -76,10 +77,11 @@ class OpenLLM:
             "models": cls.models,
             "messages": [
                 {"role": "user", "content": prompt}
-            ]
+            ],
+            "response_format": cls.structured_output
         }
 
-        response = requests.post(cls.url, headers=cls.headers, json=payload, text=cls.structured_output)
+        response = requests.post(cls.url, headers=cls.headers, json=payload)
 
         if response.status_code == 200:
             pass
@@ -90,7 +92,6 @@ class OpenLLM:
 
         try:
             validate(instance=response_json, schema=cls.llm_response_schema)
-            return response_json
         except ValidationError as ve:
             print(f"Validation failed: {ve.message}")
             print(f"Location in instance: {list(ve.path)}")
@@ -98,15 +99,6 @@ class OpenLLM:
             print(f"Invalid value: {ve.instance}")
         except SchemaError as se:
             print(f"The schema {cls.llm_response_schema_path} seems to be bad, error: {se.message}")
+
+        return response_json
         
-
-
-asset_data_json = dict()
-
-# test 
-
-with open(Path("coindata/catex.json"), encoding="utf-8") as f:
-    asset_data_json = json.load(f.read())
-
-result = OpenLLM.analyze_asset_prompt(asset_data_json)
-print(json.dumps(result, indent=2))

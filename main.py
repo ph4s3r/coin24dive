@@ -4,6 +4,7 @@ import diver
 import getter
 from datetime import datetime
 
+import llm.openrouter as ai
 from notifications import notificationsClass
 from utils.clog import log_info, log_fail, log_ok, log_task
 
@@ -45,13 +46,16 @@ def main():
     top_divers_full = []
     top_divers = set(top_divers)
 
+    coinmetrics_full = []
+
     # enriching the coin data with exchange information
     for d in top_divers:
         coin_id = d[0]
-        ex_inf = getter.get_ex_inf(coin_id, refresh=False)
+        coindata, ex_inf = getter.get_ex_inf(coin_id, refresh=False)
         t = list(d)
         t.extend(ex_inf.get(coin_id))
         top_divers_full.append(t)
+        coinmetrics_full.append(coindata)
 
     log_task("Results")
 
@@ -67,10 +71,15 @@ def main():
         )
         print(f"{d[0]:24} {d[1]:6} {d[2]:20}%", d[3:])
 
+    # analyze full coin data with llm
+    for coin_data_dict in coinmetrics_full:
+        result = ai.OpenLLM.analyze_asset_prompt(coin_data_dict)
+        print('coin analytics returned:')
+        print(json.dumps(result, indent=2))
+        # TODO: this is just for testing
+        break    
+
     nc.send_notifications()
-
-    
-
 
 if __name__ == '__main__':
     main()

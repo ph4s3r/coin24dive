@@ -6,16 +6,17 @@ import requests
 from typing import Dict, List
 from dotenv import dotenv_values
 from datetime import datetime, timezone
-from tenacity import retry, stop_after_attempt, wait_random_exponential, retry_if_exception_type
+from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 from utils.clog import log_info, log_fail, log_ok
 
 config = dotenv_values(".env")
 
-@retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60),retry=retry_if_exception_type(RateLimitError))
+@retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60))
 def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, List[str]]:
     """
-    get exchange info about a symbol
+    get all detailed coin data about a symbol from coingecko,
+    extract & save exchange data as well.
     
     Args:
         coin_id: Coin identifier in coingecko (not necessarily the symbol)
@@ -25,16 +26,16 @@ def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, Lis
 
     exchange_info = {}
     
-    fname = f"exchangedata/{id}.json"
-    fname_full = f"exchangedata/{id}.json"
+    fname_exchangedata = f"exchangedata/{id}.json"
+    fname_coindata = f"coindata/{id}.json"
 
-    if os.path.exists(fname):
+    if os.path.exists(fname_exchangedata):
         if not refresh:
-            log_ok(f"{id}: coindata already exist, and refresh is not set, loading from file.")
-            with open(fname, "rt") as f:
+            log_ok(f"{id}: exchange data already exist, and refresh is not set, loading from file.")
+            with open(fname_exchangedata, "rt") as f:
                 return json.load(f)
         else:
-            log_info(f"{id}: coindata already exist but refresh is set.")
+            log_info(f"{id}: exchange data already exist but refresh is set.")
         
     
     url = f"https://api.coingecko.com/api/v3/coins/{id}"
@@ -51,21 +52,25 @@ def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, Lis
             for ei in ticker_info:
                 es.append(ei.get("market").get("name"))
             exchange_info = {id: list(set(es))}
-            with open(fname, "w", encoding="utf-8") as f:
+            with open(fname_exchangedata, "w", encoding="utf-8") as f:
                 json.dump(exchange_info, f, indent=2)
-            if not os.path.exists(fname_full) and not write_ex_only:
-                with open(fname_full, "w", encoding="utf-8") as f2:
-                    json.dump(data, f2, indent=2)
             if len(exchange_info) > 0:
-                log_ok(f"saved exchange info of {id} to file {fname}")
+                log_ok(f"saved exchange info of {id} to file {fname_exchangedata}")
             else:
-                log_fail(f"saved empty exchange info of {id} to file {fname} (not found)")
+                log_fail(f"saved empty exchange info of {id} to file {fname_exchangedata} (not found)")
+        
+            # save complete coin data separately
+            if not os.path.exists(fname_coindata) and not write_ex_only:
+                with open(fname_coindata, "w", encoding="utf-8") as f2:
+                    json.dump(data, f2, indent=2)
+
         except Exception as e:
-            log_fail(f":( could not write coindata to file: {e.args[0]}")
+                    log_fail(f":( could not write coin/exchange data to file: {e.args[0]}")
+
     else:
         log_fail(f"got {r.status_code} ({r.reason}), exiting")
 
-    return exchange_info
+    return data, exchange_info
 
 
 
