@@ -2,6 +2,7 @@ import os
 import json
 import diver
 import getter
+from pathlib import Path
 from datetime import datetime
 
 import llm.openrouter as ai
@@ -72,14 +73,50 @@ def main():
         print(f"{d[0]:24} {d[1]:6} {d[2]:20}%", d[3:])
 
     # analyze full coin data with llm
-    for coin_data_dict in coinmetrics_full:
-        result = ai.OpenLLM.analyze_asset_prompt(coin_data_dict)
-        print('coin analytics returned:')
-        print(json.dumps(result, indent=2))
-        # TODO: this is just for testing
-        break    
 
-    nc.send_notifications()
+    analytics_folder = 'analytics'
+
+    prompt_tokens       = 0
+    completion_tokens   = 0
+
+    print()
+
+    for coin_data_dict in coinmetrics_full:
+
+        symbol                      = coin_data_dict.get('symbol')
+        model_name                  = 'openai-gpt-5'
+        analytics_file_full_path    = Path(analytics_folder + r'/' + model_name + '-' + symbol +'.json')
+
+        if os.path.exists(analytics_file_full_path):
+            print(f'analytics already exists as {analytics_file_full_path} , skipping this one for now..')
+            continue
+
+        result = ai.OpenLLM.analyze_asset_prompt(coin_data_dict)
+        print(f'coin analytics returned for symbol {symbol} from {model_name}')
+
+        prompt_tokens       += int(result.get('usage').get('prompt_tokens', 0))
+        completion_tokens   += int(result.get('usage').get('completion_tokens', 0))
+
+        # model_name = result.get('model').replace(r'/', '-') # this is for dynamic running
+        
+        # print(json.dumps(result, indent=4))
+        with open(analytics_file_full_path, 'wt', encoding="utf-8") as f:
+            json.dump(result, f, indent=4)
+        print(f'analytics successfully saved to {analytics_file_full_path}')
+
+    print(f'used {prompt_tokens=}')
+    print(f'used {completion_tokens=}')
+    print('price of the move with gpt-5: ') # (w/o openrouter\'s margin of $0.0001 on every 1k tokens, which seems to be negligible...)
+    
+    # 400,000 context $1.25/M input tokens $10/M output tokens
+    price_prompt_tokens = 1.25 * prompt_tokens / 1000000
+    price_completion_tokens = 10 * completion_tokens / 1000000
+    
+    print(f'{price_prompt_tokens=}')
+    print(f'{price_completion_tokens=}')
+
+
+    # nc.send_notifications()
 
 if __name__ == '__main__':
     main()

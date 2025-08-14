@@ -17,7 +17,7 @@ import json
 import requests
 from pathlib import Path
 from dotenv import dotenv_values
-from jsonschema import validate, ValidationError, SchemaError
+# from jsonschema import validate, ValidationError, SchemaError
 
 class OpenLLM:
 
@@ -54,8 +54,8 @@ class OpenLLM:
     models = [
         # max 3 models are alllowed
         # OpenAI requires bringing your own API key to use GPT-5 over the API. Set up here: https://openrouter.ai/settings/integrations
-        # "openai/gpt-5",                         # 400,000 context $1.25/M input tokens $10/M output tokens
-        # "openai/o4-mini-high",                  # 200,000 context $1.10/M input tokens $4.40/M output tokens $0.842/K input imgs
+        "openai/gpt-5",                           # 400,000 context $1.25/M input tokens $10/M output tokens
+        # "openai/o4-mini-high",                    # 200,000 context $1.10/M input tokens $4.40/M output tokens $0.842/K input imgs
         # "openai/o3",                            # 200,000 context $2/M input tokens $8/M output tokens
         # "openai/gpt-oss-120b",                  # 131,072 context $0.073/M input tokens $0.29/M output tokens
 
@@ -64,8 +64,8 @@ class OpenLLM:
         # "google/gemini-2.5-flash",               # 1,048,576 context $0.30/M input tokens $2.50/M output tokens
         # "anthropic/claude-opus-4.1",          # does not support structured output
         
-        "qwen/qwen3-235b-a22b-2507",            # 262,144 context $0.078/M input tokens $0.312/M output tokens
-        "qwen/qwen3-30b-a3b",                   # 40,960 context $0.02/M input tokens $0.08/M output tokens
+        # "qwen/qwen3-235b-a22b-2507",            # 262,144 context $0.078/M input tokens $0.312/M output tokens
+        # "qwen/qwen3-30b-a3b",                   # 40,960 context $0.02/M input tokens $0.08/M output tokens
         # "switchpoint/router",                 # need to test this later...
         # "mistralai/magistral-medium-2506:thinking", # 40,960 context $2/M input tokens $5/M output tokens
     ]
@@ -87,18 +87,17 @@ class OpenLLM:
             pass
         else:
             raise Exception(f"Error {response.status_code}: {response.text}")
-        
-        response_json = response.json()
 
-        try:
-            validate(instance=response_json, schema=cls.llm_response_schema)
-        except ValidationError as ve:
-            print(f"Validation failed: {ve.message}")
-            print(f"Location in instance: {list(ve.path)}")
-            print(f"Schema path: {list(ve.schema_path)}")
-            print(f"Invalid value: {ve.instance}")
-        except SchemaError as se:
-            print(f"The schema {cls.llm_response_schema_path} seems to be bad, error: {se.message}")
+        # TODO: set this up when we have structured outputs
+        # try:
+        #     validate(instance=response_json, schema=cls.llm_response_schema)
+        # except ValidationError as ve:
+        #     print(f"Validation failed: {ve.message}")
+        #     print(f"Location in instance: {list(ve.path)}")
+        #     print(f"Schema path: {list(ve.schema_path)}")
+        #     print(f"Invalid value: {ve.instance}")
+        # except SchemaError as se:
+        #     print(f"The schema {cls.llm_response_schema_path} seems to be bad, error: {se.message}")
 
-        return response_json
+        return response.json()
         
