@@ -29,11 +29,25 @@ def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, Lis
     fname_exchangedata = f"exchangedata/{id}.json"
     fname_coindata = f"coindata/{id}.json"
 
-    if os.path.exists(fname_exchangedata):
+    if os.path.exists(fname_exchangedata) and os.path.exists(fname_coindata):
         if not refresh:
-            log_ok(f"{id}: exchange data already exist, and refresh is not set, loading from file.")
-            with open(fname_exchangedata, "rt") as f:
-                return json.load(f)
+            log_ok(f"{id}: exchange & coin data already exist, and refresh is not set, loading from file.")
+
+            coindata = {}
+            exchangedata = {}
+            try:
+                with open(fname_coindata, "rt") as f:
+                    coindata = json.load(f)
+            except Exception:
+                print(f'warning, could not load coindata from {fname_coindata}')
+
+            try:
+                with open(fname_exchangedata, "rt") as f:
+                    exchangedata = json.load(f)
+            except Exception:
+                print(f'warning, could not load coindata from {fname_coindata}')
+
+            return coindata, exchangedata
         else:
             log_info(f"{id}: exchange data already exist but refresh is set.")
         
