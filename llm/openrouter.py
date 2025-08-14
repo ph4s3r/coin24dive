@@ -80,8 +80,11 @@ class OpenLLM:
             ],
             "response_format": cls.structured_output
         }
-
-        response = requests.post(cls.url, headers=cls.headers, json=payload)
+        try:
+            response = requests.post(cls.url, headers=cls.headers, json=payload)
+        except Exception as e:
+            print('unexpected error: ', e)
+            return None
 
         if response.status_code == 200:
             pass

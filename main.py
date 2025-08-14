@@ -9,6 +9,15 @@ import llm.openrouter as ai
 from notifications import notificationsClass
 from utils.clog import log_info, log_fail, log_ok, log_task
 
+def replace_escaped_newlines(obj):
+    if isinstance(obj, str):
+        return obj.replace("\\n", "\n")
+    elif isinstance(obj, list):
+        return [replace_escaped_newlines(item) for item in obj]
+    elif isinstance(obj, dict):
+        return {k: replace_escaped_newlines(v) for k, v in obj.items()}
+    return obj
+
 def main():
    
     coins = []
@@ -78,12 +87,17 @@ def main():
 
     prompt_tokens       = 0
     completion_tokens   = 0
+    error_counter       = 0 # we tolerate max 2 errors, then quit
 
     print()
 
     for coin_data_dict in coinmetrics_full:
 
-        symbol                      = coin_data_dict.get('symbol')
+        if error_counter > 1:
+            print('too many errors, skipping future promises')
+            break
+
+        symbol                      = coin_data_dict.get('id')  # symbol is somethins misleading
         model_name                  = 'openai-gpt-5'
         analytics_file_full_path    = Path(analytics_folder + r'/' + model_name + '-' + symbol +'.json')
 
@@ -92,6 +106,9 @@ def main():
             continue
 
         result = ai.OpenLLM.analyze_asset_prompt(coin_data_dict)
+        if not result:
+            error_counter += 1
+            continue 
         print(f'coin analytics returned for symbol {symbol} from {model_name}')
 
         prompt_tokens       += int(result.get('usage').get('prompt_tokens', 0))
@@ -100,8 +117,25 @@ def main():
         # model_name = result.get('model').replace(r'/', '-') # this is for dynamic running
         
         # print(json.dumps(result, indent=4))
-        with open(analytics_file_full_path, 'wt', encoding="utf-8") as f:
-            json.dump(result, f, indent=4)
+
+        data_content    = result.get('choices')[0].get('message').get('content')
+        data_reasoning  = result.get('choices')[0].get('message').get('reasoning')
+        data_exinfo     = coin_data_dict.get('detail_platforms')
+        data_links      = coin_data_dict.get('links')
+
+        data_full = {
+            **{"content": data_content},
+            **{"reasoning": data_reasoning},
+            **{"exchange_info": data_exinfo},
+            **{"links": data_links},
+        }
+
+        data_cleaned = replace_escaped_newlines(data_full)
+
+        with open(analytics_file_full_path, 'w', encoding='utf-8') as f:
+            json.dump(data_cleaned, f, indent=4, ensure_ascii=False)
+
+   
         print(f'analytics successfully saved to {analytics_file_full_path}')
 
     print(f'used {prompt_tokens=}')
