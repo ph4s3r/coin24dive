@@ -1,7 +1,7 @@
 /.env
 __pycache__
 *pyc*
-/data
-/exchangedata
-/coindata
-/dives
+# /data
+# /exchangedata
+# /coindata
+# /dives

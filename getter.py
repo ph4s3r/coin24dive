@@ -26,8 +26,8 @@ def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, Lis
 
     exchange_info = {}
     
-    fname_exchangedata = f"exchangedata/{id}.json"
-    fname_coindata = f"coindata/{id}.json"
+    fname_exchangedata = f"data/exchangedata/{id}.json"
+    fname_coindata = f"data/coindata/{id}.json"
 
     if os.path.exists(fname_exchangedata) and os.path.exists(fname_coindata):
         if not refresh:

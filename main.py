@@ -24,13 +24,14 @@ def main():
 
     print("*"*20, "COINGECKO MARKET SCANNER", "*"*20)
 
-    os.makedirs("dives", exist_ok=True)
+    
     os.makedirs("data", exist_ok=True)
-    os.makedirs("coindata", exist_ok=True)
-    os.makedirs("exchangedata", exist_ok=True)
+    os.makedirs("data/dives", exist_ok=True)
+    os.makedirs("data/coindata", exist_ok=True)
+    os.makedirs("data/exchangedata", exist_ok=True)
     # 1 get per day is enough for us
     fname_coins = f"data/coins{datetime.now().strftime('%Y%m%d')}.json"
-    fname_dives = f"dives/dives{datetime.now().strftime('%Y%m%d')}.json"
+    fname_dives = f"data/dives/dives{datetime.now().strftime('%Y%m%d')}.json"
 
     log_task("Daily market scanning")
 
@@ -83,7 +84,7 @@ def main():
 
     # analyze full coin data with llm
 
-    analytics_folder = 'analytics'
+    analytics_folder = 'data/analytics'
 
     prompt_tokens       = 0
     completion_tokens   = 0
