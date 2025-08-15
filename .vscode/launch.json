@@ -9,7 +9,8 @@
             "name": "debug main",
             "type": "debugpy",
             "request": "launch",
-            "program": "main.py",
+            "program": "${file}",
+            // "program": "main.py",
             "console": "integratedTerminal",
             "skipFiles": ["utils/clog.py"]
         }
