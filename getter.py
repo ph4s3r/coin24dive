@@ -13,7 +13,7 @@ from utils.clog import log_info, log_fail, log_ok
 config = dotenv_values(".env")
 
 @retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60))
-def get_ex_inf(id: str, refresh = False, write_ex_only = False) -> Dict[str, List[str]]:
+def get_coindata(id: str, refresh = False, write_ex_only = False) -> Dict[str, List[str]]:
     """
     get all detailed coin data about a symbol from coingecko,
     extract & save exchange data as well.
