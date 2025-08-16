@@ -43,16 +43,16 @@ output: json structured output back-validated with the requested schema (llm\sch
         with the symbol, a dead_score from 0 to 10 and the analysis text
 
 
-### Filtering daily coin analytics based on dead scores
-### &
-### Printing results & sending it as notification on Pushover
+### Results
 
-what  : coins with dead_score < 7 will be kept and printed
-how   : implementation of message sending: notifications.py
-output: needs a better output !FIXME
+what  : compiling a list top diver coins, filtering by dead score
+how   : see main.py & implementation of message sending: notifications.py
+output: prints a table to stdout & send a message on pushover about the coins with a certain max dead score
 
-looks soemthing like this:
+sample output:
 
+
+```
 TASK: [RESULTS] **********************************************************************************************************************************************************************************************
         id                    | symbol | dead_score | chg_%_24h | exchanges-traded-on
 fsn                              fsn            9         -79% Uniswap V3 (Ethereum), Nonkyc.io
@@ -68,8 +68,7 @@ kira-ai                          kira         8.5         -86% Uniswap V2 (Ether
 build                            build        9.6         -93% RadioShack (Ethereum), PancakeSwap (v2)
 coreto                           cor          9.1         -79% Uniswap V2 (Ethereum), ProBit Global
 frapped-usdt                     fusdt        9.8         -96% Equalizer, Curve (Fantom), Sushiswap (Fantom), SpiritSwap, Beethoven X, SpiritSwap (V2)
-
-
+```
 
 
 
