@@ -1,0 +1,59 @@
+{
+    "content": {
+        "coin_id": "x-world-games",
+        "dead_score": 9.1,
+        "analysis": "Summary: X World Games (XWG) exhibits multiple “mostly dead” signals: extreme illiquidity, minuscule trading volume, apparent de‑listings from meaningful CEXs, inactive developer metrics, and weak/uncertain social traction. A sustainable comeback is highly improbable without a full-scale relaunch and fresh liquidity. \n\nKey observations\n- Liquidity/volume\n  - Reported 24h volume ≈ $11.5 on BSC pair; ETH/Uniswap V2 pair showed ≈ $119 volume but data is stale; another BSC pair ≈ $14.8 (also stale). LATOKEN shows ≈ $0.1. Effective aggregate trading activity is near-zero.\n  - Turnover ≈ $11.5 / $190,866 ≈ 0.006% per day—indicative of a frozen market.\n  - DEX tickers carry “trust_score: red”; some are flagged stale. One CEX (LATOKEN) shows a ~95% bid-ask spread—practically untradeable.\n- Price/market structure\n  - Current price ≈ $0.0000558; down ~99.98% from ATH ($0.2896). 24h change shows an ~−88.8% crash, suggesting LP withdrawal/rotation or thin-book wicks.\n  - Market cap ≈ $191k; FDV ≈ $555k; circulating 3.42B vs total 9.94B (MCap/FDV ≈ 0.34). Large remaining supply → dilution risk if ever reactivated.\n- Listings/execution venues\n  - Active markets are limited to PancakeSwap V2 and a negligible LATOKEN listing; absence on higher-tier CEXs implies effective de-listing.\n- Contracts/multi-chain\n  - Contracts on BSC, Ethereum, Arbitrum. No explicit migration notice here, but multi-chain + fragmented LP complicates price discovery and further thins liquidity.\n- Team/dev/social\n  - Developer data shows zero recent commits and no repo traction (forks/stars 0; last 4 weeks: 0 commits).\n  - Reddit metrics are effectively nil; Telegram count ≈ 25k but activity unknown; overall signals point to low/absent community momentum.\n\nWhat would need to change to revive it\n- Team returns with verifiable communications, ships a new product roadmap, and restarts marketing/community.\n- Injects substantial, locked liquidity on one primary chain, consolidates pools, and tightens spreads.\n- Secures credible CEX re‑listings and/or incentivized market making.\n- Addresses token economics (unlock/dilution) and potentially executes a migration with clear guidance.\n\nProbability of a comeback\n- Without the above, the base case is continued illiquidity and price drift. Microcap bounces can occur, but with current volumes and venue quality, a durable recovery is very unlikely.\n\nBottom line\n- Status: Mostly dead by liquidity, volume, exchange presence, and dev inactivity.\n- Recovery to prior levels (let alone ATH) is extremely unlikely absent a full relaunch and significant capital/effort.\n\nNote: This is an analytical assessment based on the provided data and not financial advice."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x6b23c89196deb721e6fd9726e6c76e4810a464bc",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x6b23c89196deb721e6fd9726e6c76e4810a464bc"
+        },
+        "arbitrum-one": {
+            "decimal_place": 18,
+            "contract_address": "0xeb4d25db65dcef52380c99ba7e1344c820ecb1fc",
+            "geckoterminal_url": "https://www.geckoterminal.com/arbitrum/tokens/0xeb4d25db65dcef52380c99ba7e1344c820ecb1fc"
+        },
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x0a77ef9bf662d62fbf9ba4cf861eaa83f9cc4fec",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x0a77ef9bf662d62fbf9ba4cf861eaa83f9cc4fec"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://xwg.games/",
+            "https://www.xwggame.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://bscscan.com/token/0x6b23c89196deb721e6fd9726e6c76e4810a464bc",
+            "https://platform.arkhamintelligence.com/explorer/token/x-world-games",
+            "https://binplorer.com/address/0x6b23c89196deb721e6fd9726e6c76e4810a464bc",
+            "https://etherscan.io/token/0x0a77ef9bf662d62fbf9ba4cf861eaa83f9cc4fec",
+            "https://ethplorer.io/address/0x0a77ef9bf662d62fbf9ba4cf861eaa83f9cc4fec",
+            "https://arbiscan.io/token/0xeb4d25db65dcef52380c99ba7e1344c820ecb1fc"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://t.me/xwg_games_ann",
+            "https://discord.com/invite/xworldgames"
+        ],
+        "announcement_url": [
+            "https://medium.com/x-world-games"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "xwg_games",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "xworldgames",
+        "subreddit_url": "https://www.reddit.com/r/XWorldGames/",
+        "repos_url": {
+            "github": [
+                "https://github.com/XWorldGames"
+            ],
+            "bitbucket": []
+        }
+    }
+}

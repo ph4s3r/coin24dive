@@ -1,0 +1,68 @@
+{
+    "content": {
+        "coin_id": "coreto",
+        "dead_score": 9.1,
+        "analysis": "Verdict: Mostly dead. A sustained comeback to prior levels looks extremely unlikely without a major relaunch or external rescue.\n\nKey signals from the data you provided:\n- Liquidity/volume: 24h total volume ≈ $228 on the main listed market (ProBit); Uniswap V2 shows stale activity with tiny converted volume (~$289 last trade, marked stale). This is extreme illiquidity; order books are thin and unstable.\n- Spreads: ProBit bid-ask spread ≈ 64.6%, a hallmark of a dead/abandoned market where market makers have left.\n- Listings: Only minor CEX (ProBit) and an old Uniswap V2 pool. No meaningful listings on major exchanges. Multi-chain contract addresses exist (ETH/BSC/Polygon/Aurora/NEAR) but there’s no visible trading activity on those networks.\n- Market cap: ~$21k, FDV ~ $24k. At ATH the price was $0.058883; current price is ~$0.00005154 (~-99.91% from ATH). Returning to ATH would imply roughly a 1,100x move and ~tens of millions FDV—implausible given current depth and interest.\n- Momentum: Price change is deeply negative across all horizons (30d ~-65%, 60d ~-67%, 1y ~-89%). The most recent 24h move is -79%, suggesting either a liquidity collapse or exit of the last market maker.\n- Community/dev: Telegram ≈ 622 users; no Reddit activity; GitHub links empty and 4-week commits = 0. This points to very low visible developer and community engagement. Social and dev revival signs are absent in the data.\n- Project continuity: Contract addresses appear unchanged (no forced migrations indicated), but fragmentation across chains with no liquidity is another negative signal.\n\nWhat could change this assessment:\n- A verified development resurgence (public roadmap, code releases), significant marketing, and credible partnerships.\n- Fresh capital and market making, visible DEX/CEX liquidity, and at least one reputable exchange listing.\n- Clear community growth (order of magnitude increase in active users) and renewed utility for the token.\n\nBottom line: With microscopic liquidity, near-zero volumes, huge spreads, scant listings, and no visible development activity, COR functions as an illiquid micro-cap shell. While low-float micro-caps can have short-lived pumps, a durable recovery to former prices is not realistic under current conditions."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835"
+        },
+        "aurora": {
+            "decimal_place": 18,
+            "contract_address": "0xe62233aeaed9b9ea007704262e15445e0d756c0b",
+            "geckoterminal_url": "https://www.geckoterminal.com/aurora/tokens/0xe62233aeaed9b9ea007704262e15445e0d756c0b"
+        },
+        "near-protocol": {
+            "decimal_place": 18,
+            "contract_address": "9c2dc0c3cc2badde84b0025cf4df1c5af288d835.factory.bridge.near",
+            "geckoterminal_url": "https://www.geckoterminal.com/near/tokens/9c2dc0c3cc2badde84b0025cf4df1c5af288d835.factory.bridge.near"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa4b6573c9ae09d81e4d1360e6402b81f52557098",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa4b6573c9ae09d81e4d1360e6402b81f52557098"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x4fdce518fe527439fe76883e6b51a1c522b61b7c",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x4fdce518fe527439fe76883e6b51a1c522b61b7c"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://coreto.io",
+            "https://app.coreto.io",
+            "https://learn.coreto.io"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
+            "https://platform.arkhamintelligence.com/explorer/token/coreto",
+            "https://ethplorer.io/address/0x9c2dc0c3cc2badde84b0025cf4df1c5af288d835",
+            "https://polygonscan.com/token/0x4fdce518fe527439fe76883e6b51a1c522b61b7c",
+            "https://bscscan.com/token/0xa4b6573c9ae09d81e4d1360e6402b81f52557098",
+            "https://aurorascan.dev/address/0xe62233aeaed9b9ea007704262e15445e0d756c0b",
+            "https://binplorer.com/address/0xa4b6573c9ae09d81e4d1360e6402b81f52557098",
+            "https://nearblocks.io/token/9c2dc0c3cc2badde84b0025cf4df1c5af288d835.factory.bridge.near",
+            "https://explorer.mainnet.aurora.dev/token/0xe62233aeaed9b9ea007704262e15445e0d756c0b/token-transfers"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/PsHUyGFnkF"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Coretoio",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Coreto",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

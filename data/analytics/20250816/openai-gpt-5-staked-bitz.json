@@ -1,0 +1,39 @@
+{
+    "content": {
+        "coin_id": "staked-bitz",
+        "dead_score": 7.8,
+        "analysis": "Signal summary: very high risk of staying depressed; not technically dead yet, but functionally near-dead unless liquidity and integrations improve fast.\n\nWhat the data says\n- Fresh listing, violent crash: Down ~93% in the last 24h from its intraday/ATH (~$34.29) to ~$2.26. ATH/ATL timestamps within ~24h indicate launch-day pump-and-dump dynamics.\n- Liquidity/volume: Only one DEX market (Invariant on Eclipse). 24h volume ≈ $5k, watchlists = 3 users. This is extremely thin and makes price discovery fragile and easily manipulated.\n- Listings: No CEX listings; no other DEX pairs shown. Not delisted, but effectively “single-venue only.”\n- Market cap/FDV: CG shows market cap as 0 (circulating supply untracked). \"FDV\" ~ $95k appears to reflect roughly the currently minted supply (~42k sBITZ), not the stated max supply (5M). Treat metrics as provisional. Thin float plus tiny liquidity = severe slippage risk.\n- Token/contract: Address present on Eclipse; no sign of a token migration or deprecation in the feed. GeckoTerminal link exists, so contract is live.\n- Project context: sBITZ is a liquid staking derivative of BITZ on Eclipse. In principle, LSTs anchor to underlying (via mint/redeem and a growing exchange rate). In practice, without deep pools, easy redemption, and active arbitrage, DEX price can deviate massively from intrinsic value.\n- Social/dev: Links point to Invariant Labs’ channels (Discord, X/Twitter, YouTube; Telegram). Coin-specific community stats are near-zero on CG; developer metrics are N/A/zero here (common for tokens vs protocol repos). No explicit abandonment signal in this dataset, but no visible traction yet either.\n\nDead/alive checklist\n- Extremely low liquidity/volume: Yes (major red flag).\n- Token address changed/discontinued: No (address is consistent and live).\n- De-listed: No (but only 1 DEX venue).\n- Developers abandon: Not evidenced, but no strong activity signals in this feed.\n- Social silence: Coin-specific interest is minimal; broader Invariant channels exist.\n\nCan the price come back?\n- To regain materially, sBITZ needs: (1) reliable, low-friction redemption to/from BITZ, (2) deeper liquidity in sBITZ pairs, (3) more venues/pairs, (4) actual demand for BITZ staking and DeFi integrations on Eclipse (use as collateral, LP incentives, lending markets). Without these, a return to launch-day ATH is very unlikely; thin markets rarely revisit inflated day-one peaks.\n- If mint/redeem works and BITZ accrues value, arbitrage could lift sBITZ toward its redemption value over time—but that requires active traders, deeper pools, and ecosystem growth. Currently, none of those are evident in the data.\n\nBottom line\n- Not a hard-dead rug based on the provided info (contract live, trading live, official app link), but functionally near-dead from a liquidity/market-structure standpoint right now. Probability of a full “come back” to ATH appears low unless the team seeds liquidity, secures integrations, and the Eclipse/BITZ ecosystem gains real usage quickly.\n\nWhat to verify next (to update this score)\n- Does the stake page support seamless unstake/redemption and what’s current TVL?\n- Pool liquidity depth/reserves on GeckoTerminal for sBITZ pairs.\n- Any announced liquidity programs/listings from Invariant or Eclipse ecosystem.\n- On-chain token controls (mint authority/freeze/upgrade authority) on EclipseScan.\n\nNote: Informational only; not financial advice."
+    },
+    "exchange_info": {
+        "eclipse": {
+            "decimal_place": 11,
+            "contract_address": "sBTZcSwRZhRq3JcjFh1xwxgCxmsN7MreyU3Zx8dA8uF",
+            "geckoterminal_url": "https://www.geckoterminal.com/eclipse/tokens/sBTZcSwRZhRq3JcjFh1xwxgCxmsN7MreyU3Zx8dA8uF"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://eclipse.invariant.app/stake"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://eclipsescan.xyz/token/sBTZcSwRZhRq3JcjFh1xwxgCxmsN7MreyU3Zx8dA8uF"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/w6hTeWTJvG",
+            "https://www.youtube.com/@invariant_labs"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "invariant_labs",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Invariant_app",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "content": {
+        "coin_id": "cyberyen",
+        "dead_score": 9.2,
+        "analysis": "Verdict: Mostly dead. A sustained comeback looks very unlikely without a major turnaround in listings, liquidity, development, and community.\n\nKey signals from the data you provided:\n- Liquidity/volume: 24h total volume ≈ $1.09 across all markets; primary CEX (Bitcointry) has trust_score = red and an ≈85% bid–ask spread. Komodo DEX listing is stale with ~$0.005 volume. This indicates extreme illiquidity and practical inability to enter/exit positions at fair prices.\n- Listings: Only a minor exchange and a niche DEX; no reputable CEXs. Effectively de-listed from mainstream venues.\n- Price action: -87% in 24h, -83% in 7d, ~-52% in 60d, ~-70% in 200d, ~-99% from ATH. Recent behavior looks like micro-cap pump-and-dump volatility on negligible liquidity.\n- Market cap/FDV: Market cap not reported (circulating_supply = 0 in the feed), FDV ≈ $7.6k at current price, which is vanishingly small for an L1. Max supply is infinite (PoW inflation), creating ongoing sell pressure if mining exists.\n- Dev activity: GitHub shows 0 forks/stars/issues and 0 commits in the last 4 weeks; no recent code activity implies abandonment or dormancy.\n- Community: Telegram ~391 users; no Twitter handle in links; watchlist users 258. This is extremely small for a purported L1 network.\n- Infrastructure: Website and explorer URLs exist, so the chain may still be online, but there’s no evidence of active ecosystem growth.\n\nCan the price come back? Theoretically, yes—if there were: 1) credible new exchange listings with real market makers, 2) sustained daily liquidity (e.g., $100k+), 3) visible, ongoing development with releases/commits, 4) active marketing/community growth, and 5) a clear differentiator/use case. None of these are present today, and achieving them from this base is low-probability.\n\nBottom line: Meets multiple “mostly dead” criteria—extremely low liquidity/volume, de facto de-listing from reputable venues, minimal dev and community signals, and catastrophic drawdown. Without a significant relaunch and fresh capital, a meaningful recovery is improbable. This is not financial advice."
+    },
+    "exchange_info": {
+        "": {
+            "decimal_place": null,
+            "contract_address": ""
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://cyberyen.org"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://explorer.cyberyen.org/"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Cyberyen",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/cyberyen"
+            ],
+            "bitbucket": []
+        }
+    }
+}

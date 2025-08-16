@@ -1,0 +1,80 @@
+{
+    "content": {
+        "coin_id": "build",
+        "dead_score": 9.6,
+        "analysis": "Headline: BUILD looks effectively dead based on liquidity, activity, and price structure. A comeback would require a full-scale relaunch with fresh capital and listings.\n\nWhat the data is saying\n- Liquidity/volume: 24h volume ≈ $216 total across DEX pools; individual pairs show tiny converted volume ($26, $68). This is extremely illiquid and implies large slippage for any meaningful trade.\n- Market cap/momentum: Market cap ≈ $8.6k; FDV ≈ $11.1k; ATH drawdown ≈ -99.96%; multi-timeframe performance: -93% (24h), -97.6% (7d), -97.3% (60d), -96.9% (1y). Price has collapsed across all horizons and remains near lows.\n- Exchange presence: No credible CEX listings. Trading is on RadioShack DEX (trust score red) and a thin PancakeSwap v2 pool. Lack of centralized or reputable DEX liquidity is a major red flag.\n- Token contracts/issuance: Deployed on multiple chains (ETH, BSC, AVAX, Fantom, Polygon, Cronos, Optimism), fragmenting already-thin liquidity. No max supply (infinite), and the contract owner can mint new tokens (explicit warning). This severely undermines token value and investor confidence.\n- Community/developer activity: Telegram users ≈ 69; developer metrics show 0 commits and no public repos. Social links point to RadioShack brand accounts rather than an active, coin-specific community. This suggests practical abandonment.\n- Listings/status: No evidence of recent listings; presence confined to low-trust DEX pools. Being functionally absent from major venues is tantamount to a de facto delisting in market visibility terms.\n\nImplications for a comeback\n- What would be required: significant new liquidity provisioning (deep LPs), credible CEX/solid DEX listings, a transparent team revival (or takeover), removal/renunciation of mint privileges or a hard migration to a fixed-supply contract, clear utility, and active community growth.\n- Probability under current conditions: very low. With near-zero liquidity, minuscule market cap, unlimited mint risk, and dormant socials, organic recovery is unlikely. Any short-term spikes would be prone to pump-and-dump dynamics due to thin books.\n\nVerdict\n- Classification: Mostly dead.\n- Rationale: Extreme and sustained drawdown, negligible volume/liquidity, no active development or community, mintable supply risk, and lack of credible exchange support. Without a formal relaunch/migration and capital injection, a durable price recovery is improbable.\n\nNotes/caveats\n- Data is point-in-time. If a new team announces a migration, renounces minting, injects liquidity, and secures listings, reassess. Otherwise, treat as capital-impaired and illiquid."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x83b27de2fca046fa63a11c7ce7743de33ec58822",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x83b27de2fca046fa63a11c7ce7743de33ec58822"
+        },
+        "optimistic-ethereum": {
+            "decimal_place": 4,
+            "contract_address": "0xe4de4b87345815c71aa843ea4841bcdc682637bb",
+            "geckoterminal_url": "https://www.geckoterminal.com/optimism/tokens/0xe4de4b87345815c71aa843ea4841bcdc682637bb"
+        },
+        "avalanche": {
+            "decimal_place": 18,
+            "contract_address": "0x5f018e73c185ab23647c82bd039e762813877f0e",
+            "geckoterminal_url": "https://www.geckoterminal.com/avax/tokens/0x5f018e73c185ab23647c82bd039e762813877f0e"
+        },
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x57b59f981730c6257df57cf6f0d98283749a9eeb",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x57b59f981730c6257df57cf6f0d98283749a9eeb"
+        },
+        "fantom": {
+            "decimal_place": 18,
+            "contract_address": "0xa6097a4dbef3eb44c50bad6286a5ed2bc4418aa2",
+            "geckoterminal_url": "https://www.geckoterminal.com/ftm/tokens/0xa6097a4dbef3eb44c50bad6286a5ed2bc4418aa2"
+        },
+        "cronos": {
+            "decimal_place": 18,
+            "contract_address": "0x6467df17771ab26d1825bf0891b3c421d92ebc1d",
+            "geckoterminal_url": "https://www.geckoterminal.com/cro/tokens/0x6467df17771ab26d1825bf0891b3c421d92ebc1d"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0xe94845ac6782a2e71c407abe4d5201445c26a62b",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0xe94845ac6782a2e71c407abe4d5201445c26a62b"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://app.radioshack.org"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://bscscan.com/token/0x83b27de2fca046fa63a11c7ce7743de33ec58822",
+            "https://platform.arkhamintelligence.com/explorer/token/build",
+            "https://polygonscan.com/token/0xe94845ac6782a2e71c407abe4d5201445c26a62b",
+            "https://etherscan.io/token/0x57b59f981730c6257df57cf6f0d98283749a9eeb",
+            "https://ethplorer.io/address/0x57b59f981730c6257df57cf6f0d98283749a9eeb",
+            "https://snowtrace.io/token/0x5f018e73c185ab23647c82bd039e762813877f0e",
+            "https://avascan.info/blockchain/c/address/0x5f018e73c185ab23647c82bd039e762813877f0e/token",
+            "https://cronos-explorer.crypto.org/token/0x6467df17771ab26d1825bf0891b3c421d92ebc1d",
+            "https://ftmscan.com/token/0xa6097a4dbef3eb44c50bad6286a5ed2bc4418aa2",
+            "https://optimistic.etherscan.io/token/0xe4de4b87345815c71aa843ea4841bcdc682637bb"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@radioshack",
+            "https://www.instagram.com/radioshack/"
+        ],
+        "chat_url": [
+            "https://discord.gg/7ZaVtk43mJ"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "radioshack",
+        "facebook_username": "RadioShack",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "radioshackswap",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

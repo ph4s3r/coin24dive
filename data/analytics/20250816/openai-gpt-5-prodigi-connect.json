@@ -1,0 +1,37 @@
+{
+    "content": {
+        "coin_id": "prodigi-connect",
+        "dead_score": 9.4,
+        "analysis": "Verdict: Mostly dead. A sustained comeback is extremely unlikely without a full relaunch and sizable new capital.\n\nWhy:\n- Catastrophic price collapse: -99.999% from ATH (May 2025); -99.84% over 30d and -99.99% over 60d; -88% in the last 24h with a new ATL today. Returning to prior levels would require implausible multiples.\n- Liquidity/volume near zero: ~$1.2k 24h volume, ~22% bid-ask spread on its only listed market; FDV ~ $2.7k. This is functionally illiquid—hard to buy/sell without massive slippage.\n- Exchange presence: Only one listing (BingX PDG/USDT) with a red trust score; no meaningful market cap, no rank, no other exchange depth. Delisting risk is high; there’s no CEX/DEX breadth.\n- Contract risk (GoPlus): Creator can disable sells, change fees, mint, etc. Ownership not renounced and high control over trading mechanics—a major trust red flag.\n- Interest and activity: CoinGecko watchlists only 34 users; developer data and community metrics are effectively zero. No evidence of active development or broad community traction in the provided data.\n\nCould it come back? Only if the team injects significant liquidity (and locks it), removes risky owner permissions (or deploys a new audited/renounced contract), rebuilds community, and secures multiple reputable listings that drive sustained volume (e.g., $100k+ daily). Even then, any recovery would more likely occur on a new token/contract; the current token is unlikely to regain meaningful value.\n\nIf you still hold: Verify on-chain whether ownership is renounced and LP is locked; monitor the project’s X/Telegram for concrete plans (audits, new listings, liquidity commitments). Absent those, assume the token will not recover."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x16b034029b149315fe93b98a04f43da275c47f78",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x16b034029b149315fe93b98a04f43da275c47f78"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.prodigiconnect.xyz/"
+        ],
+        "whitepaper": "https://prodigi-connect.gitbook.io/prodigi-connect-docs",
+        "blockchain_site": [
+            "https://bscscan.com/token/0x16b034029b149315fe93b98a04f43da275c47f78",
+            "https://binplorer.com/address/0x16B034029b149315fE93b98a04f43da275c47F78"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "PDG_official_X",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "PDG_explorer_bot",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

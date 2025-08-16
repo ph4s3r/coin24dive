@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "coin_id": {
+            "type": "string",
+            "description": "Coingecko ID of the coin (NOT the symbol/ticker)"
+        },
+        "dead_score": {
+            "type": "number",
+            "description": "How dead the coin is on a 0-10 scale: 0: 100% alive, 10: so dead that even god could not revive it"
+        },
+        "analysis": {
+            "type": "string",
+            "description": "analysis details"
+        }
+    },
+    "required": [
+        "coin_id",
+        "dead_score",
+        "analysis"
+    ],
+    "additionalProperties": false
+}

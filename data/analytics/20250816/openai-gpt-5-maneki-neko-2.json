@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "maneki-neko-2",
+        "dead_score": 8,
+        "analysis": "Snapshot (based on the data you provided)\n- Chain/contract: Base, 0x41b8e9729bef43a1311a0f22c5131915fdb16647\n- Listing/markets: Only Uniswap V2 (Base) shown; no CEX listings\n- Price action: Down ~95% from intraday ATH on the same day it launched/listed\n- Market cap: ~$265k; FDV = MC (entire 1B supply circulating)\n- 24h volume: ~$4.76M but flagged as “is_anomaly: True” by the feed (potentially inflated/wash trading or data artifact)\n- Community: Telegram ~57 users; CoinGecko watchlists: 8 (very low)\n- Dev activity: 0 repos/commits/issues; no status updates\n- Messaging mismatch: Description says “turbocharged on Ethereum” while the token is on Base (sloppy or copy-paste, a small red flag)\n\nAssessment vs. “mostly dead” criteria\n- Liquidity: Not provided directly; volume looks high but is flagged anomalous. Without verifiable LP depth/lock, assume liquidity risk is high. Action: check the GeckoTerminal link for current pool liquidity, LP lock, and holder distribution before any trade.\n- Trading venues: Only one DEX pair on Base. If volume fades (likely post-launch), exit liquidity can disappear quickly.\n- Volume: Current 24h volume looks large but may be misleading. If this is launch churn or wash volume, real demand could be very low.\n- Delistings: Not applicable (not on CEX). Lack of CEX listings limits new inflows.\n- Developers: No observable development footprint and no repo; typical of memecoins, but it also means no roadmap/utility driver to revive price.\n- Social/interest: Extremely small Telegram and watchlists suggest minimal community stickiness. Recovery campaigns would need to grow this dramatically.\n- Token/address continuity: Single address shown; no sign of migration. That’s neutral/ok.\n\nCan it come back?\n- Possible in theory, but currently unlikely. A same-day ~95% drawdown, minimal community, no dev presence, and only a single DEX listing on Base are classic launch-and-dump risk factors. Without immediate, credible catalysts (meaningful new liquidity and lock, sustained marketing, active socials, possible CEX listings, or unique utility), a return to prior ATH is improbable.\n\nWhat to verify right now (to refine the call)\n- GeckoTerminal pair: LP size, real-time depth at 1–2% price impact, and whether LP is locked/renounced.\n- Holder concentration: If top 5–10 wallets control most supply or LP, risk of further dumps remains high.\n- Tax/blacklist functions: Review contract for transfer taxes or restrictive functions.\n- Social traction in the next 1–2 weeks: follower growth, AMAs, partnerships. If these stay flat, the window for a rebound closes quickly.\n\nBottom line\n- Default expectation: unlikely recovery to ATH; treat as mostly dead unless the team proves otherwise very quickly. High risk of fading liquidity.\n- This is not financial advice; data shows meaningful red flags and a classic post-launch collapse."
+    },
+    "exchange_info": {
+        "base": {
+            "decimal_place": 18,
+            "contract_address": "0x41b8e9729bef43a1311a0f22c5131915fdb16647",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0x41b8e9729bef43a1311a0f22c5131915fdb16647"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://nekotoken.vip/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://basescan.org/token/0x41b8e9729bef43a1311a0f22c5131915fdb16647"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Neko_COIN_",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Official_Maneki_Neko",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

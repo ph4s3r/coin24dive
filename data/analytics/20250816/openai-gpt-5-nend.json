@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "nend",
+        "dead_score": 9.2,
+        "analysis": "Verdict: Very likely dead/near-dead. A recovery would require a full-scale relaunch and major trust rebuild.\n\nKey red flags from the provided data:\n- Liquidity/volume: Only one listed ticker (BingX NEND/USDT) with trust_score = red, ~$335 24h volume and a 50% bid/ask spread. That is effectively illiquid for most traders and suggests any exit would incur heavy slippage.\n- Price collapse: Down ~-75% in 24h, ~-83% in 7d, ~-89% in 14d, ~-86% in 30d, and ~-99.43% in 60d. ATH (2025-06-12) to now is ~-99.97%. This is classic post-launch collapse with no subsequent bid support.\n- Valuation: Fully diluted valuation ≈ $468 at current price (0.00001001 USD) and total supply 46.7M. That implies near-zero market interest; market cap not even tracked (circulating_supply shown as 0).\n- Centralization / contract risk: Public notice flags this as a proxy contract where the owner can change code (disable sells, change fees, mint, etc.). Such admin powers deter liquidity providers, exchanges, and investors.\n- Listings: Only on BingX per the feed; no high-trust CEX listings and no healthy DEX liquidity indicated (despite a GeckoTerminal link). Delisting risk is high if volume remains this low.\n- Community/dev traction: Watchlist users = 20 (extremely low). Developer data shows no repos/commits. Telegram count (~7,176) exists, but there are no status updates and no GitHub activity—points to minimal ongoing development.\n\nWhat could change the outlook (low probability):\n- Renouncing upgradeability or constraining owner powers; third‑party audit published; removal of mint/fee toggles.\n- Significant on-chain liquidity (>$200k) and sustained real volume (>$100k/day) with tight spreads.\n- Credible exchange listings (with green trust) and transparent market-making.\n- Visible, consistent team activity, partnerships, and roadmap delivery over multiple months.\n\nAbsent the above, the combination of extreme drawdown, near-zero liquidity, admin-risky token design, and negligible market interest makes a meaningful price comeback highly unlikely."
+    },
+    "exchange_info": {
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x32dfe9b08826c24296f494ec1831ee7ceb45e4a6",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x32dfe9b08826c24296f494ec1831ee7ceb45e4a6"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://nendfi.com/"
+        ],
+        "whitepaper": "https://docs.nendfi.com/",
+        "blockchain_site": [
+            "https://polygonscan.com/token/0x32dFE9b08826C24296F494eC1831Ee7CEb45e4a6"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "NendFi",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "NEND_RWA",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -9,7 +9,7 @@ import requests
 from dotenv import dotenv_values
 
 # local
-from model import LLMConfig
+from llm.model import LLMConfig
 
 class OpenRouter:
     '''general class to execute an API call to openrouter
@@ -30,14 +30,14 @@ class OpenRouter:
         self.structured_output = None
         self.llmconfig = llmconfig
 
-        if llmconfig._response_schema:
+        if llmconfig.response_schema_dict:
             self.structured_output = {
-                "response_format": {
                     "type": "json_schema",
-                    "name": "asset_analytics_report",
-                    "schema": llmconfig.response_schema_str,
-                    "strict": True,
-                }
+                    "json_schema": {
+                        "name": "asset_analytics",
+                        "strict": True,
+                        "schema": llmconfig.response_schema_dict,
+                    }
             }
     
     def query(self, prompt_data: str | dict):
@@ -51,7 +51,7 @@ class OpenRouter:
             prompt = str(prompt_data)
 
 
-        if self.llmconfig.response_schema_str:
+        if self.llmconfig.response_schema_dict:
             payload = {
                 "models": [self.llmconfig.model_name],
                 "messages": [

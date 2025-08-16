@@ -5,18 +5,11 @@ import getter
 from pathlib import Path
 from datetime import datetime
 
-import llm.openrouter as ai
+from llm.model import LLMConfig
+from llm.openrouter import OpenRouter
 from notifications import notificationsClass
-from utils.clog import log_info, log_fail, log_ok, log_task
+from utils.clog import log_fail, log_ok, log_task
 
-def replace_escaped_newlines(obj):
-    if isinstance(obj, str):
-        return obj.replace("\\n", "\n")
-    elif isinstance(obj, list):
-        return [replace_escaped_newlines(item) for item in obj]
-    elif isinstance(obj, dict):
-        return {k: replace_escaped_newlines(v) for k, v in obj.items()}
-    return obj
 
 def main():
    
@@ -29,12 +22,17 @@ def main():
     os.makedirs("data/dives", exist_ok=True)
     os.makedirs("data/coindata", exist_ok=True)
     os.makedirs("data/exchangedata", exist_ok=True)
+    os.makedirs("data/analytics", exist_ok=True)
+    
     # 1 get per day is enough for us
-    fname_coins = f"data/coins{datetime.now().strftime('%Y%m%d')}.json"
-    fname_dives = f"data/dives/dives{datetime.now().strftime('%Y%m%d')}.json"
+
+    today_date = datetime.now().strftime('%Y%m%d')
+
+    fname_coins         = f"data/marketdata/coins{today_date}.json"
+    fname_dives         = f"data/dives/dives{today_date}.json"
+    analytics_folder    = 'data/analytics'
 
     log_task("Daily market scanning")
-
     if not os.path.exists(fname_coins):
         log_task("we don't have data for today, getting coins")
         coins = getter.get_coins_markets_all(fname_coins)
@@ -49,95 +47,93 @@ def main():
         except Exception as e:
             log_fail(f":( could not read coins from file: {e.args[0]}")
 
+
+    log_task("Searching for coins with specific criteria")
     if len(coins) > 0:
-        top_divers = diver.diver(fname_dives, coins, min_dive_percentage=-75)
+        top_divers = set(diver.diver(fname_dives, coins, min_dive_percentage=-75))
 
-    log_task("Getting coin exchange information for each coin")
 
-    top_divers_full = []
-    top_divers = set(top_divers)
+    log_task("Getting detailed coin data for each coin")
+    top_divers_dict = {} # keyed with id
 
+    # here we just load all the individual detailed coindata to a list
     coinmetrics_full = []
 
     # enriching the coin data with exchange information
     for d in top_divers:
         coin_id = d[0]
-        coindata, ex_inf = getter.get_ex_inf(coin_id, refresh=False)
+        coindata, ex_inf = getter.get_coindata(coin_id, refresh=False)
         t = list(d)
         t.extend(ex_inf.get(coin_id))
-        top_divers_full.append(t)
+        top_divers_dict[coin_id] = t
         coinmetrics_full.append(coindata)
 
-    log_task("Results")
 
-    nc = notificationsClass()
-
-    log_info("   id           |  symbol  |     chg_%_24h     |  exchanges-traded-on")
-    for d in top_divers_full:
-        nc.add_to_notifications(
-            d[1], # symbol
-            d[2], # drop_percent
-            f"https://www.coingecko.com/en/coins/{d[0]}",
-            ", ".join(str(x) for x in d[3:]) # exchange info
-        )
-        print(f"{d[0]:24} {d[1]:6} {d[2]:20}%", d[3:])
-
-    # analyze full coin data with llm
-
-    analytics_folder = 'data/analytics'
-
+    log_task("Analyzing the top divers with LLM")
+    print()
+    
     prompt_tokens       = 0
     completion_tokens   = 0
-    error_counter       = 0 # we tolerate max 2 errors, then quit
+    error_counter       = 0 # we tolerate max 2 errors, then give up
+    
+    # setting up LLM for analytics queries
+    gpt5 = LLMConfig(
+        model_name = 'openai/gpt-5',
+        provider = 'openrouter',
+        superprompt = Path("llm/superprompt"), 
+        response_schema = Path("llm/schemas/analytics_schema.json")
+    )
 
-    print()
+    gpt5_analytics_report = OpenRouter(
+        llmconfig=gpt5
+    )
+
+    dead_scores = {}
 
     for coin_data_dict in coinmetrics_full:
 
         if error_counter > 1:
-            print('too many errors, skipping future promises')
+            log_fail('too many errors, skipping future promises')
             break
 
-        symbol                      = coin_data_dict.get('id')  # symbol is somethins misleading
-        model_name                  = 'openai-gpt-5'
-        analytics_file_full_path    = Path(analytics_folder + r'/' + model_name + '-' + symbol +'.json')
+        coin_id                     = coin_data_dict.get('id')    # this is the id from coingecko, sometimes different from the 'symbol'
+        analytics_file_full_path    = Path(analytics_folder + r'/' + today_date + r'/' + gpt5.model_name.replace('/', '-') + '-' + coin_id +'.json')
 
         if os.path.exists(analytics_file_full_path):
-            print(f'analytics already exists as {analytics_file_full_path} , skipping this one for now..')
+            log_ok(f'analytics already exists as {analytics_file_full_path} , skipping this one for now..')
             continue
 
-        result = ai.OpenLLM.analyze_asset_prompt(coin_data_dict)
-        if not result:
+
+        # passing the detailed coin_data_dict from coinmetrics_full to the LLM for analysis
+        llm_api_response = None
+
+        try:
+            llm_api_response            : dict  = gpt5_analytics_report.query(prompt_data=coin_data_dict)
+            asset_report_structured     : dict  = json.loads(llm_api_response['choices'][0]['message']['content'])
+            log_ok(f'coin analytics returned for symbol {coin_id} from {gpt5.model_name}')
+        except Exception as e:
+            log_fail(f'could not get the structured output for {coin_id=} from the model. Error:', e)
             error_counter += 1
-            continue 
-        print(f'coin analytics returned for symbol {symbol} from {model_name}')
+            continue
 
-        prompt_tokens       += int(result.get('usage').get('prompt_tokens', 0))
-        completion_tokens   += int(result.get('usage').get('completion_tokens', 0))
+        if not llm_api_response:
+            continue
 
-        # model_name = result.get('model').replace(r'/', '-') # this is for dynamic running
-        
-        # print(json.dumps(result, indent=4))
+        prompt_tokens       += int(llm_api_response.get('usage').get('prompt_tokens', 0))
+        completion_tokens   += int(llm_api_response.get('usage').get('completion_tokens', 0))
 
-        data_content    = result.get('choices')[0].get('message').get('content')
-        data_reasoning  = result.get('choices')[0].get('message').get('reasoning')
-        data_exinfo     = coin_data_dict.get('detail_platforms')
-        data_links      = coin_data_dict.get('links')
-
-        data_full = {
-            **{"content": data_content},
-            **{"reasoning": data_reasoning},
-            **{"exchange_info": data_exinfo},
-            **{"links": data_links},
+        analytics_data = {
+            **{"content": asset_report_structured},
+            **{"exchange_info": coin_data_dict.get('detail_platforms')},
+            **{"links": coin_data_dict.get('links')},
         }
 
-        data_cleaned = replace_escaped_newlines(data_full)
+        Path(analytics_file_full_path).write_text(json.dumps(analytics_data, indent=4, ensure_ascii=False), encoding='utf-8')
+        log_ok(f'analytics successfully saved to {analytics_file_full_path}')
 
-        with open(analytics_file_full_path, 'w', encoding='utf-8') as f:
-            json.dump(data_cleaned, f, indent=4, ensure_ascii=False)
+        dead_scores[coin_id] = asset_report_structured['dead_score']
 
-   
-        print(f'analytics successfully saved to {analytics_file_full_path}')
+    log_task("Calculating LLM usage prices")
 
     print(f'used {prompt_tokens=}')
     print(f'used {completion_tokens=}')
@@ -151,7 +147,37 @@ def main():
     print(f'{price_completion_tokens=}')
 
 
-    # nc.send_notifications()
+    log_task("Filtering daily coin analytics based on dead scores")
+
+    if len(dead_scores) == 0:
+        analytics_path_today = Path(analytics_folder) / today_date
+        for json_file in analytics_path_today.iterdir():
+            if json_file.is_file() and json_file.suffix == '.json':
+                with json_file.open(encoding='utf-8') as f:
+                    coin_analytics = json.load(f)
+                    # not sure the coin_id is always reliable, need to watch out for this..
+                    coin_id = coin_analytics['content']['coin_id']
+                    dead_scores[coin_id] = coin_analytics['content']['dead_score']
+
+    log_task("Results")
+    print("        id                    | symbol | dead_score | chg_%_24h | exchanges-traded-on")
+    nc = notificationsClass()    
+    for coin_id, ex_data in top_divers_dict.items():
+
+        coin_exchange_data = ', '.join(ex_data[3:])
+
+        if dead_scores.get(coin_id, 10) < 7:
+            nc.add_to_notifications(
+                ex_data[1],                                             # symbol
+                dead_scores[coin_id],                                   # dead score
+            ex_data[2],                                                 # drop_percent
+                f"https://www.coingecko.com/en/coins/{coin_id}",
+                ", ".join(str(x) for x in coin_exchange_data)           # exchange info
+            )
+        print(f"{coin_id:32} {ex_data[1]:6} {dead_scores.get(coin_id, '?'):9} {ex_data[2]:11}% {coin_exchange_data:24}" )
+
+    # will not send empty message
+    nc.send_notifications()
 
 if __name__ == '__main__':
     main()

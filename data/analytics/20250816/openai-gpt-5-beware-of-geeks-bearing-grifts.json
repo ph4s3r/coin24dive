@@ -1,0 +1,37 @@
+{
+    "content": {
+        "coin_id": "beware-of-geeks-bearing-grifts",
+        "dead_score": 8.6,
+        "analysis": "Snapshot: New ERC‑20 meme coin on Ethereum, single DEX listing (Uniswap V2), MC ~US$75k, FDV = MC, total supply 1T fully circulating, price down ~84% in 24h and ~91% from ATH within ~1 day of launch. 24h volume ~US$78k; trust score on the pair: yellow. Community is tiny (Telegram ~59 users; only ~14 watchlist users). No dev activity or code repos. \n\nSignals of being mostly dead:\n- Liquidity/market structure: Only a Uniswap V2 pool; no CEX listings. Bid‑ask spread ~0.6% suggests some LP depth now, but no evidence of meaningful/defensible liquidity. “Burned liquidity/renounced ownership” claims remove admin controls but don’t create demand or utility; additional LPs can still be created elsewhere. If LP is small or thins out, slippage will spike and exits become hard.\n- Volume quality: Reported 24h volume is comparable to the entire market cap—typical of early DEX launches with bot churn and high churn rather than sticky demand; this often collapses quickly after day 1–2.\n- Price action: Down ~84% on day two and ~91% below ATH already—classic post‑launch dump pattern for low‑traction meme tokens.\n- Listings/visibility: Only on Uniswap V2; no CEX/aggregator depth, making discovery poor and buyer funnel limited.\n- Community/dev: Extremely small socials (59 TG), negligible watchlist count, zero dev signals and no roadmap/utility beyond the meme. These are strong predictors of fade‑to‑illiquidity.\n\nNeutral/positive notes:\n- Token address is consistent (no migration indicated). Renounced ownership and 0% tax reduce some contract risk perceptions but don’t drive sustained demand.\n\nCan it come back? Low probability without a new catalyst. A temporary pump is always possible in meme markets, but a durable recovery typically requires: (a) sustained organic volume (>US$100k/day for weeks), (b) material liquidity depth (multi‑tens of thousands in pooled WETH with low slippage), (c) rapid community growth (thousands of real users), and (d) additional listings/partnerships. None of these are visible.\n\nBottom line: Mostly dead. Unless significant new liquidity and real community traction appear soon, odds favor continued decay and liquidity drying up. If you’re assessing an exit, test a small sell for slippage and verify LP depth on-chain (GeckoTerminal/Uniswap) and holder concentration to gauge exit risk."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 9,
+            "contract_address": "0x2d5d69da90b4c02b95c802344b48e3e57ce220d7",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x2d5d69da90b4c02b95c802344b48e3e57ce220d7"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://bogbg.vip/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x2d5d69da90b4c02b95c802344b48e3e57ce220d7",
+            "https://ethplorer.io/address/0x2d5d69da90b4c02b95c802344b48e3e57ce220d7"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "BOGBG_Community",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "BOGBG_Community",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

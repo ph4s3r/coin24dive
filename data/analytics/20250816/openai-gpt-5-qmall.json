@@ -1,0 +1,57 @@
+{
+    "content": {
+        "coin_id": "qmall",
+        "dead_score": 8.8,
+        "analysis": "Summary: QMALL looks functionally “mostly dead” unless the underlying Qmall Exchange meaningfully revives. The token is down ~99.65% from ATH, experienced an -86.7% crash in the last 24h, and real liquidity/volume are extremely low.\n\nWhat the data says\n- Purpose: Exchange utility token for Qmall Exchange. If the exchange isn’t active/growing, token demand is structurally weak.\n- Price/returns: -99.65% from ATH; -76.9% over 1y; -86.7% in the last 24h. This pattern is consistent with projects that have lost traction or suffered a major confidence shock.\n- Market cap and supply: ~$334k market cap, ~$473k FDV; ~70.7m in circulation of 100m total. No major unlock risk visible, but demand is the key missing piece.\n- Liquidity/volume (critical): 24h total volume ≈ $2,008 across public markets (Uniswap V2 ~$1.4k, PancakeSwap ~$0.6k). The project’s own exchange shows ~$3.9k on QMALL/USDT but flagged as “anomaly” with a 26% bid-ask spread—suggesting unreliable liquidity/volume quality. This meets the “extremely low trading volume/liquidity” criterion.\n- Listings: Only on Uniswap V2 (ETH), PancakeSwap (BSC) and the project’s own Qmall exchange. No meaningful centralized exchange presence; either never achieved or lost broader listings. Very weak market access.\n- Spreads: DEXs show modest spreads (~0.6%), but pools are tiny; the Qmall CEX pairs have double-digit spreads, indicating poor orderbook depth and potential price manipulation risk.\n- Dev/social signals: No GitHub activity; no status updates; Telegram size ~10.8k users but engagement unknown. Links exist (Twitter/Telegram), but dataset shows no recent updates—suggesting low activity. This aligns with “social media falls silent.”\n- Contracts: Addresses exist on BSC, ETH, and Velas. No explicit evidence here of contract migration/discontinuation, but also no fresh development activity.\n\nCan it come back?\n- For a durable recovery, QMALL would need: (1) clear, verifiable revival/growth of Qmall Exchange (users, volumes, revenues), (2) credible new listings and real market-making/liquidity on reputable venues, (3) sustained community/comms and product progress. None of these are visible in the provided data.\n- Thin liquidity means prices can “spike” on tiny flows, but that’s not a sustainable comeback; it’s slippage-driven volatility.\n\nRisks if holding/trading now\n- Exit risk: With ~$2k real 24h volume, offloading even small positions can move price materially.\n- Pricing anomalies: The project’s own exchange shows anomalous prints and very wide spreads—beware false price signals.\n- Further delist/abandonment risk: Already minimal exchange presence and no dev/status activity.\n\nVerdict\n- Dead score: 8.8/10. Not technically extinct (some pools still exist), but by practical measures—liquidity, listings, activity, and price collapse—it is mostly dead. A true comeback looks very unlikely without major, externally verifiable catalysts.\n\nNote: This is not financial advice. If you must interact, use tiny sizes, set strict slippage limits, and assume you may not find exit liquidity."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x07e551e31a793e20dc18494ff6b03095a8f8ee36",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x07e551e31a793e20dc18494ff6b03095a8f8ee36"
+        },
+        "velas": {
+            "decimal_place": 18,
+            "contract_address": "0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "geckoterminal_url": "https://www.geckoterminal.com/velas/tokens/0x2217e5921b7edfb4bb193a6228459974010d2198"
+        },
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x2217e5921b7edfb4bb193a6228459974010d2198"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://qmall.io/qmall-token"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://bscscan.com/token/0x07e551e31a793e20dc18494ff6b03095a8f8ee36",
+            "https://platform.arkhamintelligence.com/explorer/token/qmall",
+            "https://etherscan.io/token/0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "https://ethplorer.io/address/0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "https://evmexplorer.velas.com/address/0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "https://evmexplorer.velas.com/token/0x2217e5921b7edfb4bb193a6228459974010d2198",
+            "https://binplorer.com/address/0x07e551e31a793e20dc18494ff6b03095a8f8ee36",
+            "https://explorer.velas.com/token/0x2217e5921b7edfb4bb193a6228459974010d2198/token-transfers"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://www.facebook.com/qmall.io",
+            "https://www.instagram.com/qmallua/",
+            "https://www.linkedin.com/company/qmallexchange/"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "QmallExchange",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "qMall_Exchange",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

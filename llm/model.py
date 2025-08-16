@@ -3,6 +3,7 @@
 ### purpose: model specific settings stored in a custom class
 
 #pypi
+import json
 from pathlib import Path
 
 
@@ -32,6 +33,11 @@ MODELS_WITHOUT_STRUCTURED_OUTPUT = [
 class LLMConfig():
     '''describes everything that is model and request specific
     this class can be handed over to the OpenRouter class
+
+    superprompt and response_schema are inputs. they will be loaded to the respective
+    self.superprompt_str      = ''
+    self.response_schema_dict = ''
+
     '''
 
     def __init__(self, 
@@ -40,21 +46,21 @@ class LLMConfig():
                 superprompt: str | Path | None, 
                 response_schema: dict | Path | None,   # if None, no structured output is enforced
                  ):
-        self.model_name         = model_name
-        self.provider           = provider             # currently unused - planned to use it to change params e.g. openrouters openai SDK
+        self.model_name          = model_name
+        self.provider            = provider             # currently unused - planned to use it to change params e.g. openrouters openai SDK
         self._superprompt        = superprompt
         self._response_schema    = response_schema
 
-        self.superprompt_str    = ''
-        self.response_schema_str= ''
+        self.superprompt_str      = None
+        self.response_schema_dict = None
 
         if self.model_name not in MODELS_WITH_STRUCTURED_OUTPUT + MODELS_WITHOUT_STRUCTURED_OUTPUT:
             print(f'warning: model {self.model} is not listed in our list, might be unsupported')
 
+        # loading superprmopt
         if isinstance(self._superprompt, Path):
             try:
-                with open(superprompt, encoding="utf-8") as f:
-                    self.superprompt_str = f.read()
+                self.superprompt_str = Path(superprompt).read_text()
             except Exception as e:
                 print('failed to load superprompt from file, will not use it then..', e)
                 self.superprompt = None
@@ -64,23 +70,22 @@ class LLMConfig():
             print('superprompt is not a path or str, will not use it then..')
             self.superprompt_str = None
 
+        # loading response schema for structured outputs
         if isinstance(self._response_schema, Path):
             try:
-                with open(response_schema, encoding="utf-8") as f:
-                    self.response_schema_str = f.read()
+                self.response_schema_dict = json.loads(Path(response_schema).read_text())
             except Exception as e:
                 print('failed to load response_schema from file, will not enforce structured output then..', e)
-                self.response_schema_str = None
-        elif isinstance(self.response_schema, str):
-            self.response_schema_str = response_schema
+        elif isinstance(self.response_schema, dict):
+            self.response_schema_dict = response_schema
         else:
-            print('response_schema is not a path or str, will not enforce structured output then..')
-            self.response_schema_str = None
+            print('response_schema is not a path or dict, will not enforce structured output then..')
+            self.response_schema_dict = None
 
     # bad naming maybe
     @property
     def superprompt(self):
-        raise AttributeError("use 'superprompt_str'")
+        raise AttributeError("get 'superprompt_str'")
     
     @superprompt.setter
     def superprompt(self, v):
@@ -88,7 +93,7 @@ class LLMConfig():
 
     @property
     def response_schema(self):
-        raise AttributeError("use 'response_schema_str'")
+        raise AttributeError("get 'response_schema_dict'")
 
     @response_schema.setter
     def response_schema(self, v):

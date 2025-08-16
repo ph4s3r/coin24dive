@@ -1,0 +1,37 @@
+{
+    "content": {
+        "coin_id": "kira-ai",
+        "dead_score": 8.5,
+        "analysis": "Verdict: Functionally near‑dead microcap. A bounce is possible on thin liquidity, but a sustained recovery to prior highs looks very unlikely without major changes.\n\nWhat the data says\n- Chain/contract: Ethereum, contract 0x0d7c...6976. No sign of a token migration; address appears consistent.\n- Market access: Only on Uniswap V2 (ETH/WETH pair). No centralized exchange listings; nothing to suggest de‑listings because it was never listed elsewhere.\n- Liquidity/volume: 24h DEX volume ≈ $14.9k with market cap ≈ $11.1k. This combo implies very shallow liquidity and high slippage risk. Intraday range from ~$0.0109 to ~$0.0803 and a −86% 24h move indicate fragile/ephemeral liquidity.\n- Price action: −95.7% from ATH reached just days ago (Aug 7 → Aug 16 ATL). −94.5% over 7d. Classic post‑launch pump‑and‑dump pattern.\n- Supply: 1,000,000 total and circulating (FDV = MC). No vesting overhang, but also suggests limited treasury runway unless the team holds a large share (holder distribution unknown).\n- Community/interest: Tiny footprint — ~85 Telegram users, 46 watchlists. Developer metrics are all zero and there are no status updates. This points to minimal ongoing development and awareness. I can’t verify off‑chain activity beyond the data provided.\n- Warnings: CoinGecko shows a generic liquidity‑risk caution. Not specific to this token, but the behavior here fits the profile of extremely high risk microcaps.\n\nCan it come back?\n- Non‑zero chance of short‑term price spikes due to thin books, but probability of a durable recovery to former ATH looks low without: (1) meaningful, locked LP and deeper liquidity, (2) active, transparent team communications and roadmap delivery, (3) new exchange listings, (4) real user adoption/partnerships.\n\nChecks before considering any exposure\n- Verify on‑chain: LP lock/renounce status, owner privileges, buy/sell taxes, and top‑holder concentration on Etherscan/Uniswap info.\n- Confirm that the official socials (Twitter/Telegram) are active with real engagement and that the website/whitepaper map to actual shipped product.\n\nOverall\n- Meets multiple “mostly dead” criteria: extreme drawdown, very low MC, DEX‑only, tiny community, no visible dev activity. Not entirely dead because trading still occurs, but absent major, verifiable catalysts, treat as near‑write‑off risk. Not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x0d7c10ffcaef0bf9f8bbfc44ea437beeb5a36976",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x0d7c10ffcaef0bf9f8bbfc44ea437beeb5a36976"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://KiraAi.app"
+        ],
+        "whitepaper": "https://Whitepaper.KiraAi.app",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x0d7c10ffcaef0bf9f8bbfc44ea437beeb5a36976",
+            "https://ethplorer.io/address/0x0d7c10ffcaef0bf9f8bbfc44ea437beeb5a36976"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "KiraAiErc20",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "KiraAiErc20",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

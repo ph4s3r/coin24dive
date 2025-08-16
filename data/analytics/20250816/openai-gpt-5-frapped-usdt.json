@@ -1,0 +1,45 @@
+{
+    "content": {
+        "coin_id": "frapped-usdt",
+        "dead_score": 9.8,
+        "analysis": "Summary: Frapped USDT (fUSDT) is a Multichain/Anyswap-bridged USDT on Fantom. After the Multichain collapse halted mint/burn/redeem, these bridged assets lost backing and liquidity. Based on the data provided, fUSDT now meets multiple “mostly dead” criteria and has an extremely low chance of ever regaining a $1 peg or prior price levels.\n\nKey signals from your data:\n- Price collapse and depeg: Current price ≈ $0.0241; -96.97% in 24h; ~-98.6% from ATH. Multi-timeframe losses (-97% to -98% over 30–200 days) show a structural break, not a temporary dip.\n- Liquidity and volume: Total 24h volume ≈ $22; most DEX ticks show converted volumes of only $1–$20, trust_score red/yellow, and wide bid-ask spreads (~0.7–1.8%). This is extreme illiquidity; exiting a position at quoted prices is uncertain and slippage risk is high.\n- Exchange support: Only minor Fantom DEX pools (Curve, Sushi, SpiritSwap, Beethoven X, Equalizer). No meaningful CEX listings, several tickers flagged stale/anomalous. Effective delisting from major venues.\n- Market cap and supply: Market cap not computed (circulating_supply = 0 in feed); FDV ~ $2.0M is not actionable given near-zero liquidity and broken redemption.\n- Dev/social presence: Links contain no active social handles; developer_data shows zero activity; status_updates empty; watchlist users only 530. This looks abandoned.\n- Contract/platform notes: Same contract address shown for Fantom and BSC is odd and suggests mapping issues; more importantly, the bridge that backed fUSDT is defunct, so mint/burn/redeem functionality is effectively discontinued.\n\nContext (widely known): After the Multichain/Anyswap shutdown and associated incidents in 2023, bridged assets on Fantom like fUSDT became unbacked IOUs. Without a credible, funded redemption program, return to $1 is unrealistic.\n\nCan it come back?\n- Only if a credible entity restores redeemability or buys out supply at/near par and deep liquidity returns. There is no evidence of that. Given absent devs, silent socials, DEX-only micro-liquidity, and a dead bridge, the probability of recovery is extremely low.\n\nBottom line: fUSDT is effectively a distressed, unbacked bridged token with negligible liquidity and support. Treat as mostly dead. If you still hold it, any exit may require accepting severe slippage and verifying the contract (0x049d...c7a) to avoid fake pools."
+    },
+    "exchange_info": {
+        "fantom": {
+            "decimal_place": 6,
+            "contract_address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "geckoterminal_url": "https://www.geckoterminal.com/ftm/tokens/0x049d68029688eabf473097a2fc38ef61633a3c7a"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 6,
+            "contract_address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x049d68029688eabf473097a2fc38ef61633a3c7a"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://frapped.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://ftmscan.com/token/0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "https://platform.arkhamintelligence.com/explorer/token/frapped-usdt",
+            "https://bscscan.com/token/0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "https://binplorer.com/address/0x049d68029688eabf473097a2fc38ef61633a3c7a",
+            "https://fantom.dex.guru/token/0x049d68029688eabf473097a2fc38ef61633a3c7a"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

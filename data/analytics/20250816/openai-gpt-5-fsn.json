@@ -1,0 +1,47 @@
+{
+    "content": {
+        "coin_id": "fsn",
+        "dead_score": 9,
+        "analysis": "High-level verdict: Mostly dead. A sustained return to prior valuations looks highly unlikely without a fundamental reboot of the project and liquidity.\n\nWhy this score\n- Liquidity/volume: Extremely thin. CoinGecko tickers show only a fringe CEX (Nonkyc.io) with ~US$2 daily volume and Uniswap v3 pools with roughly ~US$1.5k 24h volume (and some stale/anomalous pairs). This is functionally illiquid for most traders and suggests exit risk and high slippage.\n- Listings: Absent from major centralized exchanges; current trading is limited to a small CEX and DEX pools. This is consistent with widespread delisting.\n- Price collapse: Down ~-99.96% from ATH; -92% YoY; -75% over 60d; and another ~-78% in the last 24h. Market cap ~US$0.31M. These are typical terminal-trend metrics.\n- Contract risk: Recently migrated to a new ERC-20 (0x9afc...b605). GoPlus flags that the creator can change critical parameters (disable sells, change fees, mint, etc.). Admin-key risk materially reduces investor confidence and exchange listability.\n- Development activity: GitHub shows minimal activity (0 commits in last 4 weeks; very small repo footprint overall). This points to project dormancy.\n- Community/social: Telegram ~3.6k; Reddit/Twitter engagement appears low relative to past cycle. Social traction has largely faded vs 2018–2021 era.\n- Ecosystem posture: Fusion/Chainge history aside, the token itself shows little evidence of current adoption, integrations, or catalysts. The recent contract migration likely fragmented holders and trust without restoring liquidity.\n\nWhat would be needed to change the outlook\n- Demonstrable, sustained liquidity injection (deep Uniswap/Curve liquidity and top-tier CEX relistings), contract owner privileges removed/renounced, a credible technical roadmap with active development, and renewed partner adoption. There is no visible evidence of these today.\n\nConclusion\n- Given near-nonexistent liquidity, pervasive delistings, acute drawdowns, admin-key risk on the new contract, and weak dev/social activity, FSN appears mostly dead. Speculative bounces are possible in illiquid markets, but a durable recovery to former levels is improbable without major, verifiable changes.\n\nNotes and cautions\n- If you still hold FSN, confirm you have the migrated token (0x9afc…b605) vs the old one and test very small trades first—liquidity is thin and contract privileges may affect transferability/taxes. Expect high slippage on DEX. This is not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x9afc975edb8a0b57f066e8e0a72a5e2adbdcb605",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x9afc975edb8a0b57f066e8e0a72a5e2adbdcb605"
+        },
+        "fusion-network": {
+            "decimal_place": 18,
+            "contract_address": "0x2b8bb627ce7c0c9cbe579e83099de665032d08be"
+        }
+    },
+    "links": {
+        "homepage": [
+            "http://www.fusion.org/"
+        ],
+        "whitepaper": "http://www.fusion.org/css/FUSION%20Whitepaper%20V1.0.1.pdf",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x9afc975edb8a0b57f066e8e0a72a5e2adbdcb605",
+            "https://platform.arkhamintelligence.com/explorer/token/fsn",
+            "https://ethplorer.io/address/0x9afc975edb8a0b57f066e8e0a72a5e2adbdcb605",
+            "https://fsnscan.com/#!/address/0x2b8bb627ce7c0c9cbe579e83099de665032d08be"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [
+            "https://medium.com/@fusionprotocol"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "FUSIONProtocol",
+        "facebook_username": "FUSIONProtocol",
+        "bitcointalk_thread_identifier": 2789984,
+        "telegram_channel_identifier": "FUSIONFoundation",
+        "subreddit_url": "https://www.reddit.com/r/FusionFoundation/",
+        "repos_url": {
+            "github": [
+                "https://github.com/FUSIONFoundation/dcrm-go"
+            ],
+            "bitbucket": []
+        }
+    }
+}
