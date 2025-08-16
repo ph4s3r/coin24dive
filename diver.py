@@ -1,10 +1,9 @@
 import json
 
-from utils.clog import log_info, log_fail, log_ok, log_task
+from utils.clog import log_info, log_fail, log_ok
 
 def diver(fname: str, coins: list, min_dive_percentage: int):
 
-    log_task("Searching for coins with specific criteria")
     log_info(f"criteria: coins dropped at least {abs(int(min_dive_percentage))}% in the last 24h")
     top_divers = []
 
