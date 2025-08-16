@@ -14,40 +14,40 @@ each of the below stages are saving the compiled information to files, to
 
 ### Daily market scanning
 
-what:   getting market data from https://api.coingecko.com/api/v3/coins/markets ; this is approximately 17 thousand coins' data
-how:    implemented in function: getter.get_coins_markets_all()
-output: saved to dict coins and written into a one single file "data/marketdata/coins{date}.json"
+what:   getting market data from https://api.coingecko.com/api/v3/coins/markets ; this is approximately 17 thousand coins' data  
+how:    implemented in function: getter.get_coins_markets_all()  
+output: saved to dict coins and written into a one single file "data/marketdata/coins{date}.json"  
 
 
 ### Searching for coins with specific criteria
 
-what:   filtering the above market data for coins that dropped at least 75% in price in the last 24 hours. 
-how:    implemented in function: diver.diver
-output: top_divers variable in main and written into a one single file dives{date}.json
+what:   filtering the above market data for coins that dropped at least 75% in price in the last 24 hours.  
+how:    implemented in function: diver.diver  
+output: top_divers variable in main and written into a one single file dives{date}.json  
 
 
 ### Getting detailed coin data for each coin
 
-what:   for all the top_diver coins, getting data from https://api.coingecko.com/api/v3/coins/{id} 
-how:    implemented in function: getter.get_coindata()
+what:   for all the top_diver coins, getting data from https://api.coingecko.com/api/v3/coins/{id}  
+how:    implemented in function: getter.get_coindata()  
 output: coindata, ex_inf variables for the full data, and exchange info only 
-        and written into one file per coin into data\coindata\symbol.json and data\exchangedata\symbol.json respectively
+        and written into one file per coin into data\coindata\symbol.json and data\exchangedata\symbol.json respectively  
 
 
 ### Analyzing the top divers with LLM
 
-what:   all the detailed coindata of the 'top divers' is being sent into LLM(s) for analysis
-how:    see implementation in the llm folder. there is a superpromt telling the LLM what metrics to look for.
+what:   all the detailed coindata of the 'top divers' is being sent into LLM(s) for analysis  
+how:    see implementation in the llm folder. there is a superpromt telling the LLM what metrics to look for.  
         currently OpenRouter is used with structured outputs so we can get a json back 
 output: json structured output back-validated with the requested schema (llm\schemas\analytics_schema.json) 
-        with the symbol, a dead_score from 0 to 10 and the analysis text
+        with the symbol, a dead_score from 0 to 10 and the analysis text  
 
 
 ### Results
 
-what  : compiling a list top diver coins, filtering by dead score
-how   : see main.py & implementation of message sending: notifications.py
-output: prints a table to stdout & send a message on pushover about the coins with a certain max dead score
+what  : compiling a list top diver coins, filtering by dead score  
+how   : see main.py & implementation of message sending: notifications.py  
+output: prints a table to stdout & send a message on pushover about the coins with a certain max dead score  
 
 sample output:
 
