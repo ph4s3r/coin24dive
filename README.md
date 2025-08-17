@@ -43,7 +43,7 @@ output: json structured output back-validated with the requested schema (llm\sch
         with the symbol, a dead_score from 0 to 10 and the analysis text  
 
 
-### Results
+### Dispaly Results & send out notifications
 
 what  : compiling a list top diver coins, filtering by dead score  
 how   : see main.py & implementation of message sending: notifications.py  
@@ -53,21 +53,15 @@ sample output:
 
 
 ```
-TASK: [RESULTS] **********************************************************************************************************************************************************************************************
-        id                    | symbol | dead_score | chg_%_24h | exchanges-traded-on
-fsn                              fsn            9         -79% Uniswap V3 (Ethereum), Nonkyc.io
-beware-of-geeks-bearing-grifts   bogbg        8.6         -85% Uniswap V2 (Ethereum)
-staked-bitz                      sbitz        7.8         -93% Invariant (Eclipse)
-maneki-neko-2                    neko           8         -93% Uniswap V2 (Base)
-nend                             nend         9.2         -75% BingX
-cyberyen                         cy           9.2         -87% Komodo Wallet, Bitcointry
-x-world-games                    xwg          9.1         -88% Uniswap V2 (Ethereum), LATOKEN, PancakeSwap (v2)
-qmall                            qmall        8.8         -77% Uniswap V2 (Ethereum), PancakeSwap (v2), QMall
-prodigi-connect                  pdg          9.4         -84% BingX
-kira-ai                          kira         8.5         -86% Uniswap V2 (Ethereum)
-build                            build        9.6         -93% RadioShack (Ethereum), PancakeSwap (v2)
-coreto                           cor          9.1         -79% Uniswap V2 (Ethereum), ProBit Global
-frapped-usdt                     fusdt        9.8         -96% Equalizer, Curve (Fantom), Sushiswap (Fantom), SpiritSwap, Beethoven X, SpiritSwap (V2)
+TASK: [DISPLAY RESULTS] **********************************************************************************************************************************************************************************************************************
+┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ID                   ┃ Symbol     ┃ Dead Score ┃ 24h Change ┃ Exchanges                                                                  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ mai-kava             │ mimatic    │        9.1 │       -96% │ Équilibre                                                                  │
+│ nest                 │ nest       │        8.7 │       -89% │ Uniswap V4 (Ethereum), CoinW, LATOKEN, PancakeSwap (v2)                    │
+│ mogul-productions    │ stars      │         10 │       -83% │ Uniswap V2 (Ethereum), LATOKEN, ApeSwap                                    │
+│ stfx                 │ stfx       │        8.5 │       -87% │ MEXC, Uniswap V3 (Ethereum), Uniswap V4 (Ethereum), CoinEx, Raydium (CLMM) │
+│ tokabu               │ tokabu     │        4.8 │       -78% │ Uniswap V2 (Ethereum)                                                      │
 ```
 
 
