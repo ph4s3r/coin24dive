@@ -7,7 +7,7 @@ from dotenv import dotenv_values
 # local
 from utils.clog import log_ok
 
-class notificationsClass:
+class pushover_message:
 
     config = dotenv_values(".env")
     pushover_token = config.get("PUSHOVER_TOKEN", os.getenv("PUSHOVER_TOKEN"))
