@@ -1,59 +1,93 @@
-# Coin24Dive
+# Coin24Dive 🚀
 
-Searching for crashed shitcoins that can come back 
+**Mission:** Discover crashed shitcoins with comeback potential.  
 
-## Process
+Coin24Dive automates the process of scanning, filtering, analyzing, and reporting coins that have sharply dropped in value, allowing traders and analysts to identify potential opportunities quickly.
 
-each of the below stages are saving the compiled information to files, to 
+---
 
-- make it as fast as possible
-- make sure not to burn API calls unnecessary
-- to be able to serve the data on a webserver easily
-- to be able to do more analytics later on
+## Workflow Overview
 
+Each stage of Coin24Dive is optimized to:
 
-### Daily market scanning
+- Maximize speed  
+- Minimize unnecessary API calls  
+- Store results for easy web-serving  
+- Enable advanced analytics downstream  
 
-what:   getting market data from https://api.coingecko.com/api/v3/coins/markets ; this is approximately 17 thousand coins' data  
-how:    implemented in function: getter.get_coins_markets_all()  
-output: saved to dict coins and written into a one single file "data/marketdata/coins{date}.json"  
+---
 
+### 1. Daily Market Scanning
 
-### Searching for coins with specific criteria
+**Objective:** Collect global market data from [CoinGecko API](https://api.coingecko.com/api/v3/coins/markets).  
 
-what:   filtering the above market data for coins that dropped at least 75% in price in the last 24 hours.  
-how:    implemented in function: diver.diver  
-output: top_divers variable in main and written into a one single file dives{date}.json  
+- **Scope:** ~17,000 coins  
+- **Function:** `getter.get_coins_markets_all()`  
+- **Output:**  
+  - Dictionary: `all_coingecko_coins`  
+  - File: `data/marketdata/coins{date}.json`  
 
+> This provides a complete snapshot of the crypto market for daily analysis.
 
-### Getting detailed coin data for each coin
+---
 
-what:   for all the top_diver coins, getting data from https://api.coingecko.com/api/v3/coins/{id}  
-how:    implemented in function: getter.get_coindata()  
-output: coindata, ex_inf variables for the full data, and exchange info only 
-        and written into one file per coin into data\coindata\symbol.json and data\exchangedata\symbol.json respectively  
+### 2. Filtering Coins by Price Crash
 
+**Objective:** Identify coins that dropped ≥75% in the last 24 hours.  
 
-### Analyzing the top divers with LLM
+- **Function:** `diver.diver`  
+- **Output:**  
+  - Dictionary: `top_divers`  
+  - File: `dives{date}.json`  
 
-what:   all the detailed coindata of the 'top divers' is being sent into LLM(s) for analysis  
-how:    see implementation in the llm folder. there is a superpromt telling the LLM what metrics to look for.  
-        currently OpenRouter is used with structured outputs so we can get a json back 
-output: json structured output back-validated with the requested schema (llm\schemas\analytics_schema.json) 
-        with the symbol, a dead_score from 0 to 10 and the analysis text  
+> Only the most drastic “divers” are kept for deeper analysis.
 
+---
 
-### Dispaly Results & send out notifications
+### 3. Fetching Detailed Coin Data
 
-what  : compiling a list top diver coins, filtering by dead score  
-how   : see main.py & implementation of message sending: notifications.py  
-output: prints a table to stdout & send a message on pushover about the coins with a certain max dead score  
+**Objective:** Retrieve comprehensive coin and exchange information for top divers.  
+
+- **API:** `https://api.coingecko.com/api/v3/coins/{id}`  
+- **Function:** `getter.get_coindata()`  
+- **Output:**  
+  - Full coin data: `coindata`  
+  - Exchange info only: `ex_inf`  
+  - Files per coin:  
+    - `data/coindata/{symbol}.json`  
+    - `data/exchangedata/{symbol}.json`  
+
+> Each coin’s details are saved individually to allow efficient querying and historical tracking.
+
+---
+
+### 4. LLM-Powered Analysis
+
+**Objective:** Leverage LLMs to analyze top divers for revival potential.  
+
+- **Implementation:** See `llm/` folder  
+- **Method:** A “superprompt” guides the LLM to evaluate key metrics. Currently uses **OpenRouter** with structured JSON outputs.  
+- **Output:** JSON matching schema: `llm/schemas/analytics_schema.json`  
+  - Fields include `symbol`, `dead_score` (0–10), and `analysis_text`  
+
+> This stage brings AI insights into potential recovery likelihood.
+
+---
+
+### 5. Display & Notification
+
+**Objective:** Present filtered results and notify stakeholders.  
+
+- **Implementation:** `main.py` + `notifications.py`  
+- **Functionality:**  
+  - Print top divers in a formatted table  
+  - Send push notifications via Pushover for coins below a specified `dead_score` threshold
 
 sample output:
 
 
 ```
-TASK: [DISPLAY RESULTS] **********************************************************************************************************************************************************************************************************************
+TASK: [DISPLAY RESULTS] ********************************************************************************************************************
 ┏━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ ID                   ┃ Symbol     ┃ Dead Score ┃ 24h Change ┃ Exchanges                                                                  ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
@@ -65,4 +99,16 @@ TASK: [DISPLAY RESULTS] ********************************************************
 ```
 
 
+### Tech Highlights
 
+- **API Efficiency:** Reduces repeated calls by storing intermediate data  
+- **Structured Analysis:** LLM outputs standardized JSON for downstream usage  
+- **Extensible:** Designed for future analytics, web dashboards, or alert systems
+
+### Next Steps / TODOs
+
+- Add historical trend tracking per coin  
+- Integrate additional LLM models for diversified analysis  
+- Build a lightweight web dashboard to visualize top divers
+
+> ⚠️ **Disclaimer:** Coin24Dive is for informational purposes only. Crypto trading is highly speculative. Always do your own research.
