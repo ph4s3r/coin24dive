@@ -1,0 +1,52 @@
+{
+    "content": {
+        "coin_id": "nest",
+        "dead_score": 8.7,
+        "analysis": "Summary: NEST Protocol looks mostly dormant and financially distressed. While it’s not entirely dead (there’s still a live contract and small TVL), the odds of a meaningful, sustained price recovery without a major relaunch are very low.\n\nKey signals from the data you shared:\n- Liquidity/volume: Critically low. Reported 24h total volume ≈ $27 across pairs; DEX/CEX tickers show tiny converted volume and wide spreads (e.g., 61% bid-ask on CoinW). This implies severe slippage and exit risk for holders.\n- Market cap/rank: ≈ $255k market cap, rank ~5980. This is micro-cap territory with limited discovery and little institutional interest.\n- Price performance: Down ~-89% in 24h, ~-87% over 7–14d, ~-64% over 30d, ~-96% over 200d, ~-93% over 1y, and ~-99.98% from ATH (2020). Such persistent, multi-timeframe drawdowns typically coincide with a broken narrative and capital flight.\n- Exchange presence: Only illiquid DEX pools and fringe CEXs (CoinW, LATOKEN) listed; trust scores red and many feeds stale. This is consistent with de-listing or loss of support from larger venues.\n- Contract migration: The project migrated contracts (ETH/BSC) after the Poly Network hack (Aug 2023). Contract changes were communicated, but migrations often fragment liquidity and confuse holders. Anyone holding the old contracts risks being stuck.\n- On-chain usage: TVL ≈ $138k; mcap/TVL ≈ 1.85. TVL is small but not zero—there’s some residual on-chain activity. It does not offset the liquidity and market structure problems.\n- Community/dev activity: Telegram count reported as 51 (very low). Developer metrics: 0 commits in last 4 weeks, zero recent repo engagement. This looks like stalled development. (I can’t validate current Twitter activity from this snapshot; last notable mention in the notice was Aug 2023.)\n\nWhat would need to change to argue for a comeback:\n- Liquidity restoration: Regular 24h volume in the high five/six figures with tight spreads on both ETH and BSC pools; market makers on reputable CEXs.\n- Re-listings: Placement on Tier-1/2 exchanges with real volumes and verified order books.\n- Clear roadmap and active development: Frequent, verifiable commits and feature releases; renewed partnerships and real oracle integrations.\n- Community revival: Material growth in active users, social engagement, and third‑party ecosystem usage.\n- Narrative/product-market fit: Differentiation versus entrenched oracle competitors and credible demand drivers for the token.\n\nBottom line: Given the near-vanished liquidity, extreme multi-period drawdowns, negligible volumes, lack of major exchange support, and apparent inactivity, NEST appears mostly dead. Price can still spike on thin books, but a durable recovery is unlikely without a substantial reboot and re-listings. Proceed carefully, verify you’re interacting with the migrated contract, and avoid old/obsolete token addresses."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0xcd6926193308d3b371fdd6a6219067e550000000",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0xcd6926193308d3b371fdd6a6219067e550000000"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xcd6926193308d3b371fdd6a6219067e550000000",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xcd6926193308d3b371fdd6a6219067e550000000"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://nestprotocol.org/",
+            "https://nestdapp.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0xcd6926193308d3b371fdd6a6219067e550000000",
+            "https://platform.arkhamintelligence.com/explorer/token/nest",
+            "https://ethplorer.io/address/0xcd6926193308d3b371fdd6a6219067e550000000",
+            "https://bscscan.com/token/0xcd6926193308d3b371fdd6a6219067e550000000",
+            "https://binplorer.com/address/0xcd6926193308d3b371fdd6a6219067e550000000",
+            "https://polygonscan.com/token/0x98f8669f6481ebb341b522fcd3663f79a3d1a6a7"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://nest-protocol-82041.medium.com/"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "nest_protocol",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "nest_chat",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/NEST-Protocol/NEST-oracle-V3",
+                "https://github.com/NestDapp/NestDapp"
+            ],
+            "bitbucket": []
+        }
+    }
+}

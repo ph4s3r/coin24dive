@@ -1,0 +1,39 @@
+{
+    "content": {
+        "coin_id": "tokabu",
+        "dead_score": 4.8,
+        "analysis": "Snapshot (2025-08-17, based on provided feed):\n- Chain/contract: Ethereum, 0x9acb099a6460dead936fe7e591d2c875ae4d84b8 (2 decimals). No evidence of contract migration in the feed.\n- Listings/liquidity: Single DEX listing (Uniswap V2, WETH pair). Bid-ask spread ~0.61% suggests some LP depth, but only one pool is referenced. No CEX listings. Gecko shows a generic liquidity-risk notice.\n- Market/price: Mcap ≈ $0.42M, FDV ≈ $0.42M (all supply circulating). 24h volume ≈ $0.85M (volume/mcap > 2x) with “is_anomaly: true” on the ticker, implying possible irregular prints or wash-like behavior. Price -76.9% in 24h and ≈ -87% from ATH set just days ago (2025-08-14). Current price only ~30% above ATL (2025-08-16). Extremely high launch volatility typical of fresh meme tokens.\n- Supply/holders: Total supply 4.2e17; FDV=mcap implies no vesting, but top-holder and LP lock distribution unknown here—critical to check on-chain.\n- Community/dev: Telegram ~5.5k users; Twitter handle present. Watchlists: 82 (low). Developer data: 0 commits, 0 stars/forks—typical for meme tokens but offers no technical moat. No status updates.\n\nHow “dead” is it by your criteria?\n- Extremely low liquidity: Unknown from this feed; spread isn’t huge, but single-pool risk is high; LP lock not confirmed. Partial concern.\n- Token address changed/discontinued: Not indicated.\n- Extreme low trading volume: No—volume is high now, though may be anomalous/short-lived.\n- De-listed on exchanges: N/A (never listed beyond Uniswap).\n- Devs abandoned: Too early to claim, but zero dev footprint beyond socials.\n- Social silent: Not currently—channels exist and Telegram count is non-trivial, though quality/engagement unknown.\n\nRecovery outlook (can it come back?):\n- Short-term: A bounce is possible given high turnover and early hype—memecoins often have secondary pumps if LP remains intact and marketing continues.\n- Medium/long-term: Sustained recovery back to ATH is unlikely without clear catalysts (locked/renounced LP, transparent multisig for marketing funds, CEX listings, real community growth, and avoidance of top-holder dumps). Most similar micro-cap meme launches trend down as initial hype fades.\n\nKey checks before judging finality:\n- Verify LP lock and duration on the Uniswap V2 pool (via GeckoTerminal/Etherscan). Unlocked LP = high rug/exit risk.\n- Holder concentration on Etherscan (top 10 excluding LP); >50% concentration is a major red flag.\n- Contract ownership (renounced or multisig), trading tax settings, and any blacklist/transfer-limit functions.\n- Real social engagement vs. botted numbers (AMA cadence, dev presence, roadmap, audits).\n\nVerdict: Not dead today (active volume and functioning pool), but high-risk, single-DEX, early-stage meme with a severe post-ATH drawdown and minimal fundamentals. Price can “come back” in the short run if liquidity holds and marketing drives demand, but odds of a full, durable recovery to ATH are low without substantial, verifiable catalysts. Overall dead_score: 4.8/10 (alive but fragile; skewed toward eventual fade absent strong execution)."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 2,
+            "contract_address": "0x9acb099a6460dead936fe7e591d2c875ae4d84b8",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x9acb099a6460dead936fe7e591d2c875ae4d84b8"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://tokabu.vip"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x9acb099a6460dead936fe7e591d2c875ae4d84b8",
+            "https://ethplorer.io/address/0x9ACb099A6460Dead936fe7E591D2c875ae4D84b8"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Tokabucto",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Tokabucto",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/Tokabu"
+            ],
+            "bitbucket": []
+        }
+    }
+}

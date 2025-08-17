@@ -1,0 +1,42 @@
+{
+    "content": {
+        "coin_id": "mai-kava",
+        "dead_score": 9.1,
+        "analysis": "Snapshot (from provided feed)\n- Chain/contract: Kava, 0xb84dF10966A5D7E1Ab46d9276F55D57Bd336Afc7 (GeckoTerminal link present)\n- Listings: Only on Equilibre (DEX) with red trust score; no CEX support shown\n- 24h volume: ~$12.6 total across pairs (extremely low)\n- Price: ~$0.12, down ~-96.7% in 24h; also ~-96.7% over 7/14/60 days\n- Pairs: Quoted vs 0xFA9343… “Multichain-bridged USDC (Kava)” – a widely deprecated/compromised bridge asset\n- Market cap: Not tracked (circulating supply reported as 0); FDV ~ $1.22m off an assumed 10m supply\n- Social/dev on this listing: Telegram 1,535; Twitter points to @0xLaoZi (QiDAO). No recent status updates; CG developer stats show no activity (limited signal)\n\nWhy this looks mostly dead on Kava\n1) Liquidity collapse\n- Single DEX venue with tiny, unstable volume (~$12.6/day). Bid/ask spread exists but is meaningless under this illiquidity. Any trade can move price massively, explaining the violent -96% prints and stray highs.\n\n2) Toxic reference asset in the main pair\n- The primary quote is Multichain-bridged USDC on Kava, an asset many ecosystems mark as deprecated after the Multichain collapse. Pricing against a tainted stable undermines confidence and real liquidity.\n\n3) Exchange presence\n- No centralized or reputable DEX listings beyond Equilibre are shown. Effective discoverability and on/off-ramps are absent.\n\n4) Data signals consistent with abandonment on this chain\n- Market cap untracked, zero circulating reported, no status updates, and no observable, current liquidity incentives. Even if the broader MAI/QiDAO project remains alive on other chains, the Kava deployment appears neglected or sunset.\n\n5) Price behavior incompatible with a functioning stablecoin\n- 24h high of ~$3.8 and a current ~$0.12 for a supposed USD-pegged asset signals broken peg and near-zero depth. ATH values in the feed (e.g., $6.94) look like thin-liquidity artifacts, not organic markets.\n\nCan it come back?\n- Only if the team explicitly revives Kava support: migrate away from Multichain assets to reputable stables, re-seed deep liquidity, secure additional exchange listings, and publish clear comms/migration plans. Without a coordinated relaunch, price discovery will remain illusory and the peg unrecoverable on Kava.\n\nBottom line\n- On Kava, MAI trades like an abandoned, illiquid remnant paired to a deprecated stable. Treat as mostly dead on this chain absent a formal revival/migration announcement from QiDAO.\n\nWhat to watch (if you’re still tracking it)\n- Official QiDAO announcements (Discord/Medium/Twitter) specifically about Kava: contract migrations, LP incentives, or deprecation notices\n- Replacement of Multichain-bridged USDC with reputable native/bridged stables and credible TVL\n- New listings beyond a single small DEX and meaningful, sustained daily volume (>$100k with tight spreads for a stablecoin)\n\nRisk note\n- Swapping in such illiquid pools can incur extreme slippage and failed transactions; verify any purported arbitrage or price before interacting."
+    },
+    "exchange_info": {
+        "kava": {
+            "decimal_place": 18,
+            "contract_address": "0xb84df10966a5d7e1ab46d9276f55d57bd336afc7",
+            "geckoterminal_url": "https://www.geckoterminal.com/kava/tokens/0xb84df10966a5d7e1ab46d9276f55d57bd336afc7"
+        }
+    },
+    "links": {
+        "homepage": [
+            "http://mai.finance/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://explorer.kava.io/token/0xb84df10966a5d7e1ab46d9276f55d57bd336afc7"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/KFj4cVfbQu"
+        ],
+        "announcement_url": [
+            "https://0xlaozi.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "0xLaoZi",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/0xlaozi/qidao"
+            ],
+            "bitbucket": []
+        }
+    }
+}

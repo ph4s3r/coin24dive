@@ -1,0 +1,46 @@
+{
+    "content": {
+        "coin_id": "stfx",
+        "dead_score": 8.5,
+        "analysis": "Headline: STFX looks mostly dead after an extreme capitulation, with thin/liquidity-quality issues and little evidence of ongoing development or broad exchange support. A meaningful comeback is unlikely without a major turnaround by the team and new listings/liquidity.\n\nWhat the data says:\n- Price/return profile: $0.000197, down ~87% in 24h, ~98.7% in 7d, ~99.78% from ATH. It just set fresh ATL today. Recovering to prior highs would require ~450x—usually unrealistic without extraordinary catalysts.\n- Market cap/liquidity: ~$128k MC, ~$175k FDV. Reported 24h volume ~$181k, but quality looks questionable: most volume is on MEXC (trust score yellow), CoinEx volume is small with a huge 30% spread, and DEX volumes are tiny (Uniswap ~$110 total across pairs; Raydium ~$4.6k). This signals shallow/liquidity and high slippage risk.\n- Exchange presence: Listed on MEXC and CoinEx plus thin DEX pools. No tier-1 CEX listings; rank ~6974. This limits new inflows and increases delisting risk if activity keeps falling.\n- Contracts/migration: Active on Ethereum (0x9343…db2d) and Solana (HrqH…Wntx). No clear evidence of an official token migration; addresses appear unchanged. So there isn’t a fresh token attracting liquidity.\n- Supply: Circulating ~650M of 1B max. With FDV ≈ $175k, the market is assigning very low value; any unlocks or treasury sells would further pressure price.\n- Developer/community signals: CoinGecko developer metrics show zero recent code activity; no GitHub repos linked. Social links exist (site, Discord, X/Twitter), but the API provides no engagement stats. Watchlists are low (~1.7k). The combination suggests weak/absent builder momentum.\n\nInterpretation vs. “dead coin” checklist:\n- Extreme price collapse: Yes (multi-timeframe).\n- Extremely low/liquidity: Functionally thin—CEX-heavy with questionable quality and DEX liquidity near-empty; large spreads on CoinEx.\n- Delistings: Not yet, but risk elevated due to size/activity.\n- Dev abandonment: No proof either way, but zero observable developer activity is a red flag.\n- Social silence: Unknown from this feed; needs manual check, but absence of growth signals is concerning.\n\nWhat would need to change for a comeback:\n- Team visibly re-engages (roadmap, product progress), and coordinates deep liquidity on DEX and at least one reputable CEX.\n- Clear communications if a migration/new tokenomics is planned; otherwise, buy-side demand must return organically—which is rare after a 99% drawdown without a major catalyst.\n\nVerdict: Mostly dead (8.5/10). There may be sporadic pumps due to the tiny market cap, but a sustained recovery to former levels is improbable unless the team executes a credible turnaround and secures real liquidity and listings.\n\nNotes/next checks (if you want to validate):\n- Inspect X/Twitter (@STFX_IO) and Discord for recent activity/announcements.\n- Check exchange notices for delisting risks or migration alerts.\n- Look up on-chain liquidity and holder distribution to gauge sell pressure and pool depth.\n\nThis is not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x9343e24716659a3551eb10aff9472a2dcad5db2d",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x9343e24716659a3551eb10aff9472a2dcad5db2d"
+        },
+        "solana": {
+            "decimal_place": 8,
+            "contract_address": "HrqHpE4NQbSTjVtFSTm9i8omFfytggsS9UkccHWHWntx",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/HrqHpE4NQbSTjVtFSTm9i8omFfytggsS9UkccHWHWntx"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://stfx.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x9343e24716659a3551eb10aff9472a2dcad5db2d",
+            "https://platform.arkhamintelligence.com/explorer/token/stfx",
+            "https://ethplorer.io/address/0x9343e24716659a3551eb10aff9472a2dcad5db2d",
+            "https://solscan.io/token/HrqHpE4NQbSTjVtFSTm9i8omFfytggsS9UkccHWHWntx"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/STFX"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "STFX_IO",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "content": {
+        "coin_id": "mogul-productions",
+        "dead_score": 10,
+        "analysis": "Verdict: Effectively dead; do not expect a price comeback on the old STARS token.\n\nWhy:\n- Official migration/rebrand: CoinGecko notice states Mogul Productions (STARS) migrated to a new contract (MOGUL). The old contracts (ETH: 0xc55c…13ca, BSC: 0xbd83…f9a) are deprecated. Once a project migrates, teams and liquidity move to the new token; old tickers rarely recover.\n- Vanishing liquidity and volume: 24h volume is single-digit USD on BSC ApeSwap (~$9) and ~$50 (stale/low-trust) on Uniswap V2. LATOKEN shows only ~$5 volume with a 70%+ spread and anomaly flag. This is extreme illiquidity, implying large slippage and difficulty selling.\n- Market cap collapse: ~$5.4k market cap, FDV ~ $7.4k, down ~99.99% from ATH. An 83% daily drop underscores illiquid, abandoned markets.\n- Exchange status: No meaningful CEX listings; activity limited to DEXes and a low-tier exchange with poor market quality. This is consistent with de-listing post-migration.\n- Development/social focus moved: Developer activity shows 0 commits in past 4 weeks for the old repo. Project communications now center on the new token; the old token is not maintained.\n\nImplications:\n- Price comeback on STARS [OLD] is extremely unlikely. Liquidity is too thin, and the team’s incentives are with the new token. Any spikes are likely illiquidity-driven and not sustainable.\n- If you hold the old token, check the official migration post linked in the notice to see if a swap is still possible. Only use official channels; beware of scam “migration” sites.\n\nBottom line: This is a discontinued asset post-migration with negligible liquidity and exchange support. Treat STARS [OLD] as dead; do not expect recovery."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0xc55c2175e90a46602fd42e931f62b3acc1a013ca",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0xc55c2175e90a46602fd42e931f62b3acc1a013ca"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xbd83010eb60f12112908774998f65761cf9f6f9a",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xbd83010eb60f12112908774998f65761cf9f6f9a"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.mogulproductions.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0xc55c2175e90a46602fd42e931f62b3acc1a013ca",
+            "https://platform.arkhamintelligence.com/explorer/token/mogul-productions",
+            "https://ethplorer.io/address/0xc55c2175e90a46602fd42e931f62b3acc1a013ca",
+            "https://bscscan.com/token/0xbd83010eb60f12112908774998f65761cf9f6f9a",
+            "https://binplorer.com/address/0xbd83010eb60f12112908774998f65761cf9f6f9a"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/MogulProductions",
+            "https://www.facebook.com/mogulproduction",
+            "https://www.youtube.com/channel/UC0jod6RYPcm1vFx4P9V85kg"
+        ],
+        "announcement_url": [
+            "https://medium.com/mogulproductions",
+            "https://www.instagram.com/mogul.official/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "mogulofficial_",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "mogulproductions",
+        "subreddit_url": "https://www.reddit.com/r/mogulproductions/",
+        "repos_url": {
+            "github": [
+                "https://github.com/mogulproductions"
+            ],
+            "bitbucket": []
+        }
+    }
+}
