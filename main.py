@@ -7,12 +7,9 @@ from datetime import datetime
 # local
 import diver
 import getter
-from llm.model import LLMConfig
-from llm.openrouter import OpenRouter
+from llm.llm_analyze import llm_analytics
 from notifications import notificationsClass
-from utils.clog import log_fail, log_ok, log_task
-
-
+from utils.clog import log_task
 
 
 def main():
@@ -33,17 +30,21 @@ def main():
     fname_dives         = f"data/dives/dives{today_date}.json"
     analytics_folder    = 'data/analytics'
 
-    # executing the tasks
+    ##########################################################################
+    # EXECUTING TASKS ########################################################
+    ##########################################################################
+
 
     log_task("Daily market scanning")
     coins: list = getter.market_scan(fname_coins)
 
+
     log_task("Searching for coins with specific criteria")
     top_divers: dict = diver.diver(fname_dives, coins, min_dive_percentage=-75)
 
+
     log_task("Getting detailed coin data for each coin")
     coinmetrics_full = []   # all detailed data about every coin: in a list
-
     # adding the exchange info & detailed coin data to the top_divers
     for diver_key, diver_data in top_divers.items():
         coindata, ex_inf = getter.get_coindata(diver_key, refresh=False)
@@ -52,85 +53,10 @@ def main():
 
 
     log_task("Analyzing the top divers with LLM")
-    print()
-    
-    prompt_tokens       = 0
-    completion_tokens   = 0
-    error_counter       = 0 # we tolerate max 2 errors, then give up
-    
-    # setting up LLM for analytics queries
-    gpt5 = LLMConfig(
-        model_name = 'openai/gpt-5',
-        provider = 'openrouter',
-        superprompt = Path("llm/superprompt"), 
-        response_schema = Path("llm/schemas/analytics_schema.json")
-    )
-
-    gpt5_analytics_report = OpenRouter(
-        llmconfig=gpt5
-    )
-
-    dead_scores = {}
-
-    for coin_data_dict in coinmetrics_full:
-
-        if error_counter > 1:
-            log_fail('too many errors, skipping future promises')
-            break
-
-        coin_id                     = coin_data_dict.get('id')    # this is the id from coingecko, sometimes different from the 'symbol'
-        analytics_file_full_path    = Path(analytics_folder + r'/' + today_date + r'/' + gpt5.model_name.replace('/', '-') + '-' + coin_id +'.json')
-
-        if os.path.exists(analytics_file_full_path):
-            log_ok(f'analytics already exists as {analytics_file_full_path} , skipping this one for now..')
-            continue
-
-
-        # passing the detailed coin_data_dict from coinmetrics_full to the LLM for analysis
-        llm_api_response = None
-
-        try:
-            llm_api_response            : dict  = gpt5_analytics_report.query(prompt_data=coin_data_dict)
-            asset_report_structured     : dict  = json.loads(llm_api_response['choices'][0]['message']['content'])
-            log_ok(f'coin analytics returned for symbol {coin_id} from {gpt5.model_name}')
-        except Exception as e:
-            log_fail(f'could not get the structured output for {coin_id=} from the model. Error: {e}')
-            error_counter += 1
-            continue
-
-        if not llm_api_response:
-            continue
-
-        prompt_tokens       += int(llm_api_response.get('usage').get('prompt_tokens', 0))
-        completion_tokens   += int(llm_api_response.get('usage').get('completion_tokens', 0))
-
-        analytics_data = {
-            **{"content": asset_report_structured},
-            **{"exchange_info": coin_data_dict.get('detail_platforms')},
-            **{"links": coin_data_dict.get('links')},
-        }
-
-        Path(analytics_file_full_path).write_text(json.dumps(analytics_data, indent=4, ensure_ascii=False), encoding='utf-8')
-        log_ok(f'analytics successfully saved to {analytics_file_full_path}')
-
-        dead_scores[coin_id] = asset_report_structured['dead_score']
-
-    log_task("Calculating LLM usage prices")
-
-    print(f'used {prompt_tokens=}')
-    print(f'used {completion_tokens=}')
-    print('price of the move with gpt-5: ') # (w/o openrouter\'s margin of $0.0001 on every 1k tokens, which seems to be negligible...)
-    
-    # 400,000 context $1.25/M input tokens $10/M output tokens
-    price_prompt_tokens = 1.25 * prompt_tokens / 1000000
-    price_completion_tokens = 10 * completion_tokens / 1000000
-    
-    print(f'{price_prompt_tokens=}')
-    print(f'{price_completion_tokens=}')
+    dead_scores = llm_analytics(coinmetrics_full, analytics_folder, today_date)
 
 
     log_task("Filtering daily coin analytics based on dead scores")
-
     if len(dead_scores) == 0:
         analytics_path_today = Path(analytics_folder) / today_date
         for json_file in analytics_path_today.iterdir():
@@ -141,22 +67,21 @@ def main():
                     coin_id = coin_analytics['content']['coin_id']
                     dead_scores[coin_id] = coin_analytics['content']['dead_score']
 
+
     log_task("Results")
-    print("        id                    | symbol | dead_score | chg_%_24h | exchanges-traded-on")
+    print("coingecko id                   | symbol | dead_score | chg_%_24h | exchanges-traded-on")
     nc = notificationsClass()    
     for coin_id, ex_data in top_divers.items():
 
-        coin_exchange_data = ', '.join(ex_data[3:])
-
         if dead_scores.get(coin_id, 10) < 7:
             nc.add_to_notifications(
-                ex_data[1],                                             # symbol
-                dead_scores[coin_id],                                   # dead score
-                ex_data[2],                                                 # drop_percent
-                f"https://www.coingecko.com/en/coins/{coin_id}",
-                coin_exchange_data           # exchange info
+                coin_id,                                        # coingecko id
+                ex_data[1] + '%',                               # drop_percent
+                'deadscore: ' + dead_scores.get(coin_id, '?'),  # dead score
+                f"https://www.coingecko.com/en/coins/{coin_id}",# coingecko url
+                str(ex_data[2])                                 # exchange info
             )
-        print(f"{coin_id:32} {ex_data[1]:6} {dead_scores.get(coin_id, '?'):9} {str(ex_data[2]):11}% {coin_exchange_data:24}" )
+        print(f"{coin_id:32} {ex_data[0]:6} {dead_scores.get(coin_id, '?'):9} {ex_data[1]:11}% {str(ex_data[2]):24}" )
 
     # will not send empty message
     nc.send_notifications()
