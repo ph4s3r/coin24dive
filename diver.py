@@ -1,9 +1,12 @@
+import sys
 import json
 
 from utils.clog import log_info, log_fail, log_ok
 
 def diver(fname: str, coins: list, min_dive_percentage: int):
 
+    if len(coins) == 0:
+        sys.exit('no coins to analyze this time! Exiting')
     log_info(f"criteria: coins dropped at least {abs(int(min_dive_percentage))}% in the last 24h")
     top_divers = []
 

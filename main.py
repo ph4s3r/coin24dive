@@ -1,3 +1,4 @@
+# pypi
 import os
 import json
 import diver
@@ -5,34 +6,15 @@ import getter
 from pathlib import Path
 from datetime import datetime
 
+# local
 from llm.model import LLMConfig
 from llm.openrouter import OpenRouter
 from notifications import notificationsClass
 from utils.clog import log_fail, log_ok, log_task
 
 
-def main():
-   
-    coins = []
-
-    print("*"*20, "COINGECKO MARKET SCANNER", "*"*20)
-
+def market_scan(fname_coins):
     
-    os.makedirs("data", exist_ok=True)
-    os.makedirs("data/dives", exist_ok=True)
-    os.makedirs("data/coindata", exist_ok=True)
-    os.makedirs("data/exchangedata", exist_ok=True)
-    os.makedirs("data/analytics", exist_ok=True)
-    
-    # 1 get per day is enough for us
-
-    today_date = datetime.now().strftime('%Y%m%d')
-
-    fname_coins         = f"data/marketdata/coins{today_date}.json"
-    fname_dives         = f"data/dives/dives{today_date}.json"
-    analytics_folder    = 'data/analytics'
-
-    log_task("Daily market scanning")
     if not os.path.exists(fname_coins):
         log_task("we don't have data for today, getting coins")
         coins = getter.get_coins_markets_all(fname_coins)
@@ -47,19 +29,41 @@ def main():
         except Exception as e:
             log_fail(f":( could not read coins from file: {e.args[0]}")
 
+    return coins
+
+def main():
+   
+    
+
+    print("*"*20, "COINGECKO MARKET SCANNER", "*"*20)
+    
+    # creating directories
+    os.makedirs("data", exist_ok=True)
+    os.makedirs("data/dives", exist_ok=True)
+    os.makedirs("data/coindata", exist_ok=True)
+    os.makedirs("data/exchangedata", exist_ok=True)
+    os.makedirs("data/analytics", exist_ok=True)
+    today_date = datetime.now().strftime('%Y%m%d')
+    os.makedirs(f"data/analytics/{today_date}", exist_ok=True)
+
+    # declaring filenames
+    fname_coins         = f"data/marketdata/coins{today_date}.json"
+    fname_dives         = f"data/dives/dives{today_date}.json"
+    analytics_folder    = 'data/analytics'
+
+    # executing the tasks
+
+    log_task("Daily market scanning")
+    coins = market_scan(fname_coins)
 
     log_task("Searching for coins with specific criteria")
-    if len(coins) > 0:
-        top_divers = set(diver.diver(fname_dives, coins, min_dive_percentage=-75))
-
+    top_divers = set(diver.diver(fname_dives, coins, min_dive_percentage=-75))
 
     log_task("Getting detailed coin data for each coin")
-    top_divers_dict = {} # keyed with id
+    top_divers_dict  = {}   # only the extracted dive data keyed with id
+    coinmetrics_full = []   # all detailed data about every coin: in a list
 
-    # here we just load all the individual detailed coindata to a list
-    coinmetrics_full = []
 
-    # enriching the coin data with exchange information
     for d in top_divers:
         coin_id = d[0]
         coindata, ex_inf = getter.get_coindata(coin_id, refresh=False)
@@ -67,6 +71,8 @@ def main():
         t.extend(ex_inf.get(coin_id))
         top_divers_dict[coin_id] = t
         coinmetrics_full.append(coindata)
+
+    del top_divers
 
 
     log_task("Analyzing the top divers with LLM")
@@ -112,7 +118,7 @@ def main():
             asset_report_structured     : dict  = json.loads(llm_api_response['choices'][0]['message']['content'])
             log_ok(f'coin analytics returned for symbol {coin_id} from {gpt5.model_name}')
         except Exception as e:
-            log_fail(f'could not get the structured output for {coin_id=} from the model. Error:', e)
+            log_fail(f'could not get the structured output for {coin_id=} from the model. Error: {e}')
             error_counter += 1
             continue
 
