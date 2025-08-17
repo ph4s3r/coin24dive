@@ -176,9 +176,9 @@ def main():
             nc.add_to_notifications(
                 ex_data[1],                                             # symbol
                 dead_scores[coin_id],                                   # dead score
-            ex_data[2],                                                 # drop_percent
+                ex_data[2],                                                 # drop_percent
                 f"https://www.coingecko.com/en/coins/{coin_id}",
-                ", ".join(str(x) for x in coin_exchange_data)           # exchange info
+                coin_exchange_data           # exchange info
             )
         print(f"{coin_id:32} {ex_data[1]:6} {dead_scores.get(coin_id, '?'):9} {ex_data[2]:11}% {coin_exchange_data:24}" )
 
