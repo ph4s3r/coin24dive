@@ -1,40 +1,22 @@
 # pypi
 import os
 import json
-import diver
-import getter
 from pathlib import Path
 from datetime import datetime
 
 # local
+import diver
+import getter
 from llm.model import LLMConfig
 from llm.openrouter import OpenRouter
 from notifications import notificationsClass
 from utils.clog import log_fail, log_ok, log_task
 
 
-def market_scan(fname_coins):
-    
-    if not os.path.exists(fname_coins):
-        log_task("we don't have data for today, getting coins")
-        coins = getter.get_coins_markets_all(fname_coins)
-    else:
-        log_ok("we already have the data for today, let's just open it :)")
-        try:
-            with open (fname_coins, "rt", encoding="utf-8") as f:
-                coins = json.load(f)
-                if not isinstance(coins[0], dict):
-                    log_fail(":( something is off with the file, please check")
-                    return
-        except Exception as e:
-            log_fail(f":( could not read coins from file: {e.args[0]}")
 
-    return coins
 
 def main():
    
-    
-
     print("*"*20, "COINGECKO MARKET SCANNER", "*"*20)
     
     # creating directories
@@ -54,7 +36,7 @@ def main():
     # executing the tasks
 
     log_task("Daily market scanning")
-    coins = market_scan(fname_coins)
+    coins = getter.market_scan(fname_coins)
 
     log_task("Searching for coins with specific criteria")
     top_divers = set(diver.diver(fname_dives, coins, min_dive_percentage=-75))

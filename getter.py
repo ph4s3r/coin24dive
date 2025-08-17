@@ -8,9 +8,27 @@ from dotenv import dotenv_values
 from datetime import datetime, timezone
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
-from utils.clog import log_info, log_fail, log_ok
+from utils.clog import log_info, log_fail, log_ok, log_task
 
 config = dotenv_values(".env")
+
+def market_scan(fname_coins):
+    
+    if not os.path.exists(fname_coins):
+        log_task("we don't have data for today, getting coins")
+        coins = get_coins_markets_all(fname_coins)
+    else:
+        log_ok("we already have the data for today, let's just open it :)")
+        try:
+            with open (fname_coins, "rt", encoding="utf-8") as f:
+                coins = json.load(f)
+                if not isinstance(coins[0], dict):
+                    log_fail(":( something is off with the file, please check")
+                    return
+        except Exception as e:
+            log_fail(f":( could not read coins from file: {e.args[0]}")
+
+    return coins
 
 @retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60))
 def get_coindata(id: str, refresh = False, write_ex_only = False) -> Dict[str, List[str]]:
