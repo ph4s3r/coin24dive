@@ -1,7 +1,11 @@
+# pypi
 import os
 import urllib
 import http.client
 from dotenv import dotenv_values
+
+# local
+from utils.clog import log_ok
 
 class notificationsClass:
 
@@ -22,7 +26,6 @@ class notificationsClass:
         chunk_size = 10
 
         try:
-
             # split to max 10 chunks (one message is 1000chars max)
             for i in range(0, len(self.notification_list), chunk_size):
                 chunk = self.notification_list[i:i + chunk_size]
@@ -40,6 +43,7 @@ class notificationsClass:
                 responses.append(response)
                 response.read()  # need to make sure the response is fully read
                 self.conn.close()
+                log_ok(f'{len(responses)} notifications successfully sent out')
         except Exception as e:
             print(f"Unexpected error: {e}")
         return responses

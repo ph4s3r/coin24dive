@@ -10,6 +10,7 @@ import getter
 from llm.llm_analyze import llm_analytics
 from notifications import notificationsClass
 from utils.clog import log_task
+from utils.display_rich_table import display_table
 
 
 def main():
@@ -68,20 +69,21 @@ def main():
                     dead_scores[coin_id] = coin_analytics['content']['dead_score']
 
 
-    log_task("Results")
-    print("coingecko id                   | symbol | dead_score | chg_%_24h | exchanges-traded-on")
-    nc = notificationsClass()    
-    for coin_id, ex_data in top_divers.items():
+    log_task("Display Results")
+    display_table(top_divers, dead_scores)
 
+
+    log_task("Filter coins by dead score and send notifications")
+    nc = notificationsClass()
+    for coin_id, ex_data in top_divers.items():
         if dead_scores.get(coin_id, 10) < 7:
             nc.add_to_notifications(
-                coin_id,                                        # coingecko id
-                ex_data[1] + '%',                               # drop_percent
-                'deadscore: ' + dead_scores.get(coin_id, '?'),  # dead score
-                f"https://www.coingecko.com/en/coins/{coin_id}",# coingecko url
-                str(ex_data[2])                                 # exchange info
+                coin_id,                                                # coingecko id
+                str(ex_data[1]) + '%',                                  # drop_percent
+                'deadscore: ' + str(dead_scores.get(coin_id, '?')),     # dead score
+                str(ex_data[2])                                         # exchange info
             )
-        print(f"{coin_id:32} {ex_data[0]:6} {dead_scores.get(coin_id, '?'):9} {ex_data[1]:11}% {str(ex_data[2]):24}" )
+
 
     # will not send empty message
     nc.send_notifications()
