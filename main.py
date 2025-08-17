@@ -36,25 +36,19 @@ def main():
     # executing the tasks
 
     log_task("Daily market scanning")
-    coins = getter.market_scan(fname_coins)
+    coins: list = getter.market_scan(fname_coins)
 
     log_task("Searching for coins with specific criteria")
-    top_divers = set(diver.diver(fname_dives, coins, min_dive_percentage=-75))
+    top_divers: dict = diver.diver(fname_dives, coins, min_dive_percentage=-75)
 
     log_task("Getting detailed coin data for each coin")
-    top_divers_dict  = {}   # only the extracted dive data keyed with id
     coinmetrics_full = []   # all detailed data about every coin: in a list
 
-
-    for d in top_divers:
-        coin_id = d[0]
-        coindata, ex_inf = getter.get_coindata(coin_id, refresh=False)
-        t = list(d)
-        t.extend(ex_inf.get(coin_id))
-        top_divers_dict[coin_id] = t
+    # adding the exchange info & detailed coin data to the top_divers
+    for diver_key, diver_data in top_divers.items():
+        coindata, ex_inf = getter.get_coindata(diver_key, refresh=False)
+        top_divers[diver_key] = diver_data + (ex_inf.get(diver_key),)
         coinmetrics_full.append(coindata)
-
-    del top_divers
 
 
     log_task("Analyzing the top divers with LLM")
@@ -150,7 +144,7 @@ def main():
     log_task("Results")
     print("        id                    | symbol | dead_score | chg_%_24h | exchanges-traded-on")
     nc = notificationsClass()    
-    for coin_id, ex_data in top_divers_dict.items():
+    for coin_id, ex_data in top_divers.items():
 
         coin_exchange_data = ', '.join(ex_data[3:])
 
@@ -162,7 +156,7 @@ def main():
                 f"https://www.coingecko.com/en/coins/{coin_id}",
                 coin_exchange_data           # exchange info
             )
-        print(f"{coin_id:32} {ex_data[1]:6} {dead_scores.get(coin_id, '?'):9} {ex_data[2]:11}% {coin_exchange_data:24}" )
+        print(f"{coin_id:32} {ex_data[1]:6} {dead_scores.get(coin_id, '?'):9} {str(ex_data[2]):11}% {coin_exchange_data:24}" )
 
     # will not send empty message
     nc.send_notifications()

@@ -3,7 +3,7 @@ import json
 
 from utils.clog import log_info, log_fail, log_ok
 
-def diver(fname: str, coins: list, min_dive_percentage: int):
+def diver(fname: str, coins: list, min_dive_percentage: int) -> dict:
 
     if len(coins) == 0:
         sys.exit('no coins to analyze this time! Exiting')
@@ -27,4 +27,6 @@ def diver(fname: str, coins: list, min_dive_percentage: int):
     except Exception as e:
         log_fail(f"failed writing top 20 dives list into a file: {e}")
 
-    return bd_sorted[:20]
+    bd_dict = {k: (v1, v2) for k, v1, v2 in bd_sorted[:20]}
+
+    return bd_dict
