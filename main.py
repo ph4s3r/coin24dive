@@ -1,13 +1,11 @@
 import os
-import json
-from pathlib import Path
 from datetime import datetime
 
 from diver import diver, dead_score_filter
 from getter import market_scan, get_coindata
 from llm.llm_analyze import llm_analytics
 from notifications import PushoverMessage
-from utils.clog import log_task, log_ok
+from utils.clog import log_task
 from utils.display_rich_table import display_table
 
 
@@ -31,8 +29,10 @@ def main():
     log_task('Daily market scanning')
     all_coingecko_coins: list = market_scan(fname_coins)
 
+
     log_task('Searching for coins with specific criteria')
     top_divers: dict = diver(fname_dives, all_coingecko_coins, min_dive_percentage=-75)
+
 
     log_task('Getting detailed coin data for each coin')
     coinmetrics_full = []   # all detailed data about every coin: in a list
@@ -42,11 +42,14 @@ def main():
         top_divers[diver_key] = diver_data + (ex_inf.get(diver_key),)
         coinmetrics_full.append(coindata)
 
+
     log_task('Analyzing the top divers with LLM')
     dead_scores = llm_analytics(coinmetrics_full, analytics_folder, today_date)
 
+
     log_task('Display Results')
     display_table(top_divers, dead_scores)
+
 
     log_task('Filter coins by dead score and send notifications')
     notifications = PushoverMessage()
