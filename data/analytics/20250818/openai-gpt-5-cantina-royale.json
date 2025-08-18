@@ -1,0 +1,39 @@
+{
+    "content": {
+        "coin_id": "cantina-royale",
+        "dead_score": 9.2,
+        "analysis": "Verdict: Functionally dead without a major, coordinated revival (migration/relaunch, liquidity backing, and renewed product traction).\n\nKey evidence from the data you provided:\n- Liquidity/volume: 24h total volume ≈ $2.29 across two MultiversX DEX listings (xExchange trust score red; OneDex shows anomalous quote). This is effectively illiquid; price is easily moved and exiting positions can be impractical.\n- Exchange presence: Only thin DEX pairs on MultiversX; no meaningful CEX listings indicated. Discoverability and flow of new buyers look near-zero.\n- Price collapse: -99.66% from ATH; additional -93% in the last 24h on microscopic volume, consistent with price dislocations in illiquid markets.\n- Market cap visibility: Circulating supply is unreported (0), so market cap is not tracked. FDV ≈ $70k for a 1B max supply token suggests negligible market interest and/or abandoned economics.\n- Dev/social signals: No developer activity recorded, no status updates; Telegram shows ~4.4k users but that alone doesn’t evidence active development or player base. For a GameFi token, absent ongoing game traction, token utility is largely moot.\n- Supply/overhang: Only ~13.2% of max supply appears minted (131.855M of 1B). With no liquidity and unclear emissions/vesting, any future unlocks would worsen sell pressure unless a full tokenomics overhaul occurs.\n\nWhat a comeback would require (low probability):\n- Clear, verifiable game relaunch or substantial content updates with real user growth.\n- New funding partner(s) and a rigorous tokenomics reset (potentially a new token/migration, burn of legacy supply, or aggressive sink mechanics).\n- Guaranteed liquidity backstops and multi-venue listings (CEX + DEX) with market makers.\n- Transparent communications cadence (roadmap, audits, treasury status) to rebuild trust.\n\nAbsent those, the coin is unlikely to meaningfully recover. Holders should assume very high slippage and potential inability to exit at reference prices due to near-zero depth and sporadic quotes."
+    },
+    "exchange_info": {
+        "elrond": {
+            "decimal_place": 18,
+            "contract_address": "CRT-52decf"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://cantinaroyale.io/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://elrondscan.com/token/crt-52decf",
+            "https://explorer.multiversx.com/tokens/crt-52decf"
+        ],
+        "official_forum_url": [
+            "https://discord.gg/cantinaroyale",
+            "https://blog.cantinaroyale.io/"
+        ],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "CantinaRoyale",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "CantinaRoyale",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

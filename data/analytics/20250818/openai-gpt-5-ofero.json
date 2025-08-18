@@ -1,0 +1,43 @@
+{
+    "content": {
+        "coin_id": "ofero",
+        "dead_score": 9,
+        "analysis": "Verdict: Mostly dead. A durable recovery to former levels looks very unlikely without a major relaunch or external catalyst.\n\nKey signals from the provided data\n- Liquidity/volume: Only ~US$112 total 24h volume across two DEX pairs (xExchange, OneDex). That is extremely thin and implies severe slippage and exit risk for holders.\n- Exchange presence: No centralized exchange listings shown; only DEX pairs on the MultiversX ecosystem. OneDex ticker is flagged is_anomaly=True and xExchange has a yellow trust score. This limits new inflows and price discovery.\n- Market cap / float clarity: Circulating supply reported as 0 and market cap = 0 on the feed, while FDV ~US$517k. Lack of reliable circulating supply plus a tiny FDV is a red flag for investor interest and analytics coverage.\n- Price structure: Current price ~US$0.00115, ~−97.3% from ATH (~36x required to reclaim). Also a −92.5% daily crash is shown, suggesting LP withdrawal, whale exit, or data anomalies—any of which signal fragile markets.\n- Dev and social: GitHub activity is effectively zero (no commits in 4 weeks; no stars/forks), no status updates, modest Telegram size (~3.3k). This looks like low ongoing developer cadence and muted public comms from the data provided.\n- Token/contract: Contract appears unchanged (OFE-29eb54) with no migration noted—so no hard rug via token swap indicated here, but the project also doesn’t show revitalization steps.\n\nWhat would need to change to revise this call\n- Material, verifiable liquidity added to the primary pools (depth that supports 5–6 figures/day of real flow).\n- Credible CEX listings or cross-ecosystem liquidity venues.\n- Transparent updates: circulating supply reporting fixed, on-chain treasury disclosures, regular dev releases, and third-party audits.\n- Real demand catalysts: new users/partners on MultiversX, measurable fees/TVL for any OFE utility.\n\nBottom line\n- Today’s data indicates illiquid DEX-only trading, near-silent development, and a catastrophic recent drawdown. While illiquid microcaps can have short-lived pumps, the probability of sustainably “coming back” to prior highs is very low absent a substantial reboot."
+    },
+    "exchange_info": {
+        "elrond": {
+            "decimal_place": 4,
+            "contract_address": "OFE-29eb54"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://ofero.network/",
+            "https://ofero.me",
+            "https://ofero.exchange"
+        ],
+        "whitepaper": "https://ofero.network/documents/whitepaper.pdf",
+        "blockchain_site": [
+            "https://explorer.multiversx.com/tokens/ofe-29eb54"
+        ],
+        "official_forum_url": [
+            "https://instagram.com/oferonetwork"
+        ],
+        "chat_url": [
+            "https://discord.gg/ydZKx8D5e4"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "oferonetwork",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "oferonetwork",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/oferonetwork"
+            ],
+            "bitbucket": []
+        }
+    }
+}

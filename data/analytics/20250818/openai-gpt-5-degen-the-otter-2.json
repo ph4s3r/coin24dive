@@ -1,0 +1,41 @@
+{
+    "content": {
+        "coin_id": "degen-the-otter-2",
+        "dead_score": 8,
+        "analysis": "Verdict: Mostly dead without a major new catalyst. A return to prior ATH looks very unlikely. Mathematically possible, but improbable given current traction and market structure.\n\nKey points\n- Micro-cap: ~$22.5k market cap (FDV ~$23.9k). This is extremely small and prone to manipulation and illiquidity shocks.\n- Down ~98% from ATH: ATH $0.0011652 vs current ~$0.00002405 → ~48x required to reclaim ATH.\n- Trading venue: Single DEX listing (Raydium) with yellow trust score. No CEX listings; risk of being ignored by broader market.\n- Liquidity/volume: 24h volume ~$119k looks sizeable relative to MC (V/MC >5), but absolute liquidity depth is likely thin. One pool, one pair (vs SOL) → fragile order book and easy to swing.\n- Developer activity: None reported (0 repos, 0 commits). Typical for pump.fun-style meme tokens; no product roadmap to attract durable users/liquidity.\n- Community traction: Very small—~404 Telegram users, 74 CoinGecko watchlists. Social links exist but no evidence of robust engagement; attention seems to have faded.\n- Supply: ~940M circulating out of 1B (94%+). Little dilution risk left, but also few tokenomics levers to re-ignite interest.\n- Listings/de-listings: Not de-listed, but also never broadly listed—only Raydium. That limits organic discovery and market makers.\n- Recent price behavior: -76.8% in 24h suggests a large seller/LP change or post-hype unwind; momentum is negative despite past multi-day percentage spikes.\n\nWhat would need to happen to \"come back\"\n- Significant new attention (viral social/influencer campaigns beyond current small audience) tied to the real-world otter brand they reference.\n- Material liquidity injections (six-figure+ locked LP), deeper books on multiple DEXs, and ideally a reputable CEX listing.\n- Transparent team actions (LP lock/burn proof, clear marketing plan, consistent comms) to rebuild trust.\n- Sustained growth in unique traders/holders and daily active social engagement.\n\nBottom line\n- Not fully dead (still trades on Raydium with some turnover), but on life support. Without fresh capital, stronger listings, and real social momentum, the probability of revisiting prior highs is low. This fits the usual post-launch decay pattern of pump.fun meme coins.\n\nMonitoring checklist\n- LP depth/lock status on GeckoTerminal: https://www.geckoterminal.com/solana/tokens/4VfSNfvfu1LaE7YQCKvgukrprnnJ3amw5aDqH1i2pump\n- Daily unique traders and holder count trends\n- Social growth (Twitter/Telegram) and consistent announcements\n- New exchange listings or partnerships\n\nNote: This is not financial advice; it’s a liquidity/traction assessment based on the provided data."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "4VfSNfvfu1LaE7YQCKvgukrprnnJ3amw5aDqH1i2pump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/4VfSNfvfu1LaE7YQCKvgukrprnnJ3amw5aDqH1i2pump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.degenottercoin.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/4VfSNfvfu1LaE7YQCKvgukrprnnJ3amw5aDqH1i2pump"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@marcelldegen",
+            "https://www.instagram.com/degensiotter/"
+        ],
+        "chat_url": [
+            "https://www.youtube.com/@marcelldegen"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Degen_otter",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "dgenotter",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

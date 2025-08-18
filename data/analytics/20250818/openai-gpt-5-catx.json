@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "catx",
+        "dead_score": 8.8,
+        "analysis": "Summary: CATX on BNB Chain looks severely compromised after a near-total price collapse and carries high contract-control risk. A sustainable recovery back to prior highs is very unlikely without a major relaunch and structural fixes.\n\nKey observations\n- Exchange access/liquidity\n  - Only one DEX listing (PancakeSwap v2, WBNB pair), trust score: yellow. No CEX listings. Single-pool dependency makes liquidity fragile and easy to pull.\n  - 24h volume ~$216k is not zero, but the orderbook/liquidity depth is unknown and can be thin. One-pair DEX coins can show volume spikes during capitulation without lasting buy-side support.\n- Price action\n  - -98.83% in 24h and -97.78% in 7d. ATH was only days ago (2025-08-13) and price is now ~-98.86% below ATH. This pattern is consistent with a liquidity pull, tax flip, or mint-and-dump event typical in risky meme tokens.\n- Contract risk\n  - GoPlus flags: creator can disable sells, change fees, mint, transfer, etc. This is a critical centralization risk and often a deal-breaker for recovery. If controls remain, trust is unlikely to return.\n- Market cap/supply transparency\n  - Circulating supply = 0 on CoinGecko; market cap = 0 (not tracked). FDV ~ $259k. Lack of verified circulation and MC undermines credibility and exchange listing prospects.\n- Listings/delistings\n  - Not delisted because it was never broadly listed. The absence of multiple venues limits new inflows and recovery potential.\n- Social/developer signals\n  - Telegram ~1.3k users; no Reddit; no GitHub activity; no recent status updates via this feed. Very limited dev footprint and uncertain community engagement. Memecoins can survive on social momentum, but this footprint is small.\n\nWhat would be required for a comeback\n- Renounce or multisig ownership; remove mint/fee/disabling-sell attack surfaces; lock substantial LP with public proof; publish audit.\n- Transparent tokenomics and verified circulating supply/market cap.\n- Active, consistent communications from the team; real community traction beyond a small Telegram.\n- New liquidity providers, deeper DEX liquidity, and listings on additional venues.\n\nOutlook\n- Given the catastrophic drawdown, single-DEX exposure, high contract privilege risks, lack of verified market cap, and weak dev/social signals, the probability of CATX organically returning to former highs is very low. Without a hard reset (new contract or fully renounced controls) and significant new capital plus listings, it is likely to remain mostly dead from an investment/trading standpoint.\n\nActionable checks before any involvement\n- Verify LP lock (amount and duration) and ownership status on BscScan; confirm no mint authority and no punitive tax mechanisms.\n- Check top-holder concentration and recent holder churn.\n- Review official channels (Twitter/Telegram/site) for credible plans, audits, and exchange roadmap.\n\nBottom line\n- Assessment: Mostly dead/high-risk.\n- Recovery probability: Very low unless the team executes major structural fixes and reboots trust.\n\nThis is information, not financial advice. Always do your own research and treat DEX-only meme tokens with extreme caution."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 9,
+            "contract_address": "0x8d0c064ab0973fe124fa9efaad492060baacb62c",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x8d0c064ab0973fe124fa9efaad492060baacb62c"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://catxtoken.com/"
+        ],
+        "whitepaper": "https://catxtoken.com/whitepaper.pdf",
+        "blockchain_site": [
+            "https://bscscan.com/token/0x8d0c064ab0973fe124fa9efaad492060baacb62c",
+            "https://platform.arkhamintelligence.com/explorer/token/catx",
+            "https://binplorer.com/address/0x8d0c064ab0973fe124fa9efaad492060baacb62c"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "catxtoken",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "catxtoken",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

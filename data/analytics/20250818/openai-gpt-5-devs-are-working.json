@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "devs-are-working",
+        "dead_score": 7,
+        "analysis": "Snapshot: price ~$0.000079 (-88% 24h, ~-93% from ATH), market cap ~$76.7k, FDV equal (≈$76.7k), ~97% of supply circulating. 24h volume ≈$35k on a single DEX venue (PumpSwap/pump.fun) with yellow trust score and ~0.6% spread. Listing footprint is minimal (DEX-only). Community metrics are small (Telegram ~782; no notable developer/repo activity). No status updates.\n\nWhat looks bad:\n- Fresh all-time low printed today; severe, persistent drawdown across 7/14/30/60D.\n- Single DEX pool dependence → elevated liquidity/rug risk if LP isn’t locked; no CEX/major DEX listings.\n- Pure meme/no utility; developer activity metrics are effectively zero.\n- Market cap is micro-cap; easy to push down, hard to sustain recoveries.\n\nWhat’s not fully dead yet:\n- Non-trivial on-chain volume (~$35k/24h) and a tight spread imply some active liquidity/trading interest remains.\n- Watchlists (~5k) indicate a small reservoir of awareness.\n\nCan it come back?\n- Possible but unlikely without new catalysts. Memecoins can re-pump, but base case after a pump.fun launch with 90%+ drawdown is continued decay/flatlining unless: (1) LP is increased/locked and liquidity deepens, (2) sustained social growth and campaign, (3) new pools/DEX routes or a CEX listing, and/or (4) influential wallets accumulate/support. Without these, a return to prior ATH looks low probability.\n\nKey checks before forming a view:\n- LP status on GeckoTerminal/Solscan (is LP burned/locked? current pool liquidity depth and price impact for $1k–$5k trades).\n- Holder concentration and top wallet behavior (dev/team wallets selling?);\n- Social momentum over the last 1–2 weeks (Twitter/Telegram engagement growth, not just follower counts);\n- Any concrete roadmap/catalysts or listing plans.\n\nVerdict: not completely dead (still trading with some liquidity), but in a late post-hype decay phase. Recovery is possible but requires clear catalysts; absent those, the most likely path is continued stagnation or drift. Dead score: 7/10."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://daw.meme/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@devs.r.working"
+        ],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "DAW_on_SOL",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "DEVsAreWorking",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

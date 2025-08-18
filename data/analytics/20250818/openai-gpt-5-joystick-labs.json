@@ -1,0 +1,39 @@
+{
+    "content": {
+        "coin_id": "joystick-labs",
+        "dead_score": 7,
+        "analysis": "Snapshot (from provided data, 2025-08-14):\n- New listing. Hit ATH ~$1.81 and crashed ~-82% the same day to ~$0.32.\n- Exchanges: Only MEXC (yellow trust) and Biconomy (red trust). Bid-ask spreads high (MEXC ~3.6%, Biconomy ~26.9%). Total 24h volume ~US$283k. Liquidity is thin and centralized on lower-tier venues.\n- Market cap unknown (circulating supply not set). FDV ~US$477M at current price for 1.5B max supply — very rich for a brand-new project.\n- Security/contract: GoPlus warning — creator can disable sells, change fees, mint, etc. No audit linked. This is a major red flag that deters liquidity providers and better exchanges.\n- Community/dev: Watchlist users 19 (very low). No GitHub repos, no Telegram link, Reddit 0. Social proof is weak.\n- On-chain/ops: BSC token; Geckoterminal link exists, but no TVL info; likely no meaningful on-chain liquidity locks disclosed here.\n\nWhat this implies for “coming back”:\n- Not dead yet (there is active trading), but the setup is fragile: thin liquidity, high spreads, limited listings, and owner-controlled contract functions. That combination often leads to continued depreciation after the initial post-listing dump.\n- A return to ATH soon is unlikely without strong catalysts because the FDV is already high relative to traction, and market makers appear light.\n\nCatalysts that could revive it:\n- Renounce owner privileges or timelock; publish an external audit; disclose vesting/unlock schedules; lock/verify liquidity.\n- Deepen order books (market-making) and add reputable CEX/DEX listings with stable liquidity pools.\n- Ship real product (Freetyl DApp, games) with measurable usage and revenue; sustained social/community growth.\n\nKill switches (would make it effectively dead):\n- Exercising owner controls (e.g., disabling sells, raising taxes, arbitrary minting).\n- Exchange de-listings or failure to add new venues.\n- Silent socials, missed roadmap, token unlock dumps, or liquidity rug.\n\nBottom line: High-risk, early-phase, post-listing dump profile with significant contract-control risk and weak market infrastructure. It can bounce on speculation, but a durable recovery needs concrete security fixes, liquidity, listings, and product traction. Absent those, odds favor further decay rather than a full comeback to prior highs."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xb85447b4854e848904471728e6106356bcb4861b",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xb85447b4854e848904471728e6106356bcb4861b"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.joysticklabs.io"
+        ],
+        "whitepaper": "https://www.joysticklabs.io/whitepaper.pdf",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xB85447b4854e848904471728e6106356bCb4861B",
+            "https://binplorer.com/address/0xB85447b4854e848904471728e6106356bCb4861B"
+        ],
+        "official_forum_url": [
+            "https://www.linkedin.com/company/joysticklabs"
+        ],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Joystick_labs",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": null,
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

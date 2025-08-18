@@ -1,0 +1,37 @@
+{
+    "content": {
+        "coin_id": "plata-network",
+        "dead_score": 9.1,
+        "analysis": "Verdict: Mostly dead. A sustainable recovery is unlikely without a full relaunch and fresh liquidity.\n\nKey signals from the data you shared:\n- Liquidity/volume: 24h volume is ~USD 20 across two niche MultiversX DEXs (xExchange and OneDex). That is effectively illiquid; even small buys/sells can move price and exits are hard.\n- Exchange coverage: Only on-chain DEX pairs vs WEGLD; no meaningful CEX presence. xExchange pair shows a red trust score and ~1% spread, indicating poor depth and reliability.\n- Market size: Market cap ~USD 38k, FDV ~USD 54k. This is micro-cap territory where order books are thin and interest is minimal.\n- Price collapse: Down ~-99% from ATH (ATH ~Feb 2022). Another -93.6% in just the last 24h, suggesting LP withdrawal, a large unlock/sell, or capitulation. Such single-day crashes often destroy remaining confidence/liquidity.\n- Community/Dev: Telegram shows only ~6 users; watchlists ~334; GitHub/developer stats are zero; no status updates. Social and development activity appear dormant.\n- Token/chain: ESDT on MultiversX (PLATA-9ba6c3) still visible on explorers; no clear sign of an official token migration, but practical trading activity has dried up.\n\nWhat would need to change for a comeback:\n- Significant new liquidity added to DEX pools, plus incentives to attract volume and market makers.\n- Active team communication, roadmap delivery, and community revival (social channels, partnerships).\n- Broader listings (ideally CEX) to expand reach beyond a single-chain niche DEX.\n- Clear tokenomics reset (if needed) and transparency around past issues that led to the -93% daily drawdown.\n\nWithout the above, the most probable path is continued illiquidity with occasional thin-order-book spikes that are hard to monetize. Practical takeaway: treat as near-zero expected recovery; any position is high risk not just for price, but for exit liquidity."
+    },
+    "exchange_info": {
+        "": {
+            "decimal_place": null,
+            "contract_address": ""
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://multiversx.com/ecosystem/project/plata-network",
+            "https://linktr.ee/plataLinks"
+        ],
+        "whitepaper": "https://drive.google.com/file/d/1Tj0MsKKVXnzrt4WvXSJ75N50CBCxfgeh/view",
+        "blockchain_site": [
+            "https://explorer.elrond.com/tokens/PLATA-9ba6c3",
+            "https://explorer.multiversx.com/tokens/PLATA-9ba6c3"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "plataNetwork",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "plataNetwork",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "content": {
+        "coin_id": "maximus-lucky",
+        "dead_score": 9,
+        "analysis": "Bottom line: Very likely dead. A lasting recovery to prior levels (or ATH) is highly improbable without a fundamental turnaround.\n\nKey signals\n- Liquidity/volume: 24h volume on CoinGecko ~$1.5k (even aggregating all DEX tickers barely a few thousand USD). That is extremely illiquid; a single trade can move price materially. Several pairs have red/yellow trust scores and small, stale volumes.\n- Listings: DEX-only (Uniswap v4 on Ethereum; PulseX/Phux on PulseChain). No meaningful CEX support; effectively zero exchange discovery and exit liquidity.\n- Price action: Down ~99.7% from ATH; -78% in 24h and ~-81% over 7–14 days. This profile is consistent with LP withdrawals/large exits and buyer exhaustion.\n- Market interest: Market cap not tracked; FDV ≈ $176k; only 377 CoinGecko watchlists. These are microcap, low-attention metrics.\n- Dev/social: No GitHub activity, no status updates, and only a modest Telegram (≈2.9k). The project surfaces minimal public maintenance. \n- Token status: Contract address appears unchanged on Ethereum and the PulseChain fork, so this doesn’t look like a migration story—just dwindling demand/liquidity.\n- Structural headwinds: LUCKY is a derivative tied to HEX staking dynamics; broader HEX/PulseChain drawdowns and controversies have likely eroded the addressable buyer base and liquidity incentives.\n\nWhat would need to change to reassess\n- Sustained organic volume >$100k/day with tighter spreads and verifiable on-chain liquidity depth on main pairs.\n- Clear, credible team communication (roadmap, audits, treasury transparency) and active community revival across official channels.\n- New listings (or meaningful liquidity incentives) on reputable venues.\n- Evidence that LUCKY’s redemption economics/NAV versus HEX are functioning and attracting arbitrage/long-term holders.\n\nVerdict\n- Treat as mostly dead (9/10). While microcaps can spike on thin liquidity, a durable comeback to former valuations is very unlikely without major, externally verifiable improvements in liquidity, utility, and ecosystem sentiment."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 8,
+            "contract_address": "0x6b0956258ff7bd7645aa35369b55b61b8e6d6140",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140"
+        },
+        "pulsechain": {
+            "decimal_place": 8,
+            "contract_address": "0x6b0956258ff7bd7645aa35369b55b61b8e6d6140",
+            "geckoterminal_url": "https://www.geckoterminal.com/pulsechain/tokens/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.maximusdao.com/",
+            "https://perpetuals.maximus.cash/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140",
+            "https://platform.arkhamintelligence.com/explorer/token/maximus-lucky",
+            "https://ethplorer.io/address/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140",
+            "https://scan.pulsechain.com/token/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140",
+            "https://scan.pulsechainfoundation.org/#/token/0x6b0956258ff7bd7645aa35369b55b61b8e6d6140"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "maximus_dao",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "MaximusDAO",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

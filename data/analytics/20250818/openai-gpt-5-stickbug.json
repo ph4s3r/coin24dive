@@ -1,0 +1,55 @@
+{
+    "content": {
+        "coin_id": "stickbug",
+        "dead_score": 9.0,
+        "analysis": "Verdict: Mostly dead. A sustained recovery back to past levels looks extremely unlikely without a full relaunch/migration and fresh liquidity.\n\nKey signals\n- Price collapse: Current ~$0.0000193 vs ATH ~$0.308 (≈ -99.994%). Down ~98% in the last 24h alone, indicating a severe liquidity event or capitulation.\n- Microscopic size: FDV ≈ $193 with total supply 10M. CoinGecko shows market cap = 0 due to unknown/zero circulating supply. This implies vanishing capitalization and likely tiny liquidity.\n- Liquidity/volume: Only DEX listings (Raydium on Solana; Saucerswap V1 on Hedera). 24h volume ~ $3.5k total; Hedera pool shows stale/very low activity (~$14). Such volume is extremely low and makes orderly exits or entries difficult.\n- Exchange presence: No CEX listings; only DEX pairs with “yellow/red” trust and one stale ticker. No evidence of recent listings; delisting risk effectively realized via lack of CEXs.\n- Multi-chain fragmentation: Separate tokens on Hedera (0.0.4352885 / 0x…426b75), Base (0x3452…dbb2), Solana (Ehxi6Czn…pump). Liquidity is split across chains, further diluting depth and attention. Contract is stated “renounced,” limiting the team’s ability to reactivate control or upgrade.\n- Community/dev activity: No GitHub activity; community metrics (Reddit, Telegram counts) essentially empty in this feed. X/Twitter handle absent in links. Website/Discord/Medium exist, but there’s no evidence here of ongoing, impactful activity or campaigns.\n- Market structure: 200d ≈ -99.67%, 1y ≈ -99.90%. Prolonged drawdown suggests structural abandonment rather than temporary volatility.\n\nCan it come back?\n- For a genuine comeback, it would require: (1) a verified, coordinated migration or consolidation to a single chain, (2) new liquidity injections and LP incentives, (3) active marketing/social revival, (4) credible listings or partnerships. None of these are visible in the provided data.\n- Without those catalysts, the tiny FDV, negligible volume, and lack of centralized listings make a meaningful price recovery highly improbable.\n\nOther notes\n- No evidence in this data of an official contract change/discontinuation; however, tri-chain deployment with low liquidity can confuse buyers and impede recovery.\n- If the team announces a migration/new tokenomics, verify contract addresses on official channels before interacting.\n\nConclusion: On a 0–10 “dead” scale, this scores ~9. Price recovery to prior levels is very unlikely absent a full-scale reboot and substantial new liquidity."
+    },
+    "exchange_info": {
+        "hedera-hashgraph": {
+            "decimal_place": 4,
+            "contract_address": "0.0.4352885",
+            "geckoterminal_url": "https://www.geckoterminal.com/hedera-hashgraph/tokens/0x0000000000000000000000000000000000426b75"
+        },
+        "base": {
+            "decimal_place": 4,
+            "contract_address": "0x345207814c0304f6bd3b28e42c09450d95b5dbb2",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0x345207814c0304f6bd3b28e42c09450d95b5dbb2"
+        },
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "Ehxi6CznHg8VnnqTRdRkiLT7cuniYaVS3f4wK5Dhpump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/Ehxi6CznHg8VnnqTRdRkiLT7cuniYaVS3f4wK5Dhpump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://stickbug.org/"
+        ],
+        "whitepaper": "https://stickbug.org/whitepaper",
+        "blockchain_site": [
+            "https://hashscan.io/mainnet/token/0.0.4352885",
+            "https://hashscan.io/mainnet/token/0x0000000000000000000000000000000000426b75",
+            "https://solscan.io/token/Ehxi6CznHg8VnnqTRdRkiLT7cuniYaVS3f4wK5Dhpump",
+            "https://basescan.org/token/0x345207814c0304f6bd3b28e42c09450d95b5dbb2"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@stickbug_token",
+            "https://www.instagram.com/stickbug_hts/"
+        ],
+        "chat_url": [
+            "https://discord.gg/stickbug",
+            "https://medium.com/@stickbug"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

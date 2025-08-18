@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "catinbox",
+        "dead_score": 7.3,
+        "analysis": "Snapshot verdict: CatInBox is a very high‑risk, short‑lived Pump.fun memecoin that’s already collapsed ~80% in 24h and ~86% from its ATH two days ago. It’s not “stone-dead” yet because volumes are still flowing on Solana DEXes, but the structural odds of a durable comeback are low without major new catalysts.\n\nKey signals\n- Market cap and drawdown: ~$35.7k mcap, down ~80% in 24h and ~86% from ATH (2025‑08‑16). Price is hovering near its ATL, typical of post‑launch pump-and-dump curves.\n- Liquidity/markets: DEX-only (PumpSwap, Meteora). Trust score yellow, bid-ask ~0.6% on live pairs. No CEX listings; discoverability and depth are limited. Liquidity lock status is unknown (Pump.fun tokens are frequently unlocked and at risk of liquidity pulls).\n- Volume quality: Reported 24h volume ~$182k (≈5x mcap). That suggests active churn but could include opportunistic in/out flows and is not a guarantee of deep liquidity. Concentration on 1–2 pools raises slippage/rug risk.\n- Community/attention: Practically no footprint—no website/whitepaper, no Telegram, no X (Twitter) handle; only an X Communities link. CoinGecko watchlists: 16 users (very low). Social traction appears minimal.\n- Developer signals: No repo activity, commits, or contributors. No stated roadmap or utility. This aligns with quick-launch meme tokens that rarely sustain interest.\n- Token setup: ~1B max and circulating supply; FDV ≈ mcap (1.0 ratio). No obvious vesting overhang, but on Solana the status of mint/freeze authority is critical; not disclosed here.\n\nDoes it have a realistic path back?\n- Near-term: A short-lived bounce is possible if fresh retail flow arrives, but that’s speculative and typically fleeting.\n- Medium/long-term: Unlikely. Without real community growth, locked liquidity, new exchange listings, and consistent marketing, most Pump.fun micro-caps do not reclaim prior highs after an 80% day-two drawdown.\n\nWhat to verify before assuming any recovery chance\n- Liquidity safety: Is LP locked? Ownership renounced? Check Solscan and the Pump.fun/GeckoTerminal pair page for LP lock/migration history and authority status (mint/freeze).\n- Holder distribution: Concentration among top wallets/LP managers. Heavy concentration is a sell-pressure risk.\n- Real social traction: Active, organic community channels (Telegram, X) and consistent updates. Currently absent.\n- Listings/catalysts: Any credible DEX aggregator integrations or CEX interest. Currently none.\n\nBottom line\n- Status: Weak and likely fading; not fully dead only because DEX volumes are still present.\n- Comeback probability: Low for a sustained recovery; any upside would likely be speculative spikes rather than a durable trend."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "FJv6JHhiQmVPpauia3VLxNBTNBL3S2uKtDB8u6X1SpUq",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/FJv6JHhiQmVPpauia3VLxNBTNBL3S2uKtDB8u6X1SpUq"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://x.com/i/communities/1956338802244595784/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://solscan.io/token/FJv6JHhiQmVPpauia3VLxNBTNBL3S2uKtDB8u6X1SpUq"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": null,
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": null,
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "content": {
+        "coin_id": "godcoin-2",
+        "dead_score": 7.8,
+        "analysis": "Bottom line: Market-wise, GOD looks mostly dead right now, though the underlying project may still be active. A comeback would require major, visible catalysts (liquidity injections, real user adoption in games, new listings, and consistent comms).\n\nKey signals from the data:\n- Liquidity/volume: Extremely thin. 24h volume ≈ $543 total; primary active venue is Uniswap V3 on Base (trust score yellow). Such low turnover implies high slippage and difficulty exiting positions.\n- Exchange coverage: DEX-only in practice (Uniswap Base). A tiny, stale Hyperliquid spot print with negligible size. No meaningful CEX presence → poor discoverability and liquidity depth.\n- Price action: -84.75% in the last 24h, -96.5% from ATH set in Jan-2025; intraday high ~$0.031 vs current ~$0.0048 indicates a cliff-like drop (likely LP removal/unlock/sell-off). These events often don’t recover without heavy intervention.\n- Market cap vs FDV: MC ≈ $0.43m vs FDV ≈ $3.72m; MC/FDV ≈ 0.12. Circulating 89.9M of 777.8M (≈11.6%). Large supply overhang/unlock risk pressures price and deters market makers.\n- Listings/de-listings: Not de-listed (because hardly listed), but the absence of reputable listings is itself a strong negative.\n- Dev/community: CoinGecko developer metrics show 0 activity (common for tokens), watchlist only 204 users, and no visible community stats here. Links point to Valhalla Foundation/InfiniGods with credible backers per description, but the token’s market traction is not reflecting that.\n- Contracts/chains: Same contract address reported on Ethereum, Base, and Arbitrum Nova; unusual but possible via create2/bridging. Worth verifying official bridge details to avoid address confusion.\n\nWhat could revive it:\n- Substantial, sustained liquidity provision on DEXs and/or credible CEX listings.\n- Clear vesting schedule and unlock transparency; ideally extended cliffs/locks to reduce sell pressure.\n- Tangible in-game utility and measurable user metrics (DAU, spend) that translate into recurring token demand.\n- Active, consistent communication (Twitter/Discord), roadmap delivery, and ecosystem partnerships.\n\nProbability of revisiting ATH near-term: low without the above catalysts. Current state: mostly dead from a trading/liquidity standpoint, not necessarily abandoned as a project."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+        },
+        "base": {
+            "decimal_place": 18,
+            "contract_address": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+        },
+        "arbitrum-nova": {
+            "decimal_place": 18,
+            "contract_address": "0xb5130f4767ab0acc579f25a76e8f9e977cb3f948",
+            "geckoterminal_url": "https://www.geckoterminal.com/arbitrum_nova/tokens/0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.valhallafoundation.xyz",
+            "https://www.infinigods.com"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+            "https://nova.arbiscan.io/token/0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+            "https://ethplorer.io/address/0xb5130F4767AB0ACC579f25a76e8f9E977CB3F948",
+            "https://basescan.org/token/0xb5130f4767ab0acc579f25a76e8f9e977cb3f948"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/kingofdestiny",
+            "https://kingofdestiny.medium.com/",
+            "https://www.youtube.com/@KingOfDestinyOfficial"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "ValhallaFdn",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

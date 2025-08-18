@@ -1,0 +1,52 @@
+{
+    "content": {
+        "coin_id": "jupiter",
+        "dead_score": 9.2,
+        "analysis": "Verdict: Mostly dead. Probability of a sustainable comeback is very low; only speculative pumps are plausible.\n\nWhy:\n- Liquidity/volume: Reported 24h volume ≈ $1.7k with DEX-only liquidity on PancakeSwap (BSC) and Uniswap v2 (ETH). Bid/ask spreads ~0.7–0.9% and ticker anomalies indicate extremely shallow pools and unreliable pricing. Any meaningful sell would likely incur heavy slippage.\n- Exchange support: No Tier-1 CEX listings. The only CEX shown is Bilaxy (stale) — a low-tier venue. Effective discoverability and market access are minimal.\n- Price collapse: Down ~99.94% from ATH and ~-92% in the last 24h, with severe declines across 7/14/30/60/200d. To revisit ATH ($0.128999) from ~$0.000079 implies ~1,630x — unrealistic without major, external catalysts.\n- Project/dev activity: Developer data shows zero recent commits and no visible ongoing development. Status updates are empty; community metrics are very small (Telegram ~777). This looks abandoned.\n- Branding confusion and risk flags: Public notice clarifies it’s NOT the Jupiter DEX (Solana) token. This naming collision reduces credibility and exchange appetite. CoinGecko also displays a generic liquidity-risk caution. Two legacy contracts (ETH and BSC) persist, but there’s no sign of an organized migration or upgrade.\n\nWhat would need to change to recover:\n- Verified, revived team with transparent roadmap, code commits, and shipped product.\n- Fresh liquidity injections, larger LPs, and new reputable exchange listings.\n- Clear rebrand to end confusion with Solana’s Jupiter, plus active marketing/community growth.\n\nAbsent the above, the base case is continued illiquidity/drift. If you still hold, assume exit friction. Test small sells for slippage and verify LP depths on-chain. Monitor: contract addresses, LP size changes, any credible team communications, and GitHub activity.\n\nBottom line: This asset meets multiple “dead” criteria (illiquidity, vanishing volume, lack of development, weak listings, brand confusion). A durable comeback is highly unlikely."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x0231f91e02debd20345ae8ab7d71a41f8e140ce7",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.jup.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://explorer.gojupiter.tech",
+            "https://platform.arkhamintelligence.com/explorer/token/jupiter",
+            "https://etherscan.io/token/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "https://ethplorer.io/address/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "https://bscscan.com/token/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7",
+            "https://binplorer.com/address/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discordapp.com/invite/DUSnX5n"
+        ],
+        "announcement_url": [
+            "https://gojupiter.tech/blog/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "JUP_project",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "jupiterproject",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/SigwoTechnologies/jupiter"
+            ],
+            "bitbucket": []
+        }
+    }
+}

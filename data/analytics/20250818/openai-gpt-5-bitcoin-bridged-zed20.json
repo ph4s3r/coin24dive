@@ -1,0 +1,45 @@
+{
+    "content": {
+        "coin_id": "bitcoin-bridged-zed20",
+        "dead_score": 9.1,
+        "analysis": "Summary: Bitcoin Bridged ZED20 shows multiple red flags consistent with a near‑dead asset: a catastrophic and broad-based price collapse, negligible verifiable liquidity on mainstream venues, no market cap/supply transparency, and minimal community/developer signals. Recovery would require reserve/peg credibility and material liquidity injections that are not evident.\n\nKey signals from the data:\n- Price collapse/depeg: Current ~$5,020 with -95.76% in 24h, -95% over 7–60d. For a BTC-pegged wrapper, trading at ~4–5% of BTC parity indicates a broken peg or pool failure.\n- Liquidity/volume: 24h total volume ~$3,974 (market_data.total_volume.usd). BSC DEX tickers show only a few thousand USD traded; ZedDex shows ~$81k converted volume but is flagged is_anomaly: true with yellow trust. Practical exit liquidity appears extremely thin.\n- Market cap/supply opacity: Circulating_supply = 0.0 and market_cap = 0. CoinGecko has no supply data; FDV blank. This impairs valuation and investor confidence.\n- Listings: Only on DEXs (Uniswap v4 BSC, DODO BSC, ZedDex). No CEX presence; no evidence of recent listings—typical of illiquid wrappers.\n- Community/dev: Watchlist users 23 (very low). Telegram (ecosystem) ~11k but not coin-specific. Developer metrics all zero; no public repos. Social and dev momentum look minimal.\n- Platform/issuer risk: It’s a bridged token on the niche Zedxion chain and BSC. If redemption/mint-burn backing is unclear or halted, price recovery is unlikely. CoinGecko adds a liquidity-risk notice.\n\nWhat would need to change to “come back”:\n- Verifiable reserves/redeemability (proof the token is 1:1 backed or a functioning, trustworthy bridge).\n- Significant, sustained liquidity on widely used venues (depth to absorb >$100k–$1m without severe slippage).\n- Broader listings and active market makers.\n- Clear, active communications from the issuer with audits/attestations.\n\nVerdict: High likelihood of being effectively dead/abandoned from a marketability standpoint. Without hard proof of backing and a coordinated relaunch of liquidity/market-making, a return to parity or prior price levels is improbable."
+    },
+    "exchange_info": {
+        "zedxion": {
+            "decimal_place": 18,
+            "contract_address": "0x240962a6ddd67dd382db4d417cbdf0d8822aca2f",
+            "geckoterminal_url": "https://www.geckoterminal.com/zedxion-smart-chain/tokens/0x240962a6ddd67dd382db4d417cbdf0d8822aca2f"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa4156cc61dc7796faa24278a0f9f229b15e298cb",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa4156cc61dc7796faa24278a0f9f229b15e298cb"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://zedscan.net/token/0x240962a6dDD67DD382DB4d417CbDF0d8822ACA2f"
+        ],
+        "whitepaper": "https://docs.zedscan.net/zedxion-whitepaper/",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xa4156cc61dc7796faa24278a0f9f229b15e298cb",
+            "https://platform.arkhamintelligence.com/explorer/token/bitcoin-bridged-zed20",
+            "https://zedscan.net/token/0x240962a6ddd67dd382db4d417cbdf0d8822aca2f",
+            "https://zedscan.net/address/0x240962a6ddd67dd382db4d417cbdf0d8822aca2f",
+            "https://binplorer.com/address/0xa4156cc61dc7796faa24278a0f9f229b15e298cb"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "zedxionc",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "zedxion",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

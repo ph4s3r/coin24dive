@@ -1,0 +1,43 @@
+{
+    "content": {
+        "coin_id": "based-lambow",
+        "dead_score": 9,
+        "analysis": "Verdict: Mostly dead. A comeback looks highly unlikely without a major relaunch and fresh liquidity.\n\nKey signals\n- Liquidity / volume: 24h total volume ≈ $261 (Base pool ≈ $16, Abstract pool ≈ $246). That is extremely low and implies meaningful slippage even for small orders. Market cap ≈ $8.2k; FDV ≈ $8.2k. This is micro-cap territory with near-nonexistent trading interest.\n- Price collapse: Down ~77% in the last 24h, ~76% in 7d, ~71% in 30d, ~60% in 60d, and ~95% over 200d. ~99.67% below ATH (from June 2024). The curve suggests relentless distribution/LP bleed rather than a temporary drawdown.\n- Listings: Only on DEX (Uniswap V2 on Base and Abstract). No CEX presence; trust scores yellow/red on the DEX tickers. Delisting risk from CEX is moot because none are present; discovery and new buyer flow are minimal on current venues.\n- Fragmented presence: Two separate contracts (Base and Abstract). This splits already-thin liquidity and can confuse buyers. There’s no clear official migration notice consolidating to one chain.\n- Social/developer activity: Telegram ≈ 1,754 members; no Twitter handle listed; no GitHub activity; no status updates. Watchlists: 273. This is consistent with a project that has faded from attention.\n- Tokenomics: 1B supply, 100% circulating. No vesting/lockups to create future scarcity. Any recovery would require external capital (new LP, marketing) rather than organic token mechanics.\n\nWhat could change the outlook (low probability)\n- Large, verifiable liquidity injections into a single primary pool; consolidation to one chain/contract.\n- Significant new catalysts: credible team engagement, marketing push, partnerships, or a CEX listing.\n- Sustained social revival (active Twitter/Telegram growth) and daily volumes in the tens/hundreds of thousands with tighter depth.\n\nBottom line\n- Current state checks multiple “mostly dead” boxes: extremely low volume/liquidity, micro-cap size, severe drawdowns, minimal social/dev presence, and fragmented contracts. Without a coordinated relaunch and capital, price recovery to prior levels is very unlikely.\n\nNote: Always verify the correct contract before trading; multi-chain clones/impostors are common on DEXs. This is not financial advice."
+    },
+    "exchange_info": {
+        "base": {
+            "decimal_place": 18,
+            "contract_address": "0x4b61e2f1bbdee6d746209a693156952936f1702c",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0x4b61e2f1bbdee6d746209a693156952936f1702c"
+        },
+        "abstract": {
+            "decimal_place": 18,
+            "contract_address": "0xab38dbeac4554ede9e8c1bbdaa0b40a487b1cef1",
+            "geckoterminal_url": "https://www.geckoterminal.com/abstract/tokens/0xab38dbeac4554ede9e8c1bbdaa0b40a487b1cef1"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://lambow.xyz"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://basescan.org/token/0x4b61e2f1bbdee6d746209a693156952936f1702c",
+            "https://platform.arkhamintelligence.com/explorer/token/based-lambow",
+            "https://abscan.org/token/0xab38dbeac4554ede9e8c1bbdaa0b40a487b1cef1"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": null,
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "lambowxyz",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}
