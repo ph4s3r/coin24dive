@@ -9,9 +9,9 @@ from utils.clog import log_ok
 
 class PushoverMessage:
 
-    config = dotenv_values(".env")
-    pushover_token = config.get("PUSHOVER_TOKEN") or os.getenv("PUSHOVER_TOKEN")
-    url = "api.pushover.net:443"
+    config = dotenv_values('.env')
+    pushover_token = config.get('PUSHOVER_TOKEN') or os.getenv('PUSHOVER_TOKEN')
+    url = 'api.pushover.net:443'
 
     def __init__(self):
         self.conn = http.client.HTTPSConnection(self.url)
@@ -31,32 +31,32 @@ class PushoverMessage:
                 msg = self._tuples_to_multiline_string(chunk)
 
                 self.conn.request(
-                    "POST",
-                    "/1/messages.json",
+                    'POST',
+                    '/1/messages.json',
                     urllib.parse.urlencode({
-                        "user": "udyp91525b5c7hiubmfzh1i9r1wv8o",
-                        "token": self.pushover_token,
-                        "device": "peetphone",
-                        "message": msg,
+                        'user': 'udyp91525b5c7hiubmfzh1i9r1wv8o',
+                        'token': self.pushover_token,
+                        'device': 'peetphone',
+                        'message': msg,
                     }),
-                    {"Content-type": "application/x-www-form-urlencoded"})
+                    {'Content-type': 'application/x-www-form-urlencoded'})
                 response = self.conn.getresponse()
                 responses.append(response)
                 response.read()  # need to make sure the response is fully read
                 self.conn.close()
                 log_ok(f'{len(responses)} notifications successfully sent out')
         except Exception as e:
-            print(f"Unexpected error: {e}")
+            print(f'Unexpected error: {e}')
 
         return responses
 
     def _tuples_to_multiline_string(self, tuples_list):
-        txt = ""
+        txt = ''
 
         for tl in tuples_list:
             # every tuple (symbol, drop, etc) is first converted to a string like symbol|drop|etc, and a newline is added.
             # then this line-string is concatenated to one, which will be returned
-            txt += " | ".join((str(t) for t in tl)) + "\n"
+            txt += ' | '.join((str(t) for t in tl)) + '\n'
 
         return txt
 
