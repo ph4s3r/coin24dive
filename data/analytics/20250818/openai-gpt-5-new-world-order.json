@@ -1,0 +1,49 @@
+{
+    "content": {
+        "coin_id": "new-world-order",
+        "dead_score": 9.8,
+        "analysis": "Verdict: Functionally dead. A sustainable comeback is extremely unlikely without a full relaunch and substantial external capital/support.\n\nKey signals from the provided data:\n- Liquidity/volume: 24h volume across all DEX pairs is tiny (tens to a few hundred USD). Such volume implies severe slippage and practical inability to enter/exit positions at size.\n- Price collapse and fragmentation: Down ~99.96% over 1y and ~99.93% in the last 24h snapshot. Massive cross‑pool price discrepancies (e.g., ~1.9e-09 USD on ETH DEX pools vs ~1.3e-12 USD on Solana pools), showing no active arbitrage and effectively dead/liquidity‑starved markets.\n- Market cap/supply: Circulating supply reported as 0 (CoinGecko cannot verify), market cap 0, FDV ~ $13k. For a 10 trillion token supply, this is near-worthless and suggests no credible demand.\n- Exchange presence: DEX‑only (Uniswap/Sushi/Shibaswap on Ethereum; Raydium/Orca on Solana). No CEX listings; several pairs marked with red trust scores or anomaly flags, and stale timestamps. This is consistent with abandonment/illiquidity.\n- Contract risk: Notice that the smart‑contract owner can mint new tokens. That centralization/inflation risk is a major deterrent for new capital and can permanently suppress price.\n- Community/dev activity: Telegram shows only ~77 users; developer metrics are effectively zero (no commits, issues, stars), and there are no status updates. Sentiment on CoinGecko is 0% up / 100% down. These are classic abandonment indicators.\n- Split liquidity/multi‑chain confusion: Token exists on both Ethereum and Solana, further diluting already thin liquidity and confusing pricing, which hurts price discovery and recovery potential.\n\nWhat would need to happen to revive price (low probability):\n- Contract changes: Renounce minting/owner privileges and/or migrate to a new audited contract; lock liquidity to build trust.\n- Capital injection: Significant, persistent liquidity (six figures USD at minimum) across primary pools to reduce slippage and attract traders; ideally unify liquidity on one chain.\n- Listings and marketing: Active team, consistent communication, and credible partnerships; obtain reputable CEX listings to broaden access.\n\nAbsent the above, the most likely trajectory is continued illiquidity and price irrelevance. On the provided criteria (extremely low liquidity/volume, practical de‑listing to only DEXs with red flags, apparent developer and social abandonment, and minting risk), this asset scores as 9.8/10 on the “dead” scale."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x00c2999c8b2adf4abc835cc63209533973718eb1",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x00c2999c8b2adf4abc835cc63209533973718eb1"
+        },
+        "solana": {
+            "decimal_place": 3,
+            "contract_address": "2Ar2n5DJSiQuMhY4XeSzg7C5AGMezZPoLUt98VmmjsAR",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/2Ar2n5DJSiQuMhY4XeSzg7C5AGMezZPoLUt98VmmjsAR"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://nwo.capital",
+            "https://apps.apple.com/no/app/nwo-state/id1594385987",
+            "https://play.google.com/store/apps/details"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x00c2999c8b2adf4abc835cc63209533973718eb1",
+            "https://platform.arkhamintelligence.com/explorer/token/new-world-order",
+            "https://ethplorer.io/address/0x00c2999c8b2adf4abc835cc63209533973718eb1",
+            "https://solscan.io/token/0x00c2999c8b2adf4abc835cc63209533973718eb1",
+            "https://solscan.io/token/2ar2n5djsiqumhy4xeszg7c5agmezzpolut98vmmjsar"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "PublicaeOrg",
+        "facebook_username": "publicae",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Publicae",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/Publicae"
+            ],
+            "bitbucket": []
+        }
+    }
+}
