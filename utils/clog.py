@@ -5,12 +5,10 @@ Author: Peter Karacsonyi
 Email: peter.karacsonyi@gs.com
 Date: 13/06/2025
 '''
+import os
 
-# pypi
 import click
 
-# built-in
-import os
 
 try:
     TERMWIDTH = os.get_terminal_size().columns
@@ -21,16 +19,16 @@ except OSError:
 def log_info(text: str) -> None:
     click.echo(
         click.style(
-            f'info: {text}',
-            fg='bright_yellow',
+            f"info: {text}",
+            fg="bright_yellow",
         )
     )
 
 def log_ok(text: str) -> None:
     click.echo(
         click.style(
-            f'ok: {text}',
-            fg='green'            
+            f"ok: {text}",
+            fg="green"            
         )
     )
 
@@ -38,8 +36,8 @@ def log_ok(text: str) -> None:
 def log_fail(text: str) -> None:
     click.echo(
         click.style(
-            f'fail: {text}',
-            fg='red',
+            f"fail: {text}",
+            fg="red",
         )
     )
 
@@ -49,8 +47,8 @@ def log_task(text: str) -> None:
 
     click.echo(
         click.style(
-            f'\r\nTASK: [{text.upper()}] ' + '*'*stars,
-            fg='blue',
+            f"\r\nTASK: [{text.upper()}] " + "*" * stars,
+            fg="blue",
             bold=True
         )
     )
