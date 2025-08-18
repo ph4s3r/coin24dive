@@ -1,57 +1,49 @@
-# pypi
 import os
 import json
 from pathlib import Path
 from datetime import datetime
 
-# local
-import diver
-import getter
+from diver import diver
+from getter import market_scan, get_coindata
 from llm.llm_analyze import llm_analytics
-from notifications import pushover_message
+from notifications import PushoverMessage
 from utils.clog import log_task, log_ok
 from utils.display_rich_table import display_table
 
 
 def main():
-   
-    print("*"*20, "COINGECKO MARKET SCANNER", "*"*20)
-    
+    print(f"{' COINGECKO MARKET SCANNER ':*^66}")
+
     # creating directories
     today_date = datetime.now().strftime('%Y%m%d')
     directories = ["data", "data/dives", "data/coindata", "data/exchangedata", "data/analytics", f"data/analytics/{today_date}"]
     [os.makedirs(_, exist_ok=True) for _ in directories]
 
     # declaring filenames
-    fname_coins         = f"data/marketdata/coins{today_date}.json"
-    fname_dives         = f"data/dives/dives{today_date}.json"
-    analytics_folder    = 'data/analytics'
+    fname_coins = f"data/marketdata/coins{today_date}.json"
+    fname_dives = f"data/dives/dives{today_date}.json"
+    analytics_folder = 'data/analytics'
 
     ##########################################################################
     # EXECUTING TASKS ########################################################
     ##########################################################################
 
-
     log_task("Daily market scanning")
-    all_coingecko_coins: list = getter.market_scan(fname_coins)
-
+    all_coingecko_coins: list = market_scan(fname_coins)
 
     log_task("Searching for coins with specific criteria")
-    top_divers: dict = diver.diver(fname_dives, all_coingecko_coins, min_dive_percentage=-75)
-
+    top_divers: dict = diver(fname_dives, all_coingecko_coins, min_dive_percentage=-75)
 
     log_task("Getting detailed coin data for each coin")
     coinmetrics_full = []   # all detailed data about every coin: in a list
     # adding the exchange info & detailed coin data to the top_divers
     for diver_key, diver_data in top_divers.items():
-        coindata, ex_inf = getter.get_coindata(diver_key, refresh=False)
+        coindata, ex_inf = get_coindata(diver_key, refresh=False)
         top_divers[diver_key] = diver_data + (ex_inf.get(diver_key),)
         coinmetrics_full.append(coindata)
 
-
     log_task("Analyzing the top divers with LLM")
     dead_scores = llm_analytics(coinmetrics_full, analytics_folder, today_date)
-
 
     # if the dead scores are not present, it means the llm analytics skipped it because we already have them, might need to move this into llm_analytics
     if len(dead_scores) == 0:
@@ -69,22 +61,21 @@ def main():
     log_task("Display Results")
     display_table(top_divers, dead_scores)
 
-
     log_task("Filter coins by dead score and send notifications")
-    notifications = pushover_message()
+    notifications = PushoverMessage()
     # creating message content from the filtered coin list
     for coin_id, ex_data in top_divers.items():
         if dead_scores.get(coin_id, 10) < 7:
             notifications.add_to_notifications(
-                coin_id,                                                # coingecko id
-                str(ex_data[1]) + '%',                                  # drop_percent
-                'deadscore: ' + str(dead_scores.get(coin_id, '?')),     # dead score
-                str(ex_data[2])                                         # exchange info
+                coin_id,                                             # coingecko id
+                str(ex_data[1]) + '%',                               # drop_percent
+                'deadscore: ' + str(dead_scores.get(coin_id, '?')),  # dead score
+                str(ex_data[2])                                      # exchange info
             )
-
 
     # will not send empty message
     notifications.send_notifications()
+
 
 if __name__ == '__main__':
     main()
