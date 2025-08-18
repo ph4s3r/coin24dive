@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-from diver import diver
+from diver import diver, dead_score_filter
 from getter import market_scan, get_coindata
 from llm.llm_analyze import llm_analytics
 from notifications import PushoverMessage
@@ -64,16 +64,9 @@ def main():
     log_task('Filter coins by dead score and send notifications')
     notifications = PushoverMessage()
     # creating message content from the filtered coin list
-    for coin_id, ex_data in top_divers.items():
-        if dead_scores.get(coin_id, 10) < 7:
-            notifications.add_to_notifications(
-                coin_id,                                             # coingecko id
-                str(ex_data[1]) + '%',                               # drop_percent
-                'deadscore: ' + str(dead_scores.get(coin_id, '?')),  # dead score
-                str(ex_data[2])                                      # exchange info
-            )
-
-    # will not send empty message
+    dead_score_filter(
+        top_divers, notifications, dead_scores, dead_score_maximum=7
+    )
     notifications.send_notifications()
 
 

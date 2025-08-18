@@ -33,3 +33,22 @@ def diver(fname: str, coins: list, min_dive_percentage: int) -> dict[tuple[str, 
     bd_dict = {k: (v1, v2) for k, v1, v2 in bd_sorted[:20]}
 
     return bd_dict
+
+def dead_score_filter(
+        top_divers: dict,
+        notifications, 
+        dead_scores,
+        dead_score_maximum: int = 7
+    ):
+    '''enriches the notification list (notifications) with coins filtered by a certain dead score limit'''
+    for coin_id, ex_data in top_divers.items():
+        if dead_scores.get(coin_id, 10) <= dead_score_maximum:
+            notifications.add_to_notifications(
+                coin_id,  # coingecko id
+                str(ex_data[1]) + "%",  # drop_percent
+                "deadscore: " + str(dead_scores.get(coin_id, "?")),  # dead score
+                str(ex_data[2]),  # exchange info
+            )
+
+    return notifications
+    

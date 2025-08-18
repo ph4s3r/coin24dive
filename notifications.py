@@ -8,6 +8,7 @@ from utils.clog import log_ok
 
 
 class PushoverMessage:
+    '''maintains Pushover Messages'''
 
     config = dotenv_values('.env')
     pushover_token = config.get('PUSHOVER_TOKEN') or os.getenv('PUSHOVER_TOKEN')
@@ -21,6 +22,7 @@ class PushoverMessage:
         self.notification_list.append(tuple(args))
 
     def send_notifications(self):
+        '''does not send empty notifications'''
         responses = []
         chunk_size = 10
 
