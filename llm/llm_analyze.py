@@ -36,7 +36,14 @@ def llm_analytics(coinmetrics_full: list, analytics_folder, today_date):
         analytics_file_full_path = Path(analytics_folder)  / Path(today_date) / Path(f'{gpt5.model_name.replace('/', '-')}-{coin_id}.json')
 
         if analytics_file_full_path.exists():
-            log_ok(f'analytics already exists as {analytics_file_full_path} , skipping this one for now..')
+            try:
+                with open(analytics_file_full_path, 'r', encoding='utf-8') as f:
+                    dead_scores[coin_id] = json.load(f)['content']['dead_score']
+                    log_ok(f'analytics already exists as {analytics_file_full_path} , loaded successfully')
+            except Exception as e:
+                log_fail(
+                    f"could not load coin analytics from file {analytics_file_full_path}, Error: {e}"
+                )
             continue
 
         # passing the detailed coin_data_dict from coinmetrics_full to the LLM for analysis

@@ -45,19 +45,6 @@ def main():
     log_task('Analyzing the top divers with LLM')
     dead_scores = llm_analytics(coinmetrics_full, analytics_folder, today_date)
 
-    # if the dead scores are not present, it means the llm analytics skipped it because we already have them, might need to move this into llm_analytics
-    if len(dead_scores) == 0:
-        log_task('Loading dead score values from files')
-        analytics_path_today = Path(analytics_folder) / today_date
-        for json_file in analytics_path_today.iterdir():
-            if json_file.is_file() and json_file.suffix == '.json':
-                with json_file.open(encoding='utf-8') as f:
-                    coin_analytics = json.load(f)
-                    # not sure the coin_id is always reliable, need to watch out for this..
-                    coin_id = coin_analytics['content']['coin_id']
-                    dead_scores[coin_id] = coin_analytics['content']['dead_score']
-        log_ok(f'done loading {len(dead_scores)} coin dead score values')
-
     log_task('Display Results')
     display_table(top_divers, dead_scores)
 
