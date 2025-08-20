@@ -21,22 +21,21 @@ def main() -> None:
     """Execute the tasks of gathering data & processing it."""
     print(f"{' COINGECKO MARKET SCANNER ':*^66}")  # noqa: T201
 
-    # creating directories
+    # declaring folder & file names, then creating folders
     now = datetime.datetime.now(datetime.UTC)
     today_date = now.strftime('%Y%m%d')
+    analytics_folder = 'data/analytics'
+    fname_coins = f'data/marketdata/coins{today_date}.json'
+    fname_dives = f'data/dives/dives{today_date}.json'
     directories = [
         'data',
         'data/dives',
         'data/coindata',
         'data/exchangedata',
-        'data/analytics',
-        f'data/analytics/{today_date}']
+        analytics_folder,
+        f'{analytics_folder}/{today_date}',
+    ]
     [Path(_).mkdir(exist_ok=True, parents=True) for _ in directories]
-
-    # declaring filenames
-    fname_coins = f'data/marketdata/coins{today_date}.json'
-    fname_dives = f'data/dives/dives{today_date}.json'
-    analytics_folder = 'data/analytics'
 
     ##########################################################################
     # EXECUTING TASKS ########################################################
