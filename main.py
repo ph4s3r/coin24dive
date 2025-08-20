@@ -4,14 +4,16 @@ author: Peter Karacsonyi
 date:   8/20/2025
 """
 
-from pathlib import Path
+# pypi
 import datetime
+from pathlib import Path
 
-from diver import diver, dead_score_filter
-from getter import market_scan, get_coindata
+# local
+from utils.clog import log_task
 from llm.llm_analyze import llm_analytics
 from notifications import PushoverMessage
-from utils.clog import log_task
+from diver import diver, dead_score_filter
+from getter import market_scan, get_coindata
 from utils.display_rich_table import display_table
 
 
