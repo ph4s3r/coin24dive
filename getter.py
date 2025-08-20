@@ -40,7 +40,7 @@ def market_scan(fname_coins: str) -> list[dict]:
 
 
 @retry(stop=(stop_after_attempt(6)), wait=wait_random_exponential(min=1, max=60))
-def get_coindata(coin_id: str, refresh: bool = False, write_ex_only: bool = False) -> tuple[Any, dict[str, list[Any]]]:
+def get_coindata(coin_id: str, refresh: bool = False) -> tuple[Any, dict[str, list[Any]]]:
     """Get all detailed coin data about a symbol from coingecko.
 
     extract & save exchange data as well.
@@ -52,8 +52,8 @@ def get_coindata(coin_id: str, refresh: bool = False, write_ex_only: bool = Fals
 
     """
     exchange_info = {}
-    fname_exchangedata = f'data/exchangedata/{coin_id}.json'
     fname_coindata = f'data/coindata/{coin_id}.json'
+    fname_exchangedata = f'data/exchangedata/{coin_id}.json'
 
     ioerror = False # true if file-reading was not successful
 
@@ -105,7 +105,7 @@ def get_coindata(coin_id: str, refresh: bool = False, write_ex_only: bool = Fals
             log_fail(f'saved empty exchange info of {coin_id} to file {fname_exchangedata} (not found)')
 
         # save complete coin data separately
-        if not Path(fname_coindata).exists() and not write_ex_only:
+        if not Path(fname_coindata).exists():
             Path(fname_coindata).write_text(json.dumps(data, indent=2))
     except Exception as e:
         log_fail(f':( could not write coin/exchange data to file: {e.args[0]}')
