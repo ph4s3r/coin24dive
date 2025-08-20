@@ -4,25 +4,28 @@ import urllib
 import http.client
 from dotenv import dotenv_values
 
-from utils.clog import log_ok
+from utils.clog import log_ok, log_fail
 
 
 class PushoverMessage:
-    '''maintains Pushover Messages'''
+
+    """Maintain Pushover Messages."""
 
     config = dotenv_values('.env')
     pushover_token = config.get('PUSHOVER_TOKEN') or os.getenv('PUSHOVER_TOKEN')
     url = 'api.pushover.net:443'
 
-    def __init__(self):
+    def __init__(self) -> None:
+        """Create a new notification class, then notifications can be added."""
         self.conn = http.client.HTTPSConnection(self.url)
         self.notification_list = []
 
-    def add_to_notifications(self, *args: str):
+    def add_to_notifications(self, *args: str) -> None:
+        """Add new notification items to the list of notifications."""
         self.notification_list.append(tuple(args))
 
-    def send_notifications(self):
-        '''does not send empty notifications'''
+    def send_notifications(self) -> list:
+        """Send out the notifications, only if not empty."""
         responses = []
         chunk_size = 10
 
@@ -48,19 +51,21 @@ class PushoverMessage:
                 self.conn.close()
                 log_ok(f'{len(responses)} notifications successfully sent out')
         except Exception as e:
-            print(f'Unexpected error: {e}')
+            log_fail(f'Unexpected error: {e}')
 
         return responses
 
-    def _tuples_to_multiline_string(self, tuples_list):
+    def _tuples_to_multiline_string(self, tuples_list: list) -> str:
         txt = ''
 
         for tl in tuples_list:
-            # every tuple (symbol, drop, etc) is first converted to a string like symbol|drop|etc, and a newline is added.
+            # every tuple (symbol, drop, etc) is first converted to a string
+            # like symbol|drop|etc, and a newline is added.
             # then this line-string is concatenated to one, which will be returned
-            txt += ' | '.join((str(t) for t in tl)) + '\n'
+            txt += ' | '.join(str(t) for t in tl) + '\n'
 
         return txt
 
-    def show_notification_list(self):
+    def show_notification_list(self) -> list:
+        """Return the list of notifications for display."""
         return self.notification_list

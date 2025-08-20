@@ -8,23 +8,30 @@ from llm.openrouter import OpenRouter
 from utils.clog import log_fail, log_ok, log_task
 
 
-def llm_analytics(coinmetrics_full: list, analytics_folder, today_date):
-
+def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str) -> dict:
     print()
-    
+
     prompt_tokens = 0
     completion_tokens = 0
-    error_counter = 0 # we tolerate max 2 errors, then give up
-    
+    error_counter = 0  # we tolerate max 2 errors, then give up
+
     # setting up LLM for analytics queries
-    gpt5 = LLMConfig(
-        model_name = 'openai/gpt-5',
-        provider = 'openrouter',
-        superprompt = Path('llm/superprompt'), 
-        response_schema = Path('llm/schemas/analytics_schema.json')
+    # gpt5 = LLMConfig(
+    #     model_name = 'openai/gpt-5',
+    #     provider = 'openrouter',
+    #     superprompt = Path('llm/superprompt'),
+    #     response_schema = Path('llm/schemas/analytics_schema.json')
+    # )
+
+    # setting up LLM for analytics queries
+    o4mini = LLMConfig(
+        model_name='openai/o4-mini',
+        provider='openrouter',
+        superprompt=Path('llm/superprompt'),
+        response_schema=Path('llm/schemas/analytics_schema.json'),
     )
 
-    gpt5_analytics_report = OpenRouter(llmconfig=gpt5)
+    o4mini_analytics_report = OpenRouter(llmconfig=o4mini)
     dead_scores = {}
 
     for coin_data_dict in coinmetrics_full:
@@ -32,27 +39,27 @@ def llm_analytics(coinmetrics_full: list, analytics_folder, today_date):
             log_fail('too many errors, skipping future promises')
             break
 
-        coin_id = coin_data_dict.get('id')    # this is the id from coingecko, sometimes different from the 'symbol'
-        analytics_file_full_path = Path(analytics_folder)  / Path(today_date) / Path(f'{gpt5.model_name.replace('/', '-')}-{coin_id}.json')
+        coin_id = coin_data_dict.get('id')  # this is the id from coingecko, sometimes different from the 'symbol'
+        analytics_file_full_path = (
+            Path(analytics_folder) / Path(today_date) / Path(f'{o4mini.model_name.replace("/", "-")}-{coin_id}.json')
+        )
 
         if analytics_file_full_path.exists():
             try:
-                with open(analytics_file_full_path, 'r', encoding='utf-8') as f:
+                with open(analytics_file_full_path, encoding='utf-8') as f:
                     dead_scores[coin_id] = json.load(f)['content']['dead_score']
                     log_ok(f'analytics already exists as {analytics_file_full_path} , loaded successfully')
             except Exception as e:
-                log_fail(
-                    f"could not load coin analytics from file {analytics_file_full_path}, Error: {e}"
-                )
+                log_fail(f'could not load coin analytics from file {analytics_file_full_path}, Error: {e}')
             continue
 
         # passing the detailed coin_data_dict from coinmetrics_full to the LLM for analysis
         llm_api_response = None
 
         try:
-            llm_api_response: dict  = gpt5_analytics_report.query(prompt_data=coin_data_dict)
+            llm_api_response: dict = o4mini_analytics_report.query(prompt_data=coin_data_dict)
             asset_report_structured = json.loads(llm_api_response['choices'][0]['message']['content'])
-            log_ok(f'coin analytics returned for symbol {coin_id} from {gpt5.model_name}')
+            log_ok(f'coin analytics returned for symbol {coin_id} from {o4mini.model_name}')
         except Exception as e:
             log_fail(f'could not get the structured output for {coin_id=} from the model. Error: {e}')
             error_counter += 1
@@ -70,10 +77,7 @@ def llm_analytics(coinmetrics_full: list, analytics_folder, today_date):
             'links': coin_data_dict.get('links'),
         }
 
-        analytics_file_full_path.write_text(
-            json.dumps(analytics_data, indent=4, ensure_ascii=False),
-            encoding='utf-8'
-        )
+        analytics_file_full_path.write_text(json.dumps(analytics_data, indent=4, ensure_ascii=False), encoding='utf-8')
         log_ok(f'analytics successfully saved to {analytics_file_full_path}')
         dead_scores[coin_id] = asset_report_structured['dead_score']
 
@@ -81,8 +85,10 @@ def llm_analytics(coinmetrics_full: list, analytics_folder, today_date):
 
     print(f'used {prompt_tokens=}')
     print(f'used {completion_tokens=}')
-    print('price of the move with gpt-5: ') # (w/o openrouter\'s margin of $0.0001 on every 1k tokens, which seems to be negligible...)
-    
+    print(
+        'price of the move with gpt-5: ',
+    )  # (w/o openrouter\'s margin of $0.0001 on every 1k tokens, which seems to be negligible...)
+
     # 400,000 context $1.25/M input tokens $10/M output tokens
     price_prompt_tokens = 1.25 * prompt_tokens / 1_000_000
     price_completion_tokens = 10 * completion_tokens / 1_000_000

@@ -1,5 +1,5 @@
-import os
-from datetime import datetime
+from pathlib import Path
+import datetime
 
 from diver import diver, dead_score_filter
 from getter import market_scan, get_coindata
@@ -9,13 +9,20 @@ from utils.clog import log_task
 from utils.display_rich_table import display_table
 
 
-def main():
-    print(f'{' COINGECKO MARKET SCANNER ':*^66}')
+def main() -> None:
+    print(f"{' COINGECKO MARKET SCANNER ':*^66}")  # noqa: T201
 
     # creating directories
-    today_date = datetime.now().strftime('%Y%m%d')
-    directories = ['data', 'data/dives', 'data/coindata', 'data/exchangedata', 'data/analytics', f'data/analytics/{today_date}']
-    [os.makedirs(_, exist_ok=True) for _ in directories]
+    now = datetime.datetime.now(datetime.UTC)
+    today_date = now.strftime('%Y%m%d')
+    directories = [
+        'data',
+        'data/dives',
+        'data/coindata',
+        'data/exchangedata',
+        'data/analytics',
+        f'data/analytics/{today_date}']
+    [Path(_).mkdir(exist_ok=True, parents=True) for _ in directories]
 
     # declaring filenames
     fname_coins = f'data/marketdata/coins{today_date}.json'
@@ -39,7 +46,7 @@ def main():
     # adding the exchange info & detailed coin data to the top_divers
     for diver_key, diver_data in top_divers.items():
         coindata, ex_inf = get_coindata(diver_key, refresh=False)
-        top_divers[diver_key] = diver_data + (ex_inf.get(diver_key),)
+        top_divers[diver_key] = (*diver_data, ex_inf.get(diver_key))
         coinmetrics_full.append(coindata)
 
 
@@ -52,10 +59,10 @@ def main():
 
 
     log_task('Filter coins by dead score and send notifications')
-    notifications = PushoverMessage()
+    notifications: PushoverMessage = PushoverMessage()
     # creating message content from the filtered coin list
     dead_score_filter(
-        top_divers, notifications, dead_scores, dead_score_maximum=7
+        top_divers, notifications, dead_scores, dead_score_maximum=7,
     )
     notifications.send_notifications()
 
