@@ -58,7 +58,7 @@ def dead_score_filter(
     top_divers: dict,
     dead_scores: dict,
     dead_score_maximum: int = 7,
-) -> PushoverMessage:
+) -> None:
     """Enrich the notification list (notifications) with coins filtered by a certain dead score limit."""
     for coin_id, ex_data in top_divers.items():
         if dead_scores.get(coin_id, 10) <= dead_score_maximum:
@@ -68,5 +68,3 @@ def dead_score_filter(
                 'deadscore: ' + str(dead_scores.get(coin_id, '?')),  # dead score
                 str(ex_data[2]),  # exchange info
             )
-
-    return notifications
