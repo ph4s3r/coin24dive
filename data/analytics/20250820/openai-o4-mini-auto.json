@@ -1,0 +1,51 @@
+{
+    "content": {
+        "coin_id": "auto",
+        "dead_score": 3,
+        "analysis": "Auto (AutoFarm) remains an active DeFi yield aggregator on BSC/Polygon with ~US$8.6 M TVL and ~US$100 K–180 K 24-h trading volume. Its token contract is current and widely known; no address changes or evidence of a rug pull. Price action is still meaningful (50 USD level), and liquidity on DEX aggregators, though concentrated, supports modest trading. Community metrics (Telegram ~2.8 K users, ~13 K watchlists) and ongoing vault usage show user engagement. The only concern is zero recorded GitHub commits in the last month and lack of CEX listings, suggesting slowed development pace. Overall, the project is far from dead: while a resurgence to ATH may require renewed dev momentum or market tailwinds, Auto has sufficient liquidity, TVL and community to see its price recover in a favorable environment."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://autotokens.netlify.app/",
+            "https://autofarm-network.medium.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "https://platform.arkhamintelligence.com/explorer/token/auto",
+            "https://polygonscan.com/token/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "https://binplorer.com/address/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/bJ9ZsypQzv"
+        ],
+        "announcement_url": [
+            "https://autofarm-network.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "autofarmnetwork",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "autofarm_network",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/autofarm-network/autofarmV2"
+            ],
+            "bitbucket": []
+        }
+    }
+}

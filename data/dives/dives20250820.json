@@ -1,97 +1,34 @@
-[
-  [
-    "swag",
+{
+  "swag": [
     "$swag",
     -89
   ],
-  [
-    "aluna",
+  "aluna": [
     "aln",
     -82
   ],
-  [
-    "auto",
-    "auto",
-    -92
-  ],
-  [
-    "auto",
+  "auto": [
     "auto",
     -92
   ],
-  [
-    "auto",
-    "auto",
-    -92
-  ],
-  [
-    "biden-coin",
+  "biden-coin": [
     "biden",
     -89
   ],
-  [
-    "octus-bridge",
+  "octus-bridge": [
     "bridge",
     -95
   ],
-  [
-    "bull-pepe",
+  "bull-pepe": [
     "bullpepe",
     -80
   ],
-  [
-    "catalorian",
+  "catalorian": [
     "catalorian",
     -98
   ],
-  [
+  "catx": [
     "catx",
-    "catx",
-    -98
-  ],
-  [
-    "exit-designer-token",
-    "exit",
-    -79
-  ],
-  [
-    "exit-designer-token",
-    "exit",
-    -79
-  ],
-  [
-    "jupiter",
-    "jup",
-    -92
-  ],
-  [
-    "modpanda",
-    "panda",
-    -88
-  ],
-  [
-    "strategic-bitcoin-reserve",
-    "sbr",
-    -94
-  ],
-  [
-    "superciety",
-    "super",
-    -93
-  ],
-  [
-    "tarot",
-    "tarot",
-    -95
-  ],
-  [
-    "tor",
-    "tor",
-    -97
-  ],
-  [
-    "veritas",
-    "vpt",
     -98
   ]
-]
+}

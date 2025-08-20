@@ -1,0 +1,63 @@
+{
+    "content": {
+        "coin_id": "aluna",
+        "dead_score": 9,
+        "analysis": "Aluna (ALN) exhibits virtually all hallmarks of a dead token:\n\n• Market cap & liquidity: Market cap ~$3.6 K, 24 h volume ~$3.2 USD. Only two trading venues (Uniswap V2 and LATOKEN) with red trust scores, stale order books and tiny liquidity pools. \n• Exchange listings: No presence on any top-tier CEX. Likely delisted from all major venues. \n• Developer activity: GitHub shows zero commits in the last month, no issues or stars. Project maintenance appears abandoned. \n• Community & social: No Reddit activity, zero subreddit/subscribers, Telegram ~500 users, Discord invite only. Twitter presence inactive. \n• Price history: From an ATH of $1.84 in Mar 2021 to $0.00010 today (–99.99%), down ~80% in the last week, ~94% over 1 year. \n• Utility & on-chain metrics: No TVL, no on-chain usage data. \n\nWith negligible liquidity, no developer or community engagement, delisted from major exchanges and zero real utility, a price revival is virtually impossible without a complete project reboot.  "
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x8185bc4757572da2a610f887561c32298f1a5748",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x8185bc4757572da2a610f887561c32298f1a5748"
+        },
+        "arbitrum-one": {
+            "decimal_place": 18,
+            "contract_address": "0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25",
+            "geckoterminal_url": "https://www.geckoterminal.com/arbitrum/tokens/0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xf44fb887334fa17d2c5c0f970b5d320ab53ed557",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://aluna.social/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://etherscan.io/token/0x8185bc4757572da2a610f887561c32298f1a5748",
+            "https://platform.arkhamintelligence.com/explorer/token/aluna",
+            "https://ethplorer.io/address/0x8185bc4757572da2a610f887561c32298f1a5748",
+            "https://polygonscan.com/token/0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a",
+            "https://bscscan.com/token/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557",
+            "https://arbiscan.io/token/0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25",
+            "https://binplorer.com/address/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/hsadykv"
+        ],
+        "announcement_url": [
+            "https://aluna.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "alunasocial",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "aluna_ann",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/alunacrypto/aluna-smart-contracts"
+            ],
+            "bitbucket": []
+        }
+    }
+}

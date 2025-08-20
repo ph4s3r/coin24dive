@@ -5,49 +5,53 @@
 #pypi
 import json
 from pathlib import Path
+from typing import NoReturn
 
 
 # models supporting structured outs
 # https://openrouter.ai/models?order=newest&supported_parameters=structured_outputs
 MODELS_WITH_STRUCTURED_OUTPUT = [
-    
-        "openai/gpt-5",                             # 400,000 context $1.25/M input tokens $10/M output tokens
-        "openai/o4-mini-high",                      # 200,000 context $1.10/M input tokens $4.40/M output tokens $0.842/K input imgs
-        "openai/o3",                                # 200,000 context $2/M input tokens $8/M output tokens
-        "openai/gpt-oss-120b",                      # 131,072 context $0.073/M input tokens $0.29/M output tokens
 
-        "x-ai/grok-4",                              # 256,000 context $3/M input tokens   $15/M output tokens
-        "google/gemini-2.5-pro"                     # 1M context      $1.25/M input tokens   $10/M output tokens
-        "google/gemini-2.5-flash",                  # 1,048,576 context $0.30/M input tokens $2.50/M output tokens
-        
-        "qwen/qwen3-235b-a22b-2507",                # 262,144 context $0.078/M input tokens $0.312/M output tokens
-        "qwen/qwen3-30b-a3b",                       # 40,960 context $0.02/M input tokens $0.08/M output tokens
-        "switchpoint/router",                       # need to test this later...
-        "mistralai/magistral-medium-2506:thinking", # 40,960 context $2/M input tokens $5/M output tokens
+        'openai/gpt-5',                             # 400,000 context $1.25/M input tokens $10/M output tokens
+        'openai/o4-mini-high',                      # 200,000 context $1.10/M input tokens $4.40/M output tokens
+        'openai/o3',                                # 200,000 context $2/M input tokens $8/M output tokens
+        'openai/gpt-oss-120b',                      # 131,072 context $0.073/M input tokens $0.29/M output tokens
+
+        'x-ai/grok-4',                              # 256,000 context $3/M input tokens   $15/M output tokens
+        'google/gemini-2.5-pro'                     # 1M context      $1.25/M input tokens   $10/M output tokens
+        'google/gemini-2.5-flash',                  # 1,048,576 context $0.30/M input tokens $2.50/M output tokens
+
+        'qwen/qwen3-235b-a22b-2507',                # 262,144 context $0.078/M input tokens $0.312/M output tokens
+        'qwen/qwen3-30b-a3b',                       # 40,960 context $0.02/M input tokens $0.08/M output tokens
+        'switchpoint/router',                       # need to test this later...
+        'mistralai/magistral-medium-2506:thinking', # 40,960 context $2/M input tokens $5/M output tokens
     ]
 
 MODELS_WITHOUT_STRUCTURED_OUTPUT = [
-        "anthropic/claude-opus-4.1",                # does not support structured output
+        'anthropic/claude-opus-4.1',                # does not support structured output
     ]
 
-class LLMConfig():
-    '''describes everything that is model and request specific
-    this class can be handed over to the OpenRouter class
+class LLMConfig:
 
-    superprompt and response_schema are inputs. they will be loaded to the respective
+    """Describe everything that is model and request specific.
+
+    this class can be handed over to the OpenRouter class.
+    superprompt and response_schema are inputs.
+    they will be loaded to the respective
     self.superprompt_str      = ''
     self.response_schema_dict = ''
 
-    '''
+    """
 
-    def __init__(self, 
+    def __init__(self,
                 model_name: str,
                 provider: str,
-                superprompt: str | Path | None, 
+                superprompt: str | Path | None,
                 response_schema: dict | Path | None,   # if None, no structured output is enforced
-                 ):
+                 ) -> None:
         self.model_name          = model_name
-        self.provider            = provider             # currently unused - planned to use it to change params e.g. openrouters openai SDK
+        self.provider            = provider
+        # currently unused - planned to use it to change params e.g. openrouters openai SDK
         self._superprompt        = superprompt
         self._response_schema    = response_schema
 
@@ -55,7 +59,7 @@ class LLMConfig():
         self.response_schema_dict = None
 
         if self.model_name not in MODELS_WITH_STRUCTURED_OUTPUT + MODELS_WITHOUT_STRUCTURED_OUTPUT:
-            print(f'warning: model {self.model} is not listed in our list, might be unsupported')
+            print(f'warning: model {self.model_name} is not listed in our list, might be unsupported')
 
         # loading superprmopt
         if isinstance(self._superprompt, Path):
@@ -84,11 +88,11 @@ class LLMConfig():
 
     # bad naming maybe
     @property
-    def superprompt(self):
+    def superprompt(self) -> NoReturn:
         raise AttributeError("get 'superprompt_str'")
-    
+
     @superprompt.setter
-    def superprompt(self, v):
+    def superprompt(self, v: str) -> None:
         self._superprompt = v
 
     @property
@@ -99,6 +103,6 @@ class LLMConfig():
     def response_schema(self, v):
         self._response_schema = v
 
-    
-        
-        
+
+
+

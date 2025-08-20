@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "swag",
+        "dead_score": 8,
+        "analysis": "SWAG is a pure meme token on Ethereum with no real development, no detectable circulating supply on CoinGecko (circulating_supply = 0), and zero on-chain project activity (no GitHub, no commits, no open issues). Community metrics are flat (Reddit 0, Telegram none), and the official website/whitepaper offer only marketing copy without substance.\n\nIt trades only on small venues (Uniswap V2, XT.com, Bilaxy) with combined 24 h volume under ~$200 k and FDV ~$2.3 M, showing minimal liquidity depth (bid/ask spreads 0.6–2%). It has already fallen ~91% from its all-time high in November 2024, and social/media attention is effectively dead.\n\nWith no development roadmap, no active community, no exchange support beyond obscure platforms, and no on-chain momentum, a meaningful price rebound is extremely unlikely."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 9,
+            "contract_address": "0x36c7188d64c44301272db3293899507eabb8ed43",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x36c7188d64c44301272db3293899507eabb8ed43"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://swagcoin.xyz/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x36c7188d64c44301272db3293899507eabb8ed43",
+            "https://platform.arkhamintelligence.com/explorer/token/swag",
+            "https://ethplorer.io/address/0x36c7188d64c44301272db3293899507eabb8ed43"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Swagoneth",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}
