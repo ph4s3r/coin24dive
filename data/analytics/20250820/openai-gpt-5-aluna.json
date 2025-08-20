@@ -1,0 +1,63 @@
+{
+    "content": {
+        "coin_id": "aluna",
+        "dead_score": 9.6,
+        "analysis": "Verdict: ALN looks effectively dead. A price recovery to meaningful levels is extremely unlikely without a complete relaunch and substantial new funding/liquidity.\n\nKey evidence\n- Liquidity/volume: 24h total volume ≈ $3.17; Uniswap V2 (ETH) converted volume ≈ $2.65; LATOKEN ≈ $3.17. That’s functionally no trading activity. LATOKEN shows a ~94.6% bid-ask spread and both venues have red trust scores with stale ticks—signs of unusable liquidity and minimal market participation.\n- Market cap collapse: Market cap ≈ $3.6k; FDV ≈ $10k. Any non-trivial order would move price heavily. This is consistent with a market that has been abandoned by traders/liquidity providers.\n- Price implosion: -82% in the last 24h, -80% over 7d, and -99.99% from ATH ($1.84 → ~$0.000101). One-year change ≈ -94%. These drawdowns, paired with near-zero volume, are typical of defunct tokens.\n- Exchange presence: Only a tiny Uniswap V2 pool (stale, negligible volume) and a low-tier CEX (LATOKEN) with extreme spread. Absence on reputable exchanges and effectively non-functioning DEX liquidity are strong “dead” indicators.\n- Dev/community inactivity: Developer data shows no commits in the last 4 weeks, zero stars/forks, and minimal public repo activity. Community metrics are tiny (Telegram ≈ 506, no Reddit). The dataset provides no sign of active comms or ongoing development.\n- Multi-chain fragmentation: Addresses on Ethereum/Arbitrum/BSC/Polygon but essentially no observable activity/volume, increasing fragmentation and user confusion with no liquidity backing.\n\nWhat would need to change to revive it\n- A funded turnaround: significant liquidity injection into primary pools, market maker support, and new exchange listings.\n- Clear, active team: regular public updates, roadmap, and demonstrable product traction for Aluna.Social.\n- Potential token restructure/migration with transparent communications and exchange coordination.\n\nOutlook\n- Given the catastrophic drawdowns, microscopic market cap/volume, near-zero liquidity, poor exchange quality, and inactivity indicators, ALN fits multiple “mostly dead” criteria. Without a formal, well-funded relaunch, the probability of a sustainable recovery is extremely low.\n\nNotes for holders\n- Verify whether an official token migration has occurred before interacting with any pools—multiple chain addresses can trap liquidity in wrong versions.\n- Be cautious of liquidity traps: with spreads this wide and volume this low, even small buys/sells can incur massive slippage.\n\nThis is an informational assessment, not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x8185bc4757572da2a610f887561c32298f1a5748",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x8185bc4757572da2a610f887561c32298f1a5748"
+        },
+        "arbitrum-one": {
+            "decimal_place": 18,
+            "contract_address": "0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25",
+            "geckoterminal_url": "https://www.geckoterminal.com/arbitrum/tokens/0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xf44fb887334fa17d2c5c0f970b5d320ab53ed557",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://aluna.social/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://etherscan.io/token/0x8185bc4757572da2a610f887561c32298f1a5748",
+            "https://platform.arkhamintelligence.com/explorer/token/aluna",
+            "https://ethplorer.io/address/0x8185bc4757572da2a610f887561c32298f1a5748",
+            "https://polygonscan.com/token/0xa8fcee762642f156b5d757b6fabc36e06b6d4a1a",
+            "https://bscscan.com/token/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557",
+            "https://arbiscan.io/token/0x9b3fa2a7c3eb36d048a5d38d81e7fafc6bc47b25",
+            "https://binplorer.com/address/0xf44fb887334fa17d2c5c0f970b5d320ab53ed557"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/hsadykv"
+        ],
+        "announcement_url": [
+            "https://aluna.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "alunasocial",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "aluna_ann",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/alunacrypto/aluna-smart-contracts"
+            ],
+            "bitbucket": []
+        }
+    }
+}

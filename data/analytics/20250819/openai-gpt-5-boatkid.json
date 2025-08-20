@@ -1,0 +1,39 @@
+{
+    "content": {
+        "coin_id": "boatkid",
+        "dead_score": 4.0,
+        "analysis": "Verdict: Not dead yet, but very high-risk microcap. A short-term bounce is possible; a sustained recovery to prior highs is unlikely without clear catalysts (LP depth/locks, sustained marketing, exchange listings).\n\nWhat the data says\n- Age/price action: Appears newly launched (ATH/ATL both on 2025-08-18). Price is down ~79% in 24h and ~85% from ATH within a day—typical post-launch dump behavior for memecoins, not necessarily terminal by itself.\n- Liquidity/volume: Only trading on Uniswap V2 (Ethereum). 24h volume ~$198k with ~0.61% bid-ask spread suggests some current activity and non-zero liquidity, but it’s fragile for a $133k FDV/MCAP. Ticker marked is_anomaly: true on CG, so volume may be inflated or noisy.\n- Listings: No CEX listings; single DEX pair. Not delisted (it’s just not listed elsewhere yet). Recovery often requires broader listings or strong DEX liquidity programs.\n- Supply/FDV: Total/circulating supply 4.2e17, FDV = MCAP (~$133k), meaning no vesting buffer; dependent on LP and holder behavior. 2 decimals is unusual but not inherently fatal; still, tokenomics are purely memecoin-style.\n- Community: Telegram ~6.4k members, Twitter present. Watchlist users on CG only 33—very low organic investor interest relative to claimed Telegram size (possible bot inflation). Social isn’t silent yet, but depth/quality unknown.\n- Dev activity: GitHub exists but zero activity—a red flag if the project claims utility beyond a meme; acceptable if it’s transparently a meme but reduces comeback odds.\n- Red flags: Massive day-one drawdown, single DEX dependency, anomalous volume flag, tiny watchlist count, no proof of LP lock or renounce, and no roadmap/utility evidence in the provided data.\n\nCan it come back?\n- Short term: Yes, a reflexive bounce/pump is possible if the team injects/locks more LP, coordinates marketing, and keeps social channels very active. Microcaps can retrace large portions quickly if liquidity supports it.\n- Medium/long term: Low probability without catalysts. To reclaim ATHs sustainably, you’d typically need: verifiable LP lock and taxes disclosed, transparent team or strong meme narrative, consistent social growth with real engagement, CEX listings, and ongoing marketing or utility.\n\nWhat to watch next (deciders for dead vs. alive)\n- LP status: Is liquidity locked (and for how long)? Check Etherscan/GeckoTerminal pair info. If LP is unlocked or gets pulled, odds of recovery drop to near zero.\n- Holder distribution: If top wallets (excluding LP) control most supply, expect more dumps. Healthy distribution improves comeback odds.\n- Social cadence: Daily posts, AMAs, partnerships. If Telegram/Twitter go quiet for 48–72 hours post-launch, mark it as likely dead soon.\n- Listings/liquidity depth: Any new pools, incentives, or CEX listings? Without them, attention usually fades quickly.\n- On-chain taxes/permissions: Verify buy/sell tax, trading limits, ownership renounced or multisig. Predatory tax or revocable permissions are major negatives.\n\nBottom line\n- Current classification: Not dead, but extremely speculative. There’s just enough volume/liquidity and social noise to allow a short-term bounce, but fundamentals for a durable comeback aren’t evident yet. If LP is not locked, social slows, or volume collapses below ~$10k/day for several consecutive days, it will likely become illiquid and effectively dead."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 2,
+            "contract_address": "0x465ac9ca56f340bc5b96b02c065ae80f3d893eec",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x465ac9ca56f340bc5b96b02c065ae80f3d893eec"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://boatkid.site"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x465ac9ca56f340bc5b96b02c065ae80f3d893eec",
+            "https://ethplorer.io/address/0x465AC9Ca56f340bC5B96b02C065ae80F3d893eEC"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "BoatKidcto",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "BoatKidctotg",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/BoatKidcto"
+            ],
+            "bitbucket": []
+        }
+    }
+}

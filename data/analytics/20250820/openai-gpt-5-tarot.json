@@ -1,0 +1,71 @@
+{
+    "content": {
+        "coin_id": "tarot",
+        "dead_score": 9.5,
+        "analysis": "Verdict: Tarot V1 is effectively obsolete and unlikely to make a sustainable comeback. Any price spikes would likely be illiquidity-driven rather than fundamentals.\n\nWhy it’s mostly dead\n- Official migration: The public notice states TAROT migrated to new contracts with a new token page. That means V1 is deprecated and value/attention has moved to the new token. Old tokens typically lose support and are not intended to recover.\n- Vanishing activity/liquidity: 24h volume ≈ $1.23 total across tracked markets; bid/ask spreads ~1% and tiny pool sizes. This is extremely illiquid and impractical for entry/exit without heavy slippage.\n- Exchange presence: Only small DEX pools (SpookySwap, Velodrome). No meaningful CEX listings; some DEX feeds are stale, indicating pools are being abandoned.\n- Price collapse: Down ~-95.7% in 24h, ~-95.8% 7d, ~-98.3% 1y; market cap ≈ $35k, FDV ≈ $52k against 67.7M circulating—classic profile of a migrated/abandoned token.\n- Dev focus elsewhere: Repo shows no recent commits; migration implies developer attention is on the new contracts/token, not V1.\n- Social/interest: Community metrics are minimal; the notice and new token redirect suggest the conversation moved on from V1.\n\nNotes\n- The TVL figure shown (~$4.94m) is likely protocol-level and does not represent tradable liquidity in the V1 token. The token’s mcap/volume tell the real story for V1.\n\nWhat could change this?\n- Only an explicit, official revival or remapping of value to V1 by the team (highly unlikely post-migration). Otherwise, occasional illiquid pumps are possible but not sustainable.\n\nActionable\n- If you hold V1, check official channels for any migration/claim instructions and deadlines. Avoid buying V1; if you want exposure to the project, use the currently supported token/contracts as per the official links."
+    },
+    "exchange_info": {
+        "fantom": {
+            "decimal_place": 18,
+            "contract_address": "0xc5e2b037d30a390e62180970b3aa4e91868764cd",
+            "geckoterminal_url": "https://www.geckoterminal.com/ftm/tokens/0xc5e2b037d30a390e62180970b3aa4e91868764cd"
+        },
+        "arbitrum-one": {
+            "decimal_place": 18,
+            "contract_address": "0x6688b00f0c23a4a546beaae51a7c90c439895d48",
+            "geckoterminal_url": "https://www.geckoterminal.com/arbitrum/tokens/0x6688b00f0c23a4a546beaae51a7c90c439895d48"
+        },
+        "optimistic-ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x375488f097176507e39b9653b88fdc52cde736bf",
+            "geckoterminal_url": "https://www.geckoterminal.com/optimism/tokens/0x375488f097176507e39b9653b88fdc52cde736bf"
+        },
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x837d904a3799c0769079be9ecbaddf1abd4ccd6e",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x837d904a3799c0769079be9ecbaddf1abd4ccd6e"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa8cd6e4bf45724d3ac27f9e31e47ba4e399a7b52",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa8cd6e4bf45724d3ac27f9e31e47ba4e399a7b52"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.tarot.to"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://ftmscan.com/token/0xc5e2b037d30a390e62180970b3aa4e91868764cd",
+            "https://platform.arkhamintelligence.com/explorer/token/tarot",
+            "https://scan.meter.io/address/0xc5e2b037d30a390e62180970b3aa4e91868764cd",
+            "https://bscscan.com/token/0xa8cd6e4bf45724d3ac27f9e31e47ba4e399a7b52",
+            "https://arbiscan.io/token/0x6688b00f0c23a4a546beaae51a7c90c439895d48",
+            "https://optimistic.etherscan.io/token/0x375488f097176507e39b9653b88fdc52cde736bf",
+            "https://etherscan.io/token/0x837d904a3799c0769079be9ecbaddf1abd4ccd6e",
+            "https://ethplorer.io/address/0x837d904a3799c0769079be9ecbaddf1abd4ccd6e",
+            "https://fantom.dex.guru/token/0xc5e2b037d30a390e62180970b3aa4e91868764cd",
+            "https://binplorer.com/address/0xa8cd6e4bf45724d3ac27f9e31e47ba4e399a7b52"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/6ByFHBjqE8"
+        ],
+        "announcement_url": [
+            "https://tarotfinance.medium.com"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "tarotfinance",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/tarot-finance/tarot-token"
+            ],
+            "bitbucket": []
+        }
+    }
+}

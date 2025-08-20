@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "modpanda",
+        "dead_score": 9.1,
+        "analysis": "Verdict: Very unlikely to recover; treat as near‑dead unless there’s a fresh relaunch with real liquidity and active devs.\n\nKey signals from the data:\n- Listing/venues: Only 1 DEX pair (Raydium) with trust score red; no CEX listings. This severely limits buyers and discoverability.\n- Liquidity/volume quality: Market cap ≈ $11.9k with 24h volume ≈ $17k (volume > mcap often indicates thin LP/washy flow). Expect high slippage and difficulty exiting meaningful size.\n- Price collapse: -88.8% in 24h, -95% in 7d, -96.5% in 30d, -97.8% from ATH set ~5 weeks ago; trading near ATL. Classic post‑launch dump pattern.\n- Supply/dilution: ~1B max and essentially 100% circulating; no scarcity lever left, so recovery would require external capital and demand, not tokenomics.\n- Community/dev activity: Watchlists 24; Telegram ~26 members; developer data shows 0 commits, 0 repos, 0 issues; no status updates. This looks abandoned or never meaningfully developed.\n- Warnings: Generic liquidity‑risk notice; GeckoTerminal link provided but no evidence of locked LP or renounced mint authority in the data.\n\nWhat would need to change to have a shot at coming back:\n- Significant new liquidity injection with LP lock/renounce, credible roadmap, and active comms (Twitter/Telegram growth from double digits to thousands+).\n- Additional exchange listings beyond Raydium and restoration of trust (removal of red trust flag).\n- Real product usage to justify demand. \n\nAbsent those, probability of a durable recovery is extremely low.\n\nHow to verify before writing it off:\n- Check GeckoTerminal pool for actual USD liquidity and whether LP tokens are locked/burned.\n- On Solscan: verify mint/freeze authority status and holder concentration.\n- Review social channels (Twitter @ModPandaaa, Telegram modpandachannel) for recent activity and team presence.\n\nConclusion: Based on current liquidity, venues, price action, and inactivity, this asset scores 9.1/10 on the “dead” scale. Proceed assuming sunk cost unless clear, verifiable turnaround actions occur. Not financial advice."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "2obLASom28dxTDLJxfocejSD5emSzbESWmXuX4Fubonk",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/2obLASom28dxTDLJxfocejSD5emSzbESWmXuX4Fubonk"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.modpanda.xyz/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/2obLASom28dxTDLJxfocejSD5emSzbESWmXuX4Fubonk"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "ModPandaaa",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "modpandachannel",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

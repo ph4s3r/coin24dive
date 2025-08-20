@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "catx",
+        "dead_score": 8.2,
+        "analysis": "Verdict: Highly unlikely to recover without extraordinary intervention. Base case is a terminal fade.\n\nKey signals from the data you provided:\n- Trading venues/liquidity: Only one venue listed (PancakeSwap v2), trust score yellow. 24h volume ~$216k is not zero but can be ephemeral on BSC memecoins and is concentrated on a single DEX, making exits dependent on shallow LP depth. No centralized exchange listings.\n- Contract risk: GoPlus flags the creator can disable sells, change fees, mint, and transfer arbitrarily. This single point of control is a major red flag for freezes/tax toggles/rug mechanics and will deter new capital.\n- Price action: -98.83% in 24h and -97.78% in 7d; ~-98.86% from ATH that occurred just days ago. This is classic pump-then-dump behavior and typically destroys holder confidence and liquidity.\n- Market structure: CoinGecko shows circulating supply as 0 and no verified market cap; FDV ~ $259k at current price. Data quality is poor and suggests low transparency. Watchlist count is small (968), limiting organic bid support.\n- Dev and community: No repo activity; Telegram size ~1.3k is small. Website/socials exist but there’s no evidence here of sustained developer delivery or broad community traction needed to reignite demand.\n\nWhy recovery is unlikely:\n- Centralized, mutable contract + single DEX listing + catastrophic drawdown = extremely high perceived risk; new buyers avoid, liquidity providers exit, spreads widen.\n- Once a token suffers a near-total collapse so soon after ATH, it usually requires substantial new liquidity injections, trust restoration (renounced ownership/LP lock/audits), and major exchange listings to rebuild price. None are evident in the data.\n\nWhat would change the outlook (still low probability):\n- Verifiable LP lock and renounced ownership; third‑party audit; transparent tokenomics (no stealth taxes/minting), real marketing, and additional exchange listings with sustained organic volume over weeks.\n\nBottom line: Current state fits a near-dead microcap with severe contract/control risks and a fresh 98% crash. Without concrete, verifiable improvements, the most likely path is continued illiquidity and decay rather than a sustainable comeback."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 9,
+            "contract_address": "0x8d0c064ab0973fe124fa9efaad492060baacb62c",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x8d0c064ab0973fe124fa9efaad492060baacb62c"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://catxtoken.com/"
+        ],
+        "whitepaper": "https://catxtoken.com/whitepaper.pdf",
+        "blockchain_site": [
+            "https://bscscan.com/token/0x8d0c064ab0973fe124fa9efaad492060baacb62c",
+            "https://platform.arkhamintelligence.com/explorer/token/catx",
+            "https://binplorer.com/address/0x8d0c064ab0973fe124fa9efaad492060baacb62c"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "catxtoken",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "catxtoken",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "metagalaxy-land",
+        "dead_score": 9.0,
+        "analysis": "Verdict: Mostly dead. A sustained recovery is very unlikely without an outright team-led relaunch and major liquidity injections. Short-lived pumps are always possible on microcaps, but fundamentals here are near-zero.\n\nKey signals from the data:\n- Liquidity/volume: 24h total volume ≈ $1.25 and only a single stale DEX ticker (Uniswap V4 on BSC) with “yellow” trust and very low recent activity. This is effectively illiquid; exiting any non-tiny position would incur extreme slippage or be impossible.\n- Listings: No active centralized exchange listings visible; trading appears confined to one DEX pair. Functional de-listing from broader markets dramatically reduces discovery and inflows.\n- Market cap and structure: Market cap ≈ $36k; FDV ≈ $36k (100% of 1B supply circulating). This is microcap territory where price is easily manipulated but lacks credible investor base. With all supply out, there’s no structured emissions story; if large holders remain, overhang risk persists.\n- Price trajectory: Down ~-92% from ATH (Mar 2024), ~-86% YoY, and ~-66% over 7–60–30 day windows. A -91% day suggests a liquidity drain or thin-book collapse rather than normal market action.\n- Contract migration: Public notice shows a migration from the old contract (0x7CD8...) to new (0xcAb1f...) announced Mar 2024. Migrations often fracture liquidity, confuse holders, and strand old tokens—all of which suppress price and interest unless managed very actively.\n- Development and social: No GitHub activity, no status updates, minimal project links beyond website/Telegram. Telegram shows ~10k users but activity quality is unknown. Lack of visible dev progress and muted comms are typical of abandoned/metaverse/P2E era tokens.\n\nWhat would need to change to revive it:\n- Significant, verifiable liquidity added to the main pool(s) (e.g., deep USDT/BNB pair),\n- Fresh CEX listings or reputable DEX incentives, \n- Transparent roadmap delivery with real user traction (not just marketing), and\n- Active, consistent communication plus resolution of any migration/swap stragglers.\n\nPractical guidance:\n- If you hold the old token, verify whether an official swap path still exists; otherwise, old tokens are likely stranded.\n- If attempting to trade, use extreme caution with slippage and verify the exact contract (0xcAb1fd29D6FD64bB63471B666e8dbfC1915bF90E). With $1–$200 daily volumes, any order can move price dramatically.\n\nBottom line: Given the vanishing volume, absence of listings, severe drawdowns, and lack of visible development, the asset should be treated as mostly dead. Only a coordinated relaunch/liquidity program by the team could change this, and there’s no current evidence of that in the data."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xcab1fd29d6fd64bb63471b666e8dbfc1915bf90e",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xcab1fd29d6fd64bb63471b666e8dbfc1915bf90e"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://metagalaxyland.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xcab1fd29d6fd64bb63471b666e8dbfc1915bf90e",
+            "https://platform.arkhamintelligence.com/explorer/token/metagalaxy-land",
+            "https://binplorer.com/address/0xcab1fd29d6fd64bb63471b666e8dbfc1915bf90e"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "metagalaxyland",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "metagalaxyland",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

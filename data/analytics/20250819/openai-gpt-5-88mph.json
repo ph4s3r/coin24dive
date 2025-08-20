@@ -1,0 +1,44 @@
+{
+    "content": {
+        "coin_id": "88mph",
+        "dead_score": 9.3,
+        "analysis": "Snapshot: price ~$0.0277, market cap ~$36k, FDV ~$43.7k, supply ~1.31M/1.58M (max 1.89M). Down ~-99.99% from ATH; near ATL (+17% off lows). 24h change -90.6% on ~$302 total volume. TVL reported ~$533k (mcap/TVL ~0.07).\n\nLiquidity and trading activity (very weak):\n- Only thin DEX liquidity/pairs visible (Balancer V2, Uniswap V2, Sushi; plus a Bancor V2 pool). No active centralized exchange listings in the provided tickers.\n- 24h volumes per pair are tiny (roughly $250 + $51 + $33), trust score \"yellow\", one pair stale. Bid-ask ~0.6–0.7%. This is extremely illiquid and prone to large slippage/manipulation.\n- A -90% day with such low volume suggests liquidity removal/pool imbalance and very fragile price discovery.\n\nProject/developer/social signals (weak/dormant):\n- Developer data shows 0 commits in last 4 weeks and no repo activity in this snapshot.\n- Community data is sparse (Telegram ~1k users; no Reddit). Links exist (site, Medium, Twitter, Discord), but no activity metrics provided; absence of engagement data plus dev inactivity is a red flag for abandonment/dormancy.\n\nExchanges/delistings:\n- Only DEX pools shown; lack of CEX tickers suggests no centralized exchange presence (whether never listed or delisted). That limits new buyer flow and liquidity.\n\nToken/contract:\n- Contract unchanged (0x8888…c5) and no migration indicated here. While that avoids a known migration risk, many revivals happen via new token/migration; none is visible from this data.\n\nEconomics vs protocol:\n- Reported TVL is much larger than market cap (mcap/TVL ~0.07). Either TVL is stale/not attributable to token value capture, or the governance token no longer accrues value. In either case, it doesn’t translate into bid support.\n\nWhat it would take to “come back”:\n- A credible relaunch: new active team, roadmap, tokenomics overhaul (e.g., value capture), meaningful liquidity injections/incentives, and fresh exchange listings. None of these are evident in the data provided.\n\nVerdict:\n- This looks mostly dead by the criteria: extremely low liquidity and volume, absence of CEX listings, near-silent developer activity, and catastrophic price collapse to near ATL. While illiquidity can produce brief pumps, a sustainable recovery is very unlikely without a full-scale revival effort. Proceed assuming recovery probability is very low."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x8888801af4d980682e47f1a9036e589479e835c5",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x8888801af4d980682e47f1a9036e589479e835c5"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://88mph.app/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x8888801af4d980682e47f1a9036e589479e835c5",
+            "https://platform.arkhamintelligence.com/explorer/token/88mph",
+            "https://ethplorer.io/address/0x8888801af4d980682e47f1a9036e589479e835c5"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/QThgeYxDuM"
+        ],
+        "announcement_url": [
+            "https://medium.com/88mphapp"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "88mphapp",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "join_88mphapp",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/88mphapp"
+            ],
+            "bitbucket": []
+        }
+    }
+}

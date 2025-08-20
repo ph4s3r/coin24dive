@@ -1,0 +1,51 @@
+{
+    "content": {
+        "coin_id": "auto",
+        "dead_score": 8.6,
+        "analysis": "Summary judgment: AUTO (Autofarm) looks largely sunset for the legacy token. Without a clean, widely adopted migration and fresh exchange/liquidity support, a sustainable “comeback” to historical levels is very unlikely.\n\nKey red flags (why it looks mostly dead):\n- Fragmented pricing/liquidity: On PancakeSwap (BSC) the effective price is ~3.8 USD with tiny 24h volume (~$1.1k + ~$100), while OneDex shows ~50 USD with larger reported volume. Such a 10x price gap across venues is a hallmark of illiquid/fragmented markets or mismapped tickers. It means price discovery is broken and exit liquidity is thin.\n- De facto de‑listings: No credible centralized exchange tickers in the feed; trading is almost entirely on DEXes/aggregators with anomalies flagged. That reduces buyer access and recovery odds.\n- Migration/swap signal: The project description now centers on “Swap your AUTO tokens 1:1” via autotokens.netlify.app. That implies a token migration or restructuring. When a project moves to a new token, the old token typically bleeds liquidity and attention, trapping late holders unless they migrate. Old tokens rarely “come back.”\n- Extreme drawdown and volatility: Reported drawdown from ATH is ~−99.7% and the last 24h move shows a −80% crash with a $250 → $50 daily range. This is consistent with illiquidity and event-driven repricing, not with healthy market depth.\n- Activity signals weak: GitHub activity shows 0 commits in the last 4 weeks and community metrics are modest (Telegram ~2.8k). No status updates in the feed. That’s not the posture of an expanding, well-supported token.\n- Market cap unknown: Circulating supply shows 0, mcap 0 on the feed. Data inconsistencies like this often accompany discontinued token lines or poorly maintained listings.\n\nWhat still looks alive (why it’s not a 10/10):\n- Protocol TVL still non-trivial: Reported TVL ~$8.6M indicates the Autofarm protocol retains some usage. If the team genuinely migrates to a new token and can re-list it, value could accrue to the new line—even if the legacy AUTO won’t recover.\n- Some trading persists: There is still DEX activity and an FDV that roughly aligns with the quoted price × total supply, so the asset is not entirely abandoned in markets.\n\nCan the price “come back”? What would need to change:\n- A clear, verified token migration with an official site (not just a Netlify app), updated contract addresses, and liquidity seeded in deep pools; unified price across major venues.\n- CEX re-listings or at least top-tier DEX liquidity with market makers; elimination of the 10x venue price gap.\n- Renewed, consistent team comms (Twitter/Medium/Telegram), roadmap and fee/value accrual clarity to the token that is actually trading going forward.\n\nBottom line:\n- The legacy AUTO token fits multiple “mostly dead” criteria: low/uneven liquidity, likely migration, no major exchange presence, large drawdown, and weak public/dev signals. Odds of the legacy token reclaiming historical highs are very low. If there is any path, it’s via a successful, widely adopted migration to a new token and ecosystem relaunch—not a spontaneous recovery of the current listing.\n\nPractical next checks (before any decision):\n- Confirm the official migration announcement on Autofarm’s verified channels (Twitter/Medium, original domain) and verify the new token contract(s).\n- Check BscScan/Polygonscan for holder counts, recent transfers, and renounced/burn events on 0xa184… and 0x7f42… to see if the old token is effectively frozen.\n- Inspect on-chain liquidity (pool sizes, depth at 1–2% price impact) for the active token line; ignore anomalous aggregator prints.\n- Verify whether any reputable CEX still lists AUTO or its successor; if not, assume low recovery odds."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://autotokens.netlify.app/",
+            "https://autofarm-network.medium.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "https://platform.arkhamintelligence.com/explorer/token/auto",
+            "https://polygonscan.com/token/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "https://binplorer.com/address/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/bJ9ZsypQzv"
+        ],
+        "announcement_url": [
+            "https://autofarm-network.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "autofarmnetwork",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "autofarm_network",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/autofarm-network/autofarmV2"
+            ],
+            "bitbucket": []
+        }
+    }
+}

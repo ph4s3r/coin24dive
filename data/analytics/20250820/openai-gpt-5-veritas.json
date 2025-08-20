@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "veritas",
+        "dead_score": 8.8,
+        "analysis": "Summary: Mostly dead. A sustainable comeback looks unlikely without a major relaunch and fresh liquidity.\n\nKey signals\n- Trading/venues: Only on Uniswap (Base). No centralized exchange listings. Primary ticker has CoinGecko trust score: red. One V3 route is stale. This is typical of illiquid micro-caps nearing abandonment.\n- Liquidity/volume: 24h volume ≈ $361; market cap ≈ $41k; FDV ≈ $221k. Such low turnover implies poor exit liquidity and high slippage risk.\n- Price action: Down ~93.7% in 24h and ~99.26% from ATH recorded very recently. This profile is consistent with a blow‑off/pump-and-dump or liquidity removal. 30–60d both ≈ −84%. Any near-term bounces would likely be thin-liquidity spikes, not durable recoveries.\n- Supply overhang: Circulating ~19% (188M/1B). MC/FDV ≈ 0.19 implies large potential future sell pressure unless issuance is locked/vested transparently.\n- Listings/de-listings: Not de-listed—simply never listed beyond Base DEX. That makes organic recovery harder.\n- Dev/social activity: GitHub/repo activity reported as 0; no status updates. Telegram shows ~8k users, but engagement quality unknown. Lack of verifiable, ongoing development is a major red flag for revival probability.\n- Contract/address: Active Base address 0x0009…3f0; no sign of migration in the provided data. If a V2 is announced, V1 typically becomes a write‑off.\n\nWhat would need to change for a comeback\n- Tangible development and product releases (the AI security protocol), with verifiable code, audits, and integrations.\n- Deep, locked liquidity on Base (and ideally multichain), plus new exchange listings to restore price discovery and volume.\n- Clear tokenomics disclosures (vesting, team wallets), and on-chain safeguards (renounced dangerous permissions, LP lock, no hidden tax/blacklist).\n- Sustained, credible marketing and community engagement—not just brief pumps.\n\nVerdict\n- Given the extreme drawdown, microscopic volume, single low-trust DEX venue, and no visible developer cadence, the token scores 8.8/10 on the “dead” scale. It’s not technically defunct (still tradable), but a return to former levels is improbable without a full-scale reboot and significant new capital. Proceed only if you can tolerate the risk of near-zero liquidity and potential total loss.\n\nQuick diligence checklist (if you consider any exposure)\n- Verify current pool liquidity and LP lock on GeckoTerminal/Basescan.\n- Inspect contract owner privileges (mint/burn/blacklist/tax) and team wallet movements.\n- Look for recent, credible announcements (last 7–14 days) and shipped features. If absent, treat as effectively abandoned.\n- Watch for migration notices; V1 tokens often don’t recover after a V2 roll-out."
+    },
+    "exchange_info": {
+        "base": {
+            "decimal_place": 18,
+            "contract_address": "0x00096697dc24bd10423690126d91546a20ccb3f0",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0x00096697dc24bd10423690126d91546a20ccb3f0"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.veritasprotocol.com/",
+            "https://explorer.veritasprotocol.com/",
+            "https://app.veritasprotocol.com/"
+        ],
+        "whitepaper": "https://docs.veritasprotocol.com/",
+        "blockchain_site": [
+            "https://basescan.org/token/0x00096697dc24bd10423690126d91546a20ccb3f0"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "veritas_web3",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Veritas_Protocol",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

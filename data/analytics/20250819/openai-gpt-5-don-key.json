@@ -1,0 +1,47 @@
+{
+    "content": {
+        "coin_id": "don-key",
+        "dead_score": 9.1,
+        "analysis": "Summary: Don-key (DON) shows multiple terminal-risk signals. Odds of a sustainable comeback to prior highs are extremely low without a full reboot (team return, product relaunch, liquidity injection, exchange listings).\n\nKey evidence of “mostly dead” status:\n- Price collapse: Current ~$0.00078 vs ATH ~$3.78 (≈ -99.98%, ~4,800x below ATH) since 2021; another -78% in the last 24h.\n- Vanishing liquidity/volume: 24h total volume ≈ $21 across Uniswap v2 (ETH) and PancakeSwap v2 (BSC). This is functionally illiquid; even small orders can crash or spike price.\n- Microcap and tail-rank: Market cap ≈ $51k (rank ~8320). Easily manipulated, unattractive to market makers and CEXs.\n- Exchange presence: Only thin DEX pools; no meaningful CEX listings indicated. One BSC ticker flagged as anomaly; Uniswap pairs show low trust and tiny size.\n- Dev and social inactivity: No repos linked; developer stats show 0 activity in the last 4 weeks and no code history on record. CoinGecko status updates empty. Telegram ~3.6k members but broader social traction appears minimal from dataset.\n- Product narrative stale: 2021-era “social trading meets yield farming” with no current TVL or ecosystem metrics provided; suggests the platform/use-case is inactive.\n- Token/contract: Same legacy ETH and BSC contracts; no sign of a supported migration. Without an upgrade/migration, the token is stuck with thin LP on legacy v2 pools.\n\nWhat would need to change to revive price:\n- Verified, active team resurfacing with funded roadmap, product relaunch, partnerships.\n- Significant new liquidity added and locked to DEX pools; credible CEX listings; active market making.\n- Reactivation of socials with consistent communications and community growth; real usage metrics (TVL, users) returning.\n\nOutlook: Absent the above, a return to meaningful valuations—or anywhere near ATH—is highly improbable. Extreme illiquidity means exits are hard and slippage is high. Consider this token mostly dead from a market-structure standpoint. Not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x217ddead61a42369a266f1fb754eb5d3ebadc88a",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x217ddead61a42369a266f1fb754eb5d3ebadc88a"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x86b3f23b6e90f5bbfac59b5b2661134ef8ffd255",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x86b3f23b6e90f5bbfac59b5b2661134ef8ffd255"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.don-key.finance/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://etherscan.io/token/0x217ddead61a42369a266f1fb754eb5d3ebadc88a",
+            "https://platform.arkhamintelligence.com/explorer/token/don-key",
+            "https://ethplorer.io/address/0x217ddead61a42369a266f1fb754eb5d3ebadc88a",
+            "https://bscscan.com/token/0x86b3f23b6e90f5bbfac59b5b2661134ef8ffd255",
+            "https://binplorer.com/address/0x86b3f23b6e90f5bbfac59b5b2661134ef8ffd255"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [
+            "https://medium.com/@don-key-finance"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "Don_key_finance",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "don_key_finance",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

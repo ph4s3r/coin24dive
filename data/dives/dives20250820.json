@@ -1,38 +1,97 @@
-{
-  "antitoken": [
-    "anti",
-    -96
+[
+  [
+    "swag",
+    "$swag",
+    -89
   ],
-  "cappuccino-assassino": [
-    "assino",
-    -99
-  ],
-  "beta-finance": [
-    "beta",
-    -90
-  ],
-  "titan-blaze": [
-    "blaze",
-    -96
-  ],
-  "bossdog": [
-    "bossdog",
-    -77
-  ],
-  "octus-bridge": [
-    "bridge",
-    -94
-  ],
-  "the-bull-era": [
-    "bull",
+  [
+    "aluna",
+    "aln",
     -82
   ],
-  "catx": [
-    "catx",
-    -96
+  [
+    "auto",
+    "auto",
+    -92
   ],
-  "cirus": [
-    "cirus",
-    -76
+  [
+    "auto",
+    "auto",
+    -92
+  ],
+  [
+    "auto",
+    "auto",
+    -92
+  ],
+  [
+    "biden-coin",
+    "biden",
+    -89
+  ],
+  [
+    "octus-bridge",
+    "bridge",
+    -95
+  ],
+  [
+    "bull-pepe",
+    "bullpepe",
+    -80
+  ],
+  [
+    "catalorian",
+    "catalorian",
+    -98
+  ],
+  [
+    "catx",
+    "catx",
+    -98
+  ],
+  [
+    "exit-designer-token",
+    "exit",
+    -79
+  ],
+  [
+    "exit-designer-token",
+    "exit",
+    -79
+  ],
+  [
+    "jupiter",
+    "jup",
+    -92
+  ],
+  [
+    "modpanda",
+    "panda",
+    -88
+  ],
+  [
+    "strategic-bitcoin-reserve",
+    "sbr",
+    -94
+  ],
+  [
+    "superciety",
+    "super",
+    -93
+  ],
+  [
+    "tarot",
+    "tarot",
+    -95
+  ],
+  [
+    "tor",
+    "tor",
+    -97
+  ],
+  [
+    "veritas",
+    "vpt",
+    -98
   ]
-}
+]

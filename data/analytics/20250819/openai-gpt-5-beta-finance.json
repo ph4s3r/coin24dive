@@ -1,0 +1,57 @@
+{
+    "content": {
+        "coin_id": "beta-finance",
+        "dead_score": 9,
+        "analysis": "Beta Finance (BETA) — revival likelihood assessment\n\nWhat the data says right now:\n- Price and drawdown: $0.000139 (USD), down ~99.996% from the $3.45 ATH. Near fresh all‑time lows (ATL ~$0.000127 hit this week). 24h: -85.5%, 7d: -97%, 1y: -99.7%.\n- Market cap and supply: ~$132k mcap, ~$139k FDV; 950M circulating of 1B (95% in float). High float, little room for new incentive emissions.\n- Liquidity and volume: Only ~$5k total 24h volume across all markets. Main venue is BitVenus/BVOX (yellow trust score) with a ~14% spread; DEX volumes are tiny (PancakeSwap ~$211, Uniswap v3 ~$56). Several tickers flagged as anomalies/stale. This is extremely illiquid and makes exiting difficult.\n- Exchange presence: No major CEX listings visible in the provided tickers despite having been a “Binance Launchpad” token historically. From this dataset, it appears effectively de‑listed from tier‑1 venues, leaving only a minor CEX and thin DEX pools.\n- Dev/community signals: No public developer activity tracked (0 commits in 4 weeks; no repos listed). Status updates are empty; Telegram count ~4.6k. Website and socials still exist, but there’s no evidence here of active development or marketing.\n- On‑chain/protocol: Reported TVL ~$0.75M, but with such low token liquidity and volume, the token does not capture that value. Contract addresses on ETH/AVAX/BSC are present and unchanged; no migration is indicated in this data.\n\nDead-coin criteria check:\n- Extreme low liquidity and volume: Yes (≈$5k/day and wide spreads).\n- De‑listed on exchanges: Strongly suggested by tickers (no tier‑1s listed here).\n- Developers abandon project: No public code activity seen; unclear, but signals are poor.\n- Social silence: No status updates in the feed provided; community small.\n- Token address changed/discontinued: Not indicated.\n\nVerdict: Mostly dead. Without a major turnaround (team relaunch, credible roadmap, liquidity injections, CEX re‑listings, and sustained communication), a return to prior levels is extraordinarily unlikely. Opportunistic illiquid bounces are possible, but structural recovery is low‑probability.\n\nWhat would need to happen to revive price:\n- Clear, public reactivation from the team (roadmap, audits, product updates) and active social comms.\n- Liquidity program: deepen DEX pools and secure at least one reputable CEX re‑listing.\n- Real usage growth (material TVL with token value capture) and/or tokenomics overhaul (utility, fees, burns, revenue share) approved by governance.\n\nPractical notes if you hold or are considering entry:\n- Treat all volumes/spreads as a warning; use extreme caution with order sizing; test small.\n- Monitor official channels for any migration/relaunch. If a new token launches, old tokens can become worthless.\n- If exit is the goal, watch for temporary liquidity spikes to reduce slippage.\n\nOverall assessment: Dead score 9/10. Not technically discontinued, but functionally a zombie under your criteria. This is not financial advice."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0xbe1a001fe942f96eea22ba08783140b9dcc09d28"
+        },
+        "avalanche": {
+            "decimal_place": 18,
+            "contract_address": "0x511d35c52a3c244e7b8bd92c0c297755fbd89212",
+            "geckoterminal_url": "https://www.geckoterminal.com/avax/tokens/0x511d35c52a3c244e7b8bd92c0c297755fbd89212"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xbe1a001fe942f96eea22ba08783140b9dcc09d28"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://betafinance.org/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://etherscan.io/token/0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "https://platform.arkhamintelligence.com/explorer/token/beta-finance",
+            "https://ethplorer.io/address/0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "https://bscscan.com/token/0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "https://snowtrace.io/token/0x511d35c52a3c244e7b8bd92c0c297755fbd89212",
+            "https://avascan.info/blockchain/c/address/0x511d35c52a3c244e7b8bd92c0c297755fbd89212/token",
+            "https://binplorer.com/address/0xbe1a001fe942f96eea22ba08783140b9dcc09d28",
+            "https://snowtrace.io/token/0x511d35c52a3c244e7b8bd92c0c297755fbd89212/token?type=erc20&chainid=43114"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/kcecQQRyZJ"
+        ],
+        "announcement_url": [
+            "https://medium.com/beta-finance"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "beta_finance",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "BetaFinanceProtocol",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

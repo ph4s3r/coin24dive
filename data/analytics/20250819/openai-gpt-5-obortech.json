@@ -1,0 +1,53 @@
+{
+    "content": {
+        "coin_id": "obortech",
+        "dead_score": 8.3,
+        "analysis": "Verdict: Mostly dead/comatose without a clear catalyst. A comeback to prior highs looks very unlikely under current conditions.\n\nKey red flags against a recovery:\n- Liquidity and volume: 24h volume is roughly $13, with only one listed market (Uniswap V3 on Base). That is extremely illiquid and makes meaningful price discovery or new buyer inflows improbable.\n- Exchange presence: No centralized exchange tickers shown; effectively DEX-only with a single pair and a yellow trust score. This is functionally a de‑listing from broader markets.\n- Massive drawdowns: Price is down ~-76% in 24h, ~-77% over 7d, and ~-98.7% from ATH. Such persistent declines alongside vanishing volume indicate capitulation/liquidity removal rather than healthy trading.\n- Contract migration risk: Public notice confirms a migration from an old Ethereum contract to a new Base contract. Migrations fragment holders/liquidity, confuse markets, and often strand value in old tokens. Post‑migration traction seems absent.\n- Developer activity: Public GitHub shows 0 commits/issues in the last 4 weeks and generally minimal activity. That suggests little ongoing build momentum (code may be private, but on‑chain market signals don’t show traction either).\n- Community traction: Telegram ~5.6k is modest, with no other strong social signals provided. Watchlist and sentiment stats don’t offset the market reality.\n\nNeutral/weak positives:\n- The team executed a contract move and maintains a website/blog, implying the project isn’t fully abandoned. Market cap ~$333k and FDV ~$505k show it isn’t at zero.\n\nCan the price come back?\n- To revisit the ATH (~$0.13), it would require ~80x from here, plus deep, sustainable liquidity and renewed demand. Given:\n  - near-zero trading volume and a single DEX market,\n  - no visible exchange pipeline or product adoption data,\n  - long-term downtrend and recent crash,\n  the probability of a full comeback is very low. Short, illiquid bounces are possible, but a durable recovery needs major catalysts (significant liquidity injection, multiple liquid markets/CEX listings, real user growth in its supply-chain network, and consistent development cadence).\n\nWhat would change the outlook:\n- Measurable daily volume (e.g., >$100k) across multiple markets with tight spreads\n- Fresh listings or re‑listings on reputable CEXs\n- Verified on‑chain liquidity depth and active LP incentives\n- Transparent migration plan completion (swap windows, burned old supply) and clear communications\n- Demonstrable product adoption/partnerships and regular development updates\n\nBottom line: Without clear, external catalysts and restored market access/liquidity, OBOT appears largely inert. Treat as high risk with low odds of meaningful recovery."
+    },
+    "exchange_info": {
+        "base": {
+            "decimal_place": 18,
+            "contract_address": "0xf83759099dc88f75fc83de854c41e0d9e83ada9b",
+            "geckoterminal_url": "https://www.geckoterminal.com/base/tokens/0xf83759099dc88f75fc83de854c41e0d9e83ada9b"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xb5be8d87fce6ce87a24b90abdb019458a8ec31f9",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xb5be8d87fce6ce87a24b90abdb019458a8ec31f9"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x221743dc9e954be4f86844649bf19b43d6f8366d",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x221743dc9e954be4f86844649bf19b43d6f8366d"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.obortech.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://basescan.org/token/0xf83759099dc88f75fc83de854c41e0d9e83ada9b",
+            "https://polygonscan.com/token/0x221743dc9e954be4f86844649bf19b43d6f8366d",
+            "https://bscscan.com/token/0xb5be8d87fce6ce87a24b90abdb019458a8ec31f9",
+            "https://binplorer.com/address/0xb5be8d87fce6ce87a24b90abdb019458a8ec31f9"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [
+            "https://blog.obortech.io/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "OBORTECHhub",
+        "facebook_username": "OBORTECH",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "OBORTECH",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/OBORTECH-org/OBOT"
+            ],
+            "bitbucket": []
+        }
+    }
+}

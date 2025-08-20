@@ -1,0 +1,51 @@
+{
+    "content": {
+        "coin_id": "auto",
+        "dead_score": 8.6,
+        "analysis": "Verdict: Functionally “mostly dead” as an investable token; a full price comeback to prior highs is very unlikely without a credible relaunch/migration that is widely adopted and re-listed. Key reasons below.\n\nWhat the data says\n- Price collapse vs ATH: ~−99.7% from ATH. Recovering to old highs would require ~300–400x from here—statistically rare for legacy DeFi governance tokens absent a major new catalyst.\n- Liquidity/venues: No major CEX tickers in the feed; trading appears limited to DEX/aggregator routes (OneDex, PancakeSwap, OpenOcean). Reported 24h volume ~$180k total, but the only native Pancake pools show tiny volume (~$1.2k combined) and “is_anomaly: true” flags for several markets. This points to thin, fragmented, and unreliable liquidity—hard to enter/exit size.\n- Price inconsistencies: OneDex feeds show ~$50 while Pancake pools imply ~$3–4 equivalent, with anomaly flags. Such spreads are classic signs of illiquid pools, stale or synthetic routes, and fragile price discovery.\n- Market cap/supply tracking degraded: CoinGecko lists circulating supply as 0 and market cap as 0, despite total supply ~80,638 and implied FDV ~$4.06M. This often happens when listings go stale or the project stops providing clean supply data—another sign the token is not actively maintained for public markets.\n- Exchange footprint deterioration: Absence of recognizable CEX markets suggests de-listing or never-listed status; either way, discoverability and new capital inflows are impaired.\n- Dev and social activity: GitHub shows no recent commits (0 in last 4 weeks) and no measurable developer stats in the feed. Telegram size ~2.8k is small for a once-major BSC DeFi brand. Status updates are empty in the data. This looks stagnant.\n- Migration red flag: The description now promotes a 1:1 “swap your AUTO tokens” via a Netlify page (autotokens.netlify.app). That strongly suggests a token migration or sunset. If the canonical token is moving, the old AUTO likely becomes a dead wrapper. Use extreme caution and verify from the official domain and pinned socials before interacting—migration portals are a common phishing vector.\n- Protocol TVL: API shows ~$8.6M TVL. While this implies some residual protocol usage, it is modest versus peak-cycle DeFi and not, by itself, a driver for a 100x+ token revaluation—especially if emissions ended and governance value capture is weak.\n\nCan the price come back?\n- To prior ATHs: Practically no. The combination of near-total drawdown, thin on-chain liquidity, no major exchange presence, questionable data integrity, and signs of a migration/sunset make an ATH recovery extraordinarily unlikely.\n- To materially higher levels from here: Only if there is a verified, widely adopted migration (with clear new token economics), renewed development, credible re-listings, and sustained TVL/fee growth. None of that is visible in this feed.\n\nWhat would change the call\n- Official confirmation (from autofarm.network and verified Twitter/Telegram) of a migration with an audited new contract, clear vesting/fee share, and published liquidity plans.\n- Restored market data integrity (accurate supply, circulating market cap) and meaningful, consistent DEX/CEX liquidity (> low-seven-figure daily volume with tight spreads).\n- Demonstrable product momentum (rising TVL well beyond current ~$8.6M, feature launches, partnerships) and active dev/social cadence.\n\nActionable cautions\n- Treat the current AUTO as deprecated unless you confirm otherwise from official channels. Do not use third-party swap links without verification.\n- If you already hold, check the official site and pinned announcements for any migration snapshot/claim deadlines. Beware impostors.\n\nBottom line: AUTO trades, but by the criteria (liquidity fragility, exchange presence, developer/social stagnation, migration signals), it fits “mostly dead.” A structural comeback requires a verified relaunch and renewed listings; otherwise, expect continued illiquidity and price volatility rather than sustainable recovery. Not financial advice."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        },
+        "polygon-pos": {
+            "decimal_place": 18,
+            "contract_address": "0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "geckoterminal_url": "https://www.geckoterminal.com/polygon_pos/tokens/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://autotokens.netlify.app/",
+            "https://autofarm-network.medium.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xa184088a740c695e156f91f5cc086a06bb78b827",
+            "https://platform.arkhamintelligence.com/explorer/token/auto",
+            "https://polygonscan.com/token/0x7f426f6dc648e50464a0392e60e1bb465a67e9cf",
+            "https://binplorer.com/address/0xa184088a740c695e156f91f5cc086a06bb78b827"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/bJ9ZsypQzv"
+        ],
+        "announcement_url": [
+            "https://autofarm-network.medium.com/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "autofarmnetwork",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "autofarm_network",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/autofarm-network/autofarmV2"
+            ],
+            "bitbucket": []
+        }
+    }
+}

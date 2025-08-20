@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "biden-coin",
+        "dead_score": 7.5,
+        "analysis": "Verdict: Mostly impaired with a low chance of reclaiming prior highs without new catalysts. Not fully dead yet due to active trading, but the risk profile is very high.\n\nWhat the data says\n- Price action: Down ~89% in 24h and ~93.5% from ATH; at/near all‑time lows. Market cap fell from ~$8.7M to ~$1.0M in a day—typical of a rug/LP event or mass exit.\n- Liquidity/venue: Only trading on Uniswap V2 (DEX), trust score yellow. Bid‑ask spread ~0.6% indicates trading exists, but LP depth is unknown from this feed. Single‑venue dependence is a risk.\n- Volume: 24h volume ~$1.43M is sizable, implying there is still two‑sided activity (not completely illiquid). However, volume during collapses can be panic selling or wash trading; it does not guarantee healthy liquidity.\n- Supply: Fixed and fully circulating (100B). No ongoing emissions, but concentration risk likely (check top holders on Etherscan).\n- Social/dev: Telegram shows ~12k users, but CoinGecko watchlists are only 18—weak organic traction here. No developer activity or code repos (expected for a meme coin). No status updates; no CEX listings.\n- Narrative risk: Election‑themed meme; interest typically decays fast after the event window unless there is exceptional community momentum.\n\nKey red flags relative to a comeback\n- Single DEX listing; no CEX support.\n- Severe 24h drawdown consistent with LP withdrawal/whale exit or a confidence shock.\n- Minimal developer footprint and unclear roadmap beyond memes.\n- Low CoinGecko watchlist count suggests limited broader investor mindshare.\n\nMitigating factors\n- Trading is still active; bid‑ask spread is not extreme for a microcap meme. A community‑driven push or fresh liquidity could spark temporary bounces.\n- Fixed supply (no further dilution) if contract is immutable.\n\nCan it come back?\n- Short‑term bounce: Possible if LP is restored/locked and marketing reignites, but highly speculative.\n- Return to ATH: Unlikely without multiple catalysts (meaningful LP, CEX listings, sustained social growth, and visible governance/activity from the promoters). Current setup suggests a low probability of fully recovering prior highs.\n\nWhat to verify before considering any position\n- Liquidity health: Use the provided GeckoTerminal link to check pool USD liquidity, recent LP adds/removes, and whether LP tokens are locked/burned.\n- Contract safety: On Etherscan, confirm ownership status (renounced or multisig), trading restrictions, mint/pause functions, and tax settings.\n- Holder distribution: Inspect top 10 wallets and recent whale flows for dump risk.\n- Team/community signals: Activity on @BidenCoins and Telegram beyond hype (roadmap, audits, LP lock proof, partnerships, listing plans).\n\nBottom line\n- Not entirely dead given active DEX trading, but the combination of a massive one‑day collapse, single‑pool dependence, and weak fundamentals points to a low likelihood of a durable recovery without clear, verifiable catalysts. Proceed only if on‑chain liquidity is healthy and you see concrete steps (LP lock, credible marketing, listings)."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x9e59a081320ddb046d74a106335ca6b84eadc067",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x9e59a081320ddb046d74a106335ca6b84eadc067"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://bidencoins.com/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/address/0x9E59A081320Ddb046d74a106335cA6B84EadC067",
+            "https://etherscan.io/token/0x9E59A081320Ddb046d74a106335cA6B84EadC067",
+            "https://ethplorer.io/address/0x9E59A081320Ddb046d74a106335cA6B84EadC067"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "BidenCoins",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "BidenCoinBoost",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

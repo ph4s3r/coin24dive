@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "pumpless-coin",
+        "dead_score": 7.4,
+        "analysis": "Verdict: Very likely a short‑lived pump.fun memecoin already in post‑launch dump; a full recovery to prior highs is unlikely without an unexpected viral catalyst. Not totally dead yet (still trading), but risk of fading to illiquidity is high.\n\nKey signals from the data\n- New, pump-and-dump profile: ATH and ATL both occurred within roughly a day of listing (2025‑08‑18), followed by a −93.4% price drop in 24h. This is classic post‑launch blow‑off on Solana meme coins.\n- Microcap with extreme turnover: Market cap ≈ $46.8k vs 24h volume ≈ $2.8M (≈60× turnover). Such ratios often indicate highly speculative flow and bot/wash‑like churning that tends to evaporate quickly.\n- Listings/liquidity venues: Only on DEXes (PumpSwap, Raydium CLMM, Orca/Meteora entries stale). Trust score is yellow; no centralized exchange listings. Bid‑ask spread on PumpSwap ~0.6% (not terrible), but absence of CEXs and yellow trust implies fragile liquidity that can disappear.\n- Community/interest: Only 22 watchlists on CoinGecko, no Reddit presence, Telegram/Twitter handles exist but no usage stats in the feed. This suggests minimal organic traction.\n- Builder/dev signals: Zero developer activity (no repos, commits, or issues). As a pump.fun meme, there’s typically no roadmap or product—price depends almost entirely on hype.\n- Supply/ownership risk: Nearly full supply in circulation (~1B of 1B). With no vesting or utility, outcomes hinge on holder concentration and marketing; these are not provided, but pump.fun tokens often have concentrated early holders.\n- Risk notices: CoinGecko flags liquidity‑related risk and directs to GeckoTerminal; typical for tokens where LP can be thin or removable.\n\nWhat would need to change for a comeback\n- Demonstrable, locked and deepening liquidity on Raydium/Orca (track pool TVL and lock status on GeckoTerminal/Solscan).\n- Clear renouncement of mint/freeze authorities and transparent top‑holder distribution to reduce rug/freeze risk.\n- Sustained social growth (Twitter/Telegram) and consistent marketing; ideally a narrative that catches broader meme attention.\n- New exchange listings (even Tier‑3 CEX) or aggregator attention to broaden reach.\n\nProbability of recovery\n- Reclaiming ATH: Low. Given the magnitude and speed of the dump, the base case for similar pump.fun launches is continued decay with occasional low‑liquidity spikes. Subjective odds of revisiting ATH in the near term: very low (single‑digit percentage).\n- Short‑term bounces: Possible while DEX volumes remain, but timing and slippage risks are high.\n\nBottom line\n- Not entirely dead yet due to active DEX trading, but fundamentals are absent and community traction appears weak. Without rapid, external catalysts (liquidity locks, listings, viral marketing), the most likely path is further fade. Dead score: 7.4/10.\n\nNote: This is not financial advice. Verify LP lock status, authority renouncements, and top‑holder concentration on Solscan/GeckoTerminal before any decision."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "7TffjPhjJHMoqdtoA4CWoRyNxwJsYJe1ndGURAVgpump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/7TffjPhjJHMoqdtoA4CWoRyNxwJsYJe1ndGURAVgpump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://pumpless.xyz/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/7TffjPhjJHMoqdtoA4CWoRyNxwJsYJe1ndGURAVgpump"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "pumpless_onsol",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "pumpless_onsol",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

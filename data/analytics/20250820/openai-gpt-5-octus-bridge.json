@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "octus-bridge",
+        "dead_score": 9,
+        "analysis": "Verdict: Very likely dead or effectively non-tradable for most participants. A comeback to prior levels looks highly improbable without a major relaunch/migration, fresh listings, and new liquidity.\n\nWhat the data says\n- Liquidity and volume: 24h total volume ≈ $8.67 across listed markets. That’s effectively illiquid; any attempt to buy/sell size will incur extreme slippage. One additional WBTC pair shows a larger converted volume but is flagged as stale/anomalous; the aggregate volume metric still sits near zero.\n- Exchange access: Only visible trading venue is FlatQube (a DEX on Everscale). No centralized exchange listings in the provided tickers. For most users, this is a de facto delisting/market exile.\n- Price collapse: Current price ≈ $0.0267 vs ATH $10.52 (≈ -99.75%). Down ≈ -95% over 60 days and ≈ -98.7% over 200 days. The latest 24h drop (~-95%) alongside near-zero volume is consistent with a liquidity pull/market-maker exit or large unlock dump.\n- Market cap/size: Market cap ≈ $170k; rank ~6538. Watchlist users: 851. Extremely small footprint.\n- TVL mismatch: Reported TVL ≈ $23.27m (mcap/TVL ~0.01). If accurate, the protocol may still hold bridged assets, but the BRIDGE token appears to capture little to no value (or the TVL feed is not representative of token value capture). Either way, the market is pricing the token near-zero.\n- Developer and community signals: No linked GitHub activity and 0 commits in 4 weeks per CG data (often means no repo connected, but still no visible development signal here). Telegram size ~611 users; very small for a previously larger project. No status updates in the feed.\n- Token address: One Everscale contract is shown; no explicit evidence of a token migration in the provided data. If a migration occurred elsewhere, it’s not reflected here.\n\nDead/alive assessment vs your criteria\n- Extremely low liquidity: Yes (critical). \n- Extreme low trading volume: Yes (critical).\n- De-listed on exchanges: No CEXs shown; only a niche DEX → functionally yes for broader market access.\n- Devs abandon project: Not provable, but no public dev signals via CG; community is tiny.\n- Social silence: We cannot verify posting cadence here, but small community metrics suggest low engagement.\n- Token address changed/discontinued: No evidence in the provided data.\n\nCan it come back?\n- Only if the team (or a new team) injects significant liquidity, secures new exchange listings, revamps token utility/economics, and visibly re-engages the community. Without those, a return even to cents-level liquidity is hard; a return to prior ATH is effectively out of reach.\n\nRisk notes and next checks\n- If you’re holding, verify: (1) official channels for any migration/redenomination plans; (2) actual DEX pool liquidity on FlatQube before transacting; (3) whether the TVL figure corresponds to active, secure bridging and if any value accrual to BRIDGE still exists.\n- This is not financial advice; it’s a liquidity/market-structure assessment based solely on the provided dataset."
+    },
+    "exchange_info": {
+        "everscale": {
+            "decimal_place": 9,
+            "contract_address": "0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://octusbridge.io/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://everscan.io/accounts/0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.com/invite/6dryaZQNmC",
+            "https://octusbridge.medium.com/"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "OctusBridge",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "OctusBridge",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

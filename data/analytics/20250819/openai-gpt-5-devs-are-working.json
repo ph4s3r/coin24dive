@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "devs-are-working",
+        "dead_score": 7.5,
+        "analysis": "Summary snapshot\n- Chain/type: Solana meme coin (Pump.fun origin)\n- Price now: ~$0.00007916; making fresh ATL today; -92.8% from ATH; -88% in last 24h, -88% over 7–60d\n- Market cap: ~$76.7k; FDV ≈ MC (supply ~969M/1B)\n- Volume (24h): ~$35.5k (≈46% of MC); trading exists but is thin for any meaningful exit/entry\n- Listings/liquidity venues: Single DEX venue shown (PumpSwap). Trust score yellow. No CEX listings\n- Community: ~5,044 watchlists; Telegram ~782 users; no Reddit. Twitter/Telegram exist but activity level not provided\n- Dev/code: No GitHub activity (not unusual for a meme, but still signals no ongoing technical work)\n\nAssessment versus “mostly dead” criteria\n- Liquidity depth: Unknown pool size; only one DEX pair is visible. Single-pool reliance means fragile liquidity and high slippage risk if LP is small or can be pulled. This leans toward “mostly dead” risk\n- Token address/change: Current address intact on Solana; no migrations indicated\n- Trading volume: Not zero, but modest and likely insufficient to sustainably absorb larger sells. Volume/MC ratio is high due to churn, but absolute dollars are small (~$35k)\n- Exchange presence: Only Pump.fun/PumpSwap route; no Raydium/Orca aggregations shown, no CEX. Very limiting for discovery and order flow\n- Developer presence: No measurable code activity; project states no promised utility. No status updates in feed. Dev restraint narrative notwithstanding, there’s no evidence of ongoing build that would attract new capital\n- Social signal: Small Telegram, unknown recent posting cadence. Without active, growing socials, meme momentum tends to decay fast\n- Price action: Steep multi-timeframe drawdowns and a fresh ATL suggest capitulation and fading interest. Market cap fell ~88% in 24h; recovering from that typically requires strong new catalysts (marketing, listings, LP injections)\n\nWhat could revive it\n- Liquidity: Verifiable LP lock and significant LP additions; multiple DEX listings (Raydium/Orca) and aggregator routing; sustained daily volume >$200k for a week+\n- Distribution/holders: Healthier holder dispersion (no top wallets controlling outsized share) to reduce dump risk\n- Social/marketing: Consistent, non-botted growth on X/Telegram; collaborations/influencers; clear campaign\n- Listings: Tier-2 CEX or at least broader Solana DEX integrations; market maker support\n\nRed flags to watch\n- LP unlocks or withdrawals on Solscan/GeckoTerminal\n- Top-10 wallets controlling a large share (>50%)\n- Multi-day social silence and shrinking Telegram/X engagement\n- Continual printing of new lows with falling volume (liquidity trap)\n\nVerdict\n- Not completely dead (there is on-chain trading and a small community), but odds of a meaningful comeback are low without fresh liquidity and new listings. The combination of a single DEX venue, sharp drawdowns to new lows, no utility roadmap, and modest socials place it in the “mostly dead” bucket unless new catalysts arrive.\n\nBottom line\n- Dead score: 7.5/10 (high probability it does not recover materially without clear, external catalysts)."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://daw.meme/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/aDniBKD8XpRP6Y4jBZQVwH1K1uf8NYZbG8Uz1wXpump"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@devs.r.working"
+        ],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "DAW_on_SOL",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "DEVsAreWorking",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}
