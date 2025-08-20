@@ -1,0 +1,48 @@
+{
+    "content": {
+        "coin_id": "exit-designer-token",
+        "dead_score": 8.5,
+        "analysis": "Verdict: mostly dead from a market-liquidity/attention standpoint. A sustainable comeback to prior highs looks very unlikely without a major turnaround.\n\nKey signals\n- Liquidity/volume: 24h volume ~ $1.8 across listings, with a 75% bid-ask spread on Changelly PRO and a stale PancakeSwap v2 quote. This is functionally illiquid—exiting or entering size at fair prices is difficult.\n- Exchange presence: Only a thin DEX pair (PancakeSwap v2) and a minor CEX (Changelly PRO). No Tier-1 or mid-tier listings, and the CEX ticker is stale with microscopic volume. Discoverability and fresh inflows are minimal.\n- Market structure data: CoinGecko shows circulating supply = 0 and market cap = 0 (untracked), yet FDV screens ~ $600M at ~$0.60. That FDV is a paper figure in the absence of real float and liquidity; price is easily moved by small orders.\n- Price action: -79.6% in 24h and ~-90% from ATH. It also did a round-trip to an ATL in June and then spiked again—behavior consistent with very thin books and episodic pumps rather than organic demand.\n- Developer activity: GitHub exists but shows 0 commits in the last 4 weeks and minimal repo signals (1 fork, 0 stars). Not proof of abandonment, but no visible build velocity.\n- Community/interest: Only 48 CoinGecko watchlists and ~1.9k Telegram members. Social links exist (Twitter/Instagram/TikTok/Discord), but the dataset offers no evidence of strong, ongoing engagement. Attention appears low.\n- Token/contract: Single BSC contract address is consistent; no indication of a rebase or migrated token. However, on-chain liquidity depth is likely tiny given the volumes and spreads.\n\nWhat would need to change to revive it\n- Inject and lock meaningful liquidity on the primary DEX pair(s); add reputable market-making to tighten spreads.\n- Secure additional credible CEX listings with real market depth; keep order books active.\n- Publish verifiable circulating supply and improve transparency on tokenomics, treasury, and liquidity lock status (ideally multisig + time-locked).\n- Ship product traction that drives actual token demand (the luxury marketplace narrative needs on-chain evidence of usage), plus sustained marketing/community growth.\n\nOutlook\n- Without the above, the asset will likely remain illiquid with sporadic pumps and sharp dumps. A durable return toward prior highs is low probability. Treat as very high risk and thinly traded; small orders only if engaging at all, and assume liquidity may vanish at any time."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xdebd6e2da378784a69dc6ec99fe254223b312287",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xdebd6e2da378784a69dc6ec99fe254223b312287"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://exitlab.io",
+            "https://beta.designermall.io"
+        ],
+        "whitepaper": "https://exitlab.io/assets/documents/EXIT_WHITE_PAPER.pdf",
+        "blockchain_site": [
+            "https://bscscan.com/token/0xdebd6e2da378784a69dc6ec99fe254223b312287",
+            "https://platform.arkhamintelligence.com/explorer/token/exit-designer-token",
+            "https://binplorer.com/address/0xdebd6e2da378784a69dc6ec99fe254223b312287"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@exitlab.io",
+            "https://www.instagram.com/exitlab.io/",
+            "https://bitcointalk.org/index.php?topic=5476650.0"
+        ],
+        "chat_url": [
+            "https://discord.gg/nAURZUj47E",
+            "https://www.youtube.com/@exitlab_io"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "ExitLab_io",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "exitlabio",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/Exitlabs/EXIT-token"
+            ],
+            "bitbucket": []
+        }
+    }
+}

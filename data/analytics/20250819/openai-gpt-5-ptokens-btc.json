@@ -1,0 +1,49 @@
+{
+    "content": {
+        "coin_id": "ptokens-btc",
+        "dead_score": 10,
+        "analysis": "Verdict: Essentially dead. This is the deprecated pTokens BTC contract. The project has officially migrated to a new token address; the old asset is abandoned and not intended to recover. Any future “price” action would likely be illiquid, synthetic, and unsustainable.\n\nWhy it’s dead\n- Explicit migration/discontinuation: Public notice confirms pBTC moved from old Ethereum contract 0x5228… to new 0x6219… (see notice link). Old token is marked [OLD]. This alone makes the legacy coin structurally obsolete.\n- Exchange support collapsed: Only thin DEX pairs remain (Uniswap V2, PancakeSwap). No major CEX listings; effectively delisted.\n- Extreme illiquidity/volume: Reported 24h volume ≈ $538 total; market cap ≈ $1,611; trades are tiny (e.g., Uniswap volumes in the sub-$1k range). High slippage and exit risk.\n- Developer/activity dormancy: Recent developer metrics show zero commits/forks/stars; community data minimal (Telegram ~237; Reddit 0). The team focuses on the new contract, not this legacy one.\n- Price collapse and data anomalies: Down ~-99.996% from ATH; recent -99% daily move prints and inconsistent tickers suggest broken/illiquid pricing typical of abandoned tokens. Any brief spikes are artifacts of thin books, not organic demand.\n- Supply oddities: Circulating supply shows ~8 tokens on this listing, indicating almost everything migrated/removed; old pools are effectively empty.\n\nCan it come back?\n- Fundamentally no. The value, branding, and support moved to the new contract. Old coins are not intended to regain liquidity or listings. At best, transient illiquid pumps can occur, but they are not sustainable and come with severe execution risk.\n\nWhat to do if you hold it\n- Do not buy the old token. If you still hold legacy pBTC, check the official pNetwork/pTokens channels for any remaining migration/swap paths to the new contract. If migration has closed, liquidity to exit may be negligible.\n\nConclusion: Treat pTokens BTC [OLD] as discontinued. Recovery to meaningful price/liquidity is not realistic. The only rational path to value is swapping to the new token (if still supported)."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x5228a22e72ccc52d415ecfd199f99d0665e7733b",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x5228a22e72ccc52d415ecfd199f99d0665e7733b"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0xed28a457a5a76596ac48d87c0f577020f6ea1c4c",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0xed28a457a5a76596ac48d87c0f577020f6ea1c4c"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://ptokens.io/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://etherscan.io/token/0x5228a22e72ccc52d415ecfd199f99d0665e7733b",
+            "https://platform.arkhamintelligence.com/explorer/token/ptokens-btc",
+            "https://ethplorer.io/address/0x5228a22e72ccc52d415ecfd199f99d0665e7733b",
+            "https://bscscan.com/token/0xed28a457a5a76596ac48d87c0f577020f6ea1c4c",
+            "https://binplorer.com/address/0xed28a457a5a76596ac48d87c0f577020f6ea1c4c"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [
+            "https://medium.com/provable"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "pTokens_io",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "ptokens",
+        "subreddit_url": "https://www.reddit.com/r/pTokens/",
+        "repos_url": {
+            "github": [
+                "https://github.com/provable-things/ptokens-core"
+            ],
+            "bitbucket": []
+        }
+    }
+}

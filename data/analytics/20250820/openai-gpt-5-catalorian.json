@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "catalorian",
+        "dead_score": 8.8,
+        "analysis": "Summary: Catalorian suffered a catastrophic -98.4% price collapse in the last 24h (from ~$0.0209 to ~$0.000335), wiping market cap to ~$0.33M. ATH was recorded essentially a day ago, and the immediate crash is consistent with LP removal/market-maker withdrawal or a coordinated exit. While not fully dead (still tradable), the probability of a meaningful recovery is very low without decisive action from the team.\n\nLiquidity/trading:\n- Active tickers: XT.COM (USDT), Uniswap V2 (ETH), Bilaxy (stale). No tier-1/2 exchanges.\n- 24h volume: ~$66k (XT) + ~$21k (Uniswap); combined well under $100k. Bid-ask spreads 0.6–2.3% indicate shallow depth.\n- Post-crash interest appears modest; for a meme coin after a 98% drop, lack of heavy dip-buying suggests weak buy support.\n\nListings/status:\n- Only low-tier CEX (XT) and Uniswap V2. Bilaxy entry stale with negligible volume. Delisting risk remains elevated; no major listings to drive new demand.\n\nOn-chain/contract:\n- Single ETH token address 0x8baf…01a; no sign of a migration in provided data. FDV = Market Cap (all 1B tokens circulating); no forthcoming unlock catalysts, but also no vesting-related supply relief.\n\nTeam/dev/community:\n- Developer data: 0 across the board (no repo activity).\n- Socials: Telegram ~1,609 members; CoinGecko watchlists 452. Very small footprint for a fresh meme narrative; no status updates reported.\n\nPrice structure:\n- ATH-to-current drawdown ~-98.37% within ~1 day; 24h high matches the ATH, then near-total collapse. This pattern is typical of a rug/pool drain or sudden liquidity removal. Without a documented cause and remediation plan, recoveries from such drawdowns are rare.\n\nWhat could improve outlook:\n- Verifiable LP injections and locked liquidity; transparent team communications; meaningful CEX listings; sustained organic volume (> $1M/day) and active community growth over weeks.\n\nVerdict: Mostly dead. Still tradeable but with low-quality liquidity, minimal exchange presence, no developer activity, and a rug-like crash. Without immediate, credible recovery steps by the team, a return to prior levels is unlikely."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x8baf5d75cae25c7df6d1e0d26c52d19ee848301a",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x8baf5d75cae25c7df6d1e0d26c52d19ee848301a"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://thefirstcatalorian.com"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x8baf5d75cae25c7df6d1e0d26c52d19ee848301a",
+            "https://platform.arkhamintelligence.com/explorer/token/catalorian",
+            "https://ethplorer.io/address/0x8baf5d75cae25c7df6d1e0d26c52d19ee848301a"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "CatalorianOGETH",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "CatalorianComm",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "strategic-bitcoin-reserve",
+        "dead_score": 7.9,
+        "analysis": "Verdict: High risk of being mostly dead. A comeback to former highs looks unlikely without major new catalysts.\n\nKey signals\n- Price collapse: -94.7% in the last 24h and -98.81% from ATH. To reclaim ATH (~$4.31) from ~$0.0516 requires ~83x, which is extremely rare for small-cap meme tokens without extraordinary catalysts.\n- Liquidity/volume quality: Reported 24h volume ~ $265k, but on-chain Uniswap V2 volume is only ~ $18.9k with ~0.6% spread. The bulk of volume comes from lower-trust CEXs (XT.com, BitVenus) with “yellow” trust/anomaly flags. Adjusted for likely wash/liquidity incentives, real executable liquidity appears low, making large buys/sells hard without heavy slippage.\n- Listings: Not on reputable top-tier exchanges; Bilaxy ticker is stale. Reliance on DEX and lower-tier CEXs increases delisting and wash-trade risk.\n- Project/dev activity: Developer data shows no commits, and there are no status updates via the listing source. Website and socials exist (Twitter handle and a ~3.4k Telegram), but community size is small and no measurable dev cadence is visible—typical of short-lived meme tokens.\n- Token/structure: Fixed supply (21,042,069) fully circulating; no future unlock overhang, which is a mild positive. However, there’s no evident utility beyond meme/PolitiFi narrative, so demand is purely speculative and marketing-driven.\n- Market cap: ~ $1.09m FDV=MCAP. Small enough to pump, but current post-crash state plus weak venues suggest limited organic bid support.\n\nWhat would need to change to revive it\n- Material on-chain liquidity injections (e.g., $300k–$1m+ locked/burned LP) and proof of LP safety.\n- Sustained, organic volume (> $1m/day) on reputable venues (and/or a credible tier-1/2 exchange listing) with solid order book depth.\n- Clear, verifiable team presence, roadmap, and regular communications; visible social growth well beyond a few thousand users.\n- New narratives/partnerships that expand beyond pure meme exposure.\n\nBottom line\n- Not completely dead (still tradable on-chain; some activity remains), but current state suggests low probability of a durable recovery. Without significant new liquidity, credible listings, and real community momentum, a return to prior highs is very unlikely. Treat any bounce potential as speculative and liquidity-constrained, not as evidence of a sustainable comeback. (Not financial advice)"
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 9,
+            "contract_address": "0xd6203889c22d9fe5e938a9200f50fdffe9dd8e02",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0xd6203889c22d9fe5e938a9200f50fdffe9dd8e02"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://strategicbitcoinreserve.cc/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0xd6203889c22d9fe5e938a9200f50fdffe9dd8e02",
+            "https://platform.arkhamintelligence.com/explorer/token/strategic-bitcoin-reserve",
+            "https://ethplorer.io/address/0xd6203889c22d9fe5e938a9200f50fdffe9dd8e02"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "sbr_coin",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "SBR_eth",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

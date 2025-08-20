@@ -1,0 +1,36 @@
+{
+    "content": {
+        "coin_id": "fork-chain",
+        "dead_score": 7.8,
+        "analysis": "Snapshot: Fork Chain (FORK) is a new Solana Pump.fun token with 1B supply. Price collapsed ~96.7% in the last 24h and sits ~97.4% below ATH one day after launch. Market cap ≈ $133k, with reported 24h volume ≈ $7.1M (turnover ~53x MC) and several yellow‑trust tickers on low‑tier CEXs (LBank, BitMart, Ourbit, KCEX, Hibt) plus DEX routes (PumpSwap, Meteora, Raydium). Many quotes are flagged as anomalies; spreads vary from ~0.6% up to >10%, suggesting shallow/unstable liquidity and likely wash‑trading/MEV churn.  \n\nSignals of decay\n- Post‑launch dump: −96–97% in a day from ATH is a textbook pump‑and‑dump profile for Pump.fun coins. These usually trend toward zero unless a large community or real utility forms quickly.  \n- Low quality market venues: Predominantly yellow‑trust listings and low‑tier CEXs with wide spreads increase delisting and slippage risk; “volume” may not equal true depth.  \n- Community/dev vacuum: Watchlists are tiny (36). No Telegram link, no GitHub activity (all zeros), no repo, minimal website copy. This points to no ongoing development and little stickiness.  \n- Category: “Pump.fun Ecosystem” = high abandonment probability; most such tokens never sustain interest beyond initial hype.  \n\nCounterpoints (why not 10/10 dead)\n- Not illiquid today: There is still active trading on DEX/CEX, with some pairs showing sub‑1% spreads, so exit liquidity hasn’t fully evaporated yet. Contract/address is consistent and live on Solana.  \n\nCan it come back?  \n- Reclaiming ATH (~$0.00497) would require durable community growth, credible utility, and better‑quality exchange listings. Given the current fundamentals and typical Pump.fun lifecycle, the probability is very low. Short‑term bounces are possible, but a sustained recovery back to ATH is unlikely.  \n\nBottom line: Functionally a post‑pump asset with fleeting liquidity. Not fully dead yet, but trending that way. Treat any participation as a high‑risk, lottery‑style trade.  \n\nPractical checks if you must engage\n- Verify LP depth/locks and top‑holder concentration on Solscan/GeckoTerminal.  \n- Watch for social growth (Twitter/Telegram activity) and any real roadmap—absent this, expect continued decay.  \n- Use strict sizing and limits; liquidity can vanish quickly.  \n\nConclusion: Dead score 7.8/10. Price “coming back” to prior highs is improbable without extraordinary new catalysts."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "66LPmREAYBqPeyidL7LMW7RaJjKbfADbuUMsqatkpump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/66LPmREAYBqPeyidL7LMW7RaJjKbfADbuUMsqatkpump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://forkchain.org/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://solscan.io/token/66LPmREAYBqPeyidL7LMW7RaJjKbfADbuUMsqatkpump"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "forkchain_org",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

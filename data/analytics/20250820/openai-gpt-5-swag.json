@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "swag",
+        "dead_score": 6.5,
+        "analysis": "Verdict: Not dead, but severely impaired after a -90% day and low mindshare. A comeback is possible only with clear catalysts (marketing, bigger listings, sticky liquidity). Odds of revisiting prior ATH without such catalysts look low.\n\nWhat the data says\n- Chain/contract: Live ERC-20 at 0x36c7…ed43. No evidence of a forced migration. GeckoTerminal link exists (can verify LP depth there). Presence of a Bilaxy SWAG2/ETH market is odd and may reflect ticker confusion rather than an official new contract.\n- Trading venues: Uniswap V2 (ETH, green trust), XT.com (tier-3 CEX, yellow trust), Bilaxy (low-tier). Not de‑listed, but listings are lower‑tier; no majors.\n- Liquidity/volume: 24h volume roughly 46k–130k USD across venues in the snapshot. That’s modest but not “extremely low.” Bid/ask on Uniswap ~0.6% suggests some ongoing flow, but we lack LP depth figures (check GeckoTerminal for TVL and pool depth). \n- Price action: Current ~$0.023, ~-91% from ATH. Intraday high ~$0.226 then crash to ~$0.022 implies a pump-and-dump style move or a major seller/unlock. Such profiles often struggle to recover without narrative and liquidity support.\n- Supply/valuation: Total/max supply 100M; FDV ~ $2.3M at current price. CG shows circulating supply as 0 (data gap), so MC not tracked—reduces visibility.\n- Community/dev: Watchlists ~397 (low). No GitHub footprint (typical for meme tokens). Social links exist (site + X handle), but activity/engagement not provided—risk of low attention.\n\nSignals against being “dead”\n- Active trading and multiple venues; Uniswap trust score green. \n- Nonzero daily volume and tight-ish spread indicate there are still counterparties.\n\nRed flags keeping it in the “ailing” bucket\n- Extreme daily drawdown (-89.8%) and -63% over 30d; reputational hit typical of PnD or team/whale exits.\n- Limited exchange quality; no Tier-1 listings.\n- Small watchlist/user mindshare and no dev roadmap; meme-only narrative.\n- Possible ticker confusion (SWAG vs SWAG2 on Bilaxy) could deter buyers.\n\nCan the price come back?\n- Possible, but unlikely to reclaim ATH sustainably without: 1) measurable LP growth and daily volume >$0.5–1M, 2) stronger social traction and consistent marketing, 3) cleaner exchange footprint (better CEX listings), 4) transparent comms about tokenomics (vesting, holder distribution) and clear avoidance of further big unlocks/sells.\n\nWhat to verify before concluding\n- LP depth and TVL on the main Uniswap pool (via GeckoTerminal link provided).\n- Holder distribution and recent large transfers on Etherscan (concentration/insider sells).\n- Social activity of @Swagoneth (frequency, engagement, partnerships).\n- Any official statements on unlocks, taxes, or migrations.\n\nBottom line\n- Status: Ailing but not clinically dead. \n- Recovery path: Exists but requires strong catalysts; absent those, drift or further decay is more probable than a full comeback to ATH."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 9,
+            "contract_address": "0x36c7188d64c44301272db3293899507eabb8ed43",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x36c7188d64c44301272db3293899507eabb8ed43"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://swagcoin.xyz/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://etherscan.io/token/0x36c7188d64c44301272db3293899507eabb8ed43",
+            "https://platform.arkhamintelligence.com/explorer/token/swag",
+            "https://ethplorer.io/address/0x36c7188d64c44301272db3293899507eabb8ed43"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "Swagoneth",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

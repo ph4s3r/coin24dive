@@ -1,0 +1,44 @@
+{
+    "content": {
+        "coin_id": "merge",
+        "dead_score": 9.3,
+        "analysis": "Verdict: Mostly dead. Recovery looks highly unlikely without a full relaunch and significant new liquidity/exchange support.\n\nKey signals:\n- Liquidity/volume: Vanishingly small. Reported 24h volume on aggregate is ~$0.08; even using individual tickers it’s only on the order of tens of dollars (~$100 total across PancakeSwap v2 and BabyDogeSwap). Order-book pairs on StakeCube show tiny volumes and very wide spreads (6%–44%), indicating exit risk and easy price manipulation.\n- Market cap/FDV: Microscopic. MC ~ $17.9k, FDV ~ $19.8k. This is the long tail of the market with little institutional or retail interest.\n- Price action: Down ~98% in the last 24h, ~-97.6% over 60d, and ~-99.78% from the 2021 ATH. Such drawdowns alongside negligible liquidity often reflect pool drains, abandonment, or terminal decline. Any future spikes would likely be illiquid pump-and-dumps, not sustainable recoveries.\n- Exchange support: Currently only on BSC DEXs (PancakeSwap v2, BabyDogeSwap) and a minor CEX (StakeCube) with yellow/red trust flags and stale ticks. A BitMart listing was announced in 2022 but is absent from current tickers—suggesting delisting. Lack of reputable exchange listings severely limits buyers and liquidity.\n- Development/social: No recent status updates since 2022, repos list is empty, dev activity 0 in last 4 weeks, and small community (Telegram ~868). This looks abandoned.\n- Contract/migrations: BSC contract 0x2d5c… remains the reference; no explicit evidence of an active token migration, but there’s also no sign of ongoing maintenance.\n\nCan it come back? Practically no under current conditions. A real comeback would require: active team return, audited relaunch or migration, meaningful liquidity injection, credible exchange listings, and revived community/product momentum. None of these are visible in the data.\n\nRisks: With such low liquidity, price can be easily moved; avoid reading illiquid spikes as recovery. Potential for further de-listings or pool drains remains high."
+    },
+    "exchange_info": {
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x2d5c9167fdd5c068c8fcb8992e6af639b42fbf70",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x2d5c9167fdd5c068c8fcb8992e6af639b42fbf70"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://projectmerge.org/"
+        ],
+        "whitepaper": null,
+        "blockchain_site": [
+            "https://explorer.projectmerge.org",
+            "https://platform.arkhamintelligence.com/explorer/token/merge",
+            "https://bscscan.com/address/0x2d5c9167fdd5c068c8fcb8992e6af639b42fbf70",
+            "https://bscscan.com/token/0x2d5c9167fdd5c068c8fcb8992e6af639b42fbf70",
+            "https://binplorer.com/address/0x2d5c9167fdd5c068c8fcb8992e6af639b42fbf70"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.gg/zwAv5dV"
+        ],
+        "announcement_url": [
+            "https://projectmerge.medium.com"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "theprojectmerge",
+        "facebook_username": "TheProjectMerge",
+        "bitcointalk_thread_identifier": 5034723,
+        "telegram_channel_identifier": "projectmergecommunity",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "content": {
+        "coin_id": "tor",
+        "dead_score": 9.7,
+        "analysis": "Snapshot verdict: TOR looks effectively dead and very unlikely to recover without a full relaunch and recapitalization.\n\nKey signals from the data you provided:\n- Broken peg/stablecoin failure: Marketed as a fully collateralized $1 stablecoin, but current price is ~$0.016 (–98%+ from $1, –99.92% from reported ATH). The “stablecoin” label no longer matches reality.\n- Liquidity/volume collapse: 24h volume is ~US$30 total across two DEX pools (ApeSwap on BSC and SpookySwap on Fantom), both with red trust scores and notable bid–ask spreads. This is extremely illiquid; exiting positions at quoted prices is unlikely at size.\n- Exchange presence: No centralized exchange listings shown; only two thin DEX pairs. Effective de-listing from major venues reduces discovery and any path to organic demand.\n- Market cap and rank: ~$280k market cap, rank ~5833, with circulating supply equal to total supply. No tokenomics lever (e.g., emissions/burns) is evident to drive recovery.\n- Price behavior consistent with abandoned/illiquid assets: +700% over 7d followed by –97% in 24h suggests thin-order-book spikes and collapses, not sustainable demand.\n- Social/developer inactivity: Developer metrics are zeroed (no repos, commits, or issues). Social links point to Hector Network, which has gone through major issues/restructuring; CoinGecko sentiment shows 0% up / 100% down. There’s no evidence of an active team maintaining a peg or providing redemptions.\n- Risk flags: CoinGecko displays a liquidity-risk notice. The reported ATH of $20 for a supposed $1 stablecoin is itself a sign of illiquidity/price anomalies. Trust scores red on both tickers.\n\nWhat would need to change to revive it (none of which is visible):\n- A credible, well-funded entity taking over, recapitalizing reserves, publishing audits, and restoring a real $1 redemption mechanism.\n- Deep liquidity provision on reputable venues (CEX and leading DEXs) with sustained volume.\n- Transparent governance and active communication proving the project is maintained.\n\nConclusion: With a collapsed peg, near-zero volume/liquidity, no CEX listings, no visible development, and negative sentiment, TOR’s chances of organically “coming back” are minimal. Treat it as mostly dead unless a formal, well-capitalized relaunch with verifiable reserves and broad exchange support is announced."
+    },
+    "exchange_info": {
+        "fantom": {
+            "decimal_place": 18,
+            "contract_address": "0x74e23df9110aa9ea0b6ff2faee01e740ca1c642e",
+            "geckoterminal_url": "https://www.geckoterminal.com/ftm/tokens/0x74e23df9110aa9ea0b6ff2faee01e740ca1c642e"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x1d6cbdc6b29c6afbae65444a1f65ba9252b8ca83",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x1d6cbdc6b29c6afbae65444a1f65ba9252b8ca83"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://tor.cash/",
+            "https://linktr.ee/HectorDAO",
+            "https://app.hector.finance/"
+        ],
+        "whitepaper": "https://docs.hector.finance/whitepaper-and-roadmap/whitepaper",
+        "blockchain_site": [
+            "https://ftmscan.com/token/0x74e23df9110aa9ea0b6ff2faee01e740ca1c642e",
+            "https://platform.arkhamintelligence.com/explorer/token/tor",
+            "https://bscscan.com/token/0x1d6cbdc6b29c6afbae65444a1f65ba9252b8ca83",
+            "https://binplorer.com/address/0x1d6cbdc6b29c6afbae65444a1f65ba9252b8ca83"
+        ],
+        "official_forum_url": [
+            "https://www.tiktok.com/@hector_network"
+        ],
+        "chat_url": [
+            "https://discord.com/invite/hector",
+            "https://instagram.com/hector_network",
+            "https://www.youtube.com/c/HectorDAO"
+        ],
+        "announcement_url": [
+            "https://medium.com/@Hector_Network"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "Hector_Network",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "Hector_Network",
+        "subreddit_url": "https://www.reddit.com/r/hectordao/",
+        "repos_url": {
+            "github": [],
+            "bitbucket": []
+        }
+    }
+}

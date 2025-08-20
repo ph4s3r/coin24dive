@@ -1,0 +1,38 @@
+{
+    "content": {
+        "coin_id": "nonos",
+        "dead_score": 8.7,
+        "analysis": "Bottom line: Very high probability this never recovers to prior highs. It is not technically lifeless (still trading), but fundamentals and market structure point to a near‑dead pump token.\n\nWhat the data says\n- Collapse from highs: Price is down ~98.95% from ATH in ~9 days (ATH ~0.004866 USD vs current ~0.00005081 USD). It would require ~96x just to revisit ATH—statistically rare without extraordinary catalysts.\n- 24h and 7d drawdowns: -97.25% in 24h, -98.82% in 7d, near fresh ATL prints today. This is a classic post‑launch pump.fun decay profile.\n- Market cap and breadth: ~$40.6k market cap, only ~97 watchlists, 100% negative sentiment votes. This signals very limited investor base/interest.\n- Venue quality: Trading is DEX‑only, primarily on PumpSwap (pump.fun route). One Meteora quote exists but is stale. No CEX listings. DEX‑only tokens with minuscule MC typically fail to regain traction once the initial wave is over.\n- Volume vs liquidity: Reported 24h volume (~$438k) is outsized relative to MC, typical of high‑churn/wash‑friendly microcaps and not evidence of deep two‑sided liquidity. No on‑chain LP depth/lock data is provided; pump.fun launches often have small, fragile LP that can be pulled or drained.\n- Token/issuer risk: Address ends with “ppump” (pump.fun mint). These launches frequently lack sustainable treasuries, budgets, or roadmaps, and are vulnerable to liquidity/manipulation risks (Coingecko’s own liquidity warning is attached).\n- Social/developer signal: Telegram shows ~435 users (small). GitHub shows 163 commits in 4 weeks and 12 stars—activity exists but the repo’s relevance to this token’s value accrual is unclear. Ambitious “OS in Rust/zk/dual‑arch” claims are out of proportion to the token’s launch method and current traction.\n\nDeadness criteria assessment\n- Extremely low durable liquidity: Likely. No proof of LP lock/burn; DEX‑only; high churn vs depth suggests fragile liquidity. Strong negative.\n- Token address changed/discontinued: Not indicated. Neutral.\n- Extreme low sustainable volume: Headline volume is high but quality is questionable and non‑sticky. Slight negative.\n- De‑listed on exchanges: Not listed anywhere meaningful to begin with. Negative.\n- Developer abandonment: Not yet—there are recent commits, but they may be weakly tied to token value. Slight positive, but insufficient.\n- Social silence: Not silent, but very small and likely to fade post‑dump. Negative.\n\nWhat would need to change to lower the “dead” score\n- Verifiable LP health: LP burn/lock, mint authority renounced, freeze authority removed; meaningful, persistent depth on major Solana DEXs (e.g., Raydium/Jupiter routes) with tight spreads and real depth.\n- Distribution: Transparent holder analytics showing low concentration and no obvious insider overhangs.\n- Listings/catalysts: Credible CEX listing(s), audited contracts/bridges, and demonstrable product milestones tying token utility to the purported OS.\n- Community traction: Order‑of‑magnitude growth in active users and engagement beyond a few hundred TG members.\n\nRisk‑managed takeaway\n- With a ~96x climb needed to reclaim ATH, DEX‑only presence, microcap size, and a pump.fun origin, odds of a durable comeback are very low. Treat as mostly dead unless on‑chain proof of LP security plus real, external adoption catalysts appear.\n\nNotes for your own verification (before any decision)\n- Check Solscan/GeckoTerminal for: LP size, whether LP tokens are burned/locked, mint/freeze authority status, top‑holder concentration, and recent liquidity events.\n- Monitor whether any reputable aggregator routes form (Jupiter/Raydium) with real depth, and whether any credible exchange listings or product releases land.\n\nThis is not financial advice."
+    },
+    "exchange_info": {
+        "solana": {
+            "decimal_place": 6,
+            "contract_address": "CuEPELFSwRcs4nQ4Dn6a7RVz9ZRVoa1rBapcqG6ppump",
+            "geckoterminal_url": "https://www.geckoterminal.com/solana/tokens/CuEPELFSwRcs4nQ4Dn6a7RVz9ZRVoa1rBapcqG6ppump"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://nonos-tech.xyz/"
+        ],
+        "whitepaper": "https://docs.nonos-tech.xyz/",
+        "blockchain_site": [
+            "https://solscan.io/token/CuEPELFSwRcs4nQ4Dn6a7RVz9ZRVoa1rBapcqG6ppump"
+        ],
+        "official_forum_url": [],
+        "chat_url": [],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "nonos_eth",
+        "facebook_username": null,
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "nonosPortal",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/NON-OS/N0N-OS"
+            ],
+            "bitbucket": []
+        }
+    }
+}

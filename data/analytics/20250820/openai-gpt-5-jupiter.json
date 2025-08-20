@@ -1,0 +1,52 @@
+{
+    "content": {
+        "coin_id": "jupiter",
+        "dead_score": 9.2,
+        "analysis": "Summary verdict: Jupiter Project (JUP) looks mostly dead. A durable recovery to prior levels is highly unlikely without a full relaunch/rebrand, major new listings, and clear developer return. Short, low-liquidity spikes are possible, but sustained price comeback is improbable.\n\nKey evidence from the data:\n- Price collapse: down ~-92% in 24h and ~-92% over 7/14/30/60 days; ~-99.94% from ATH (2021). This is a structural collapse, not a routine drawdown.\n- Micro-cap/low float interest: market cap ≈ $79k with the entire 1B supply circulating (MC/FDV ratio 1.0). To revisit ATH (~$0.129) would imply ~$129M cap—orders of magnitude beyond current interest.\n- Liquidity/volume: 24h aggregated volume only ~$1.7k; individual DEX pair volumes are small and one is flagged “is_anomaly = true.” This suggests fragile liquidity with potential price-discovery issues and slippage risk.\n- Exchange presence: active trading appears limited to thin DEX pools and a stale Bilaxy listing (minor exchange). No meaningful CEX presence → effectively de-listed from mainstream venues.\n- Warnings/brand confusion: public notice states this project is NOT the Solana Jupiter DEX. Name confusion can create sporadic noise but is more likely a liability than a growth vector.\n- Dev activity: GitHub shows 0 commits in the past 4 weeks; stars/forks are 0; no status updates. This strongly implies developer abandonment or dormancy.\n- Community traction: Telegram ≈ 777 users; no Reddit, no visible forum activity. Low and stagnant social metrics typically correlate with terminal decline.\n\nWhy a comeback is unlikely:\n- No catalyst: no active dev roadmap, tokenomics changes, or partnerships indicated.\n- Distribution already maxed: with 100% of supply circulating, there’s no credible unlock/utility roadmap lever. Price revival would need real demand, not token engineering.\n- Venue risk: without top-tier listings, new capital inflows are minimal. DEX-only, low-liquidity markets discourage serious participants.\n- Liquidity risk flagged by the data source and anomalous DEX readings raise quality-of-market concerns.\n\nWhat could theoretically change the outlook (low probability):\n- A verified, active team return with shipped product, transparent comms, and audited tokenomics overhaul.\n- Significant new exchange listings with funded liquidity programs.\n- A clean rebrand to end confusion with Solana’s Jupiter, plus real user adoption.\n\nBottom line: On the provided indicators—extreme drawdowns, vanishing liquidity/volume, near-absent dev/social signals, and negligible listings—JUP scores as mostly dead. Expect only illiquid pumps; a fundamental recovery to prior prices is very unlikely without extraordinary, verifiable changes."
+    },
+    "exchange_info": {
+        "ethereum": {
+            "decimal_place": 18,
+            "contract_address": "0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "geckoterminal_url": "https://www.geckoterminal.com/eth/tokens/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8"
+        },
+        "binance-smart-chain": {
+            "decimal_place": 18,
+            "contract_address": "0x0231f91e02debd20345ae8ab7d71a41f8e140ce7",
+            "geckoterminal_url": "https://www.geckoterminal.com/bsc/tokens/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://www.jup.io/"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://explorer.gojupiter.tech",
+            "https://platform.arkhamintelligence.com/explorer/token/jupiter",
+            "https://etherscan.io/token/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "https://ethplorer.io/address/0x4b1e80cac91e2216eeb63e29b957eb91ae9c2be8",
+            "https://bscscan.com/token/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7",
+            "https://binplorer.com/address/0x0231f91e02debd20345ae8ab7d71a41f8e140ce7"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discordapp.com/invite/DUSnX5n"
+        ],
+        "announcement_url": [
+            "https://gojupiter.tech/blog/"
+        ],
+        "snapshot_url": null,
+        "twitter_screen_name": "JUP_project",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "jupiterproject",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/SigwoTechnologies/jupiter"
+            ],
+            "bitbucket": []
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "content": {
+        "coin_id": "superciety",
+        "dead_score": 8.7,
+        "analysis": "Summary: PeerMe SUPER (SUPER-507aa6 on MultiversX) shows multiple “mostly dead” signals: a near-total collapse in price, vanishing liquidity/volume, no market-cap ranking, and little visible developer or community momentum. It is still tradable on one DEX and the contract appears unchanged, so it’s not fully dead, but odds of a sustainable comeback look very low without a major relaunch and capital injection.\n\nKey signals from the data you provided:\n- Liquidity/volume\n  - Only 1 active market: xExchange (SUPER/WEGLD) with ~US$59.6 24h volume. That is extremely illiquid; even small sells can move price a lot.\n  - TVL ≈ US$9.2k. Tiny pool depth; difficult to enter/exit positions.\n  - Bid/ask spread ~0.62% looks tight, but on such tiny volume it’s not indicative of real depth.\n- Price/market structure\n  - Price crash: -93.46% (24h), -94.42% (7d), -96.02% (30d). This magnitude suggests a structural event (LP pull, unlock, abandonment, or migration) rather than normal volatility.\n  - Down ~96.5% from ATH. Long, deep drawdown typical of dormant/abandoned tokens.\n  - FDV ≈ US$48.7k at current price (total supply 10M). Micro-cap scale with minimal on-chain liquidity.\n  - CoinGecko shows circulating supply = 0 and market cap = 0 → unranked, hurting visibility and discovery.\n- Listings\n  - No centralized exchange listings shown; only a single DEX pair. Functionally “de-listed” from broader markets.\n- Development/community\n  - GitHub org present, but CG developer data indicates 0 commits in last 4 weeks, 0 stars/forks. Not proof of total abandonment, but not encouraging.\n  - Community data is sparse (Telegram ~642). No status updates recorded on CG.\n- Contract/status\n  - Token address shown as SUPER-507aa6; no explicit evidence here of a contract migration or deprecation. Still, the severity of the drawdown and liquidity collapse warrants double-checking official channels for any swap/migration that holders may have missed.\n- Ratios\n  - FDV/TVL ~5.3. On its face not absurd, but absolute sizes (FDV ~US$49k, TVL ~US$9k) are so small that any metric is dominated by illiquidity risk.\n\nWhat would need to change for a comeback?\n- Substantial liquidity injection into LPs and additional exchange listings (beyond a single DEX) to enable real price discovery and investor access.\n- Clear, public roadmap, active development, and regular communication (GitHub, Twitter, Discord/Telegram).\n- Utility expansion or a credible relaunch/rebrand, possibly with incentives for LPs and users.\n\nVerdict\n- Classification: Mostly dead.\n- Rationale: Extreme 30–90 day collapse, negligible volume, single illiquid DEX listing, no market-cap ranking, minimal documented dev activity and small community footprint.\n- Can it come back? Only with significant new capital, exchange access, and team-driven revival. Speculative illiquid spikes are possible, but a durable recovery is unlikely without those catalysts.\n\nNote: This is not financial advice. Always verify if there’s an announced migration or token swap on official channels before making decisions."
+    },
+    "exchange_info": {
+        "elrond": {
+            "decimal_place": 18,
+            "contract_address": "SUPER-507aa6"
+        }
+    },
+    "links": {
+        "homepage": [
+            "https://peerme.io"
+        ],
+        "whitepaper": "",
+        "blockchain_site": [
+            "https://explorer.elrond.com/tokens/super-507aa6",
+            "https://explorer.multiversx.com/tokens/super-507aa6"
+        ],
+        "official_forum_url": [],
+        "chat_url": [
+            "https://discord.peerme.io"
+        ],
+        "announcement_url": [],
+        "snapshot_url": null,
+        "twitter_screen_name": "PeerMeHQ",
+        "facebook_username": "",
+        "bitcointalk_thread_identifier": null,
+        "telegram_channel_identifier": "PeerMeCommunity",
+        "subreddit_url": null,
+        "repos_url": {
+            "github": [
+                "https://github.com/Superciety"
+            ],
+            "bitbucket": []
+        }
+    }
+}
