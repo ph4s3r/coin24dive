@@ -1,27 +1,34 @@
+"""Query LLMs.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
+
 # pypi
-import os
 import json
 from pathlib import Path
 
+# local
 from llm.model import LLMConfig
 from llm.openrouter import OpenRouter
-from utils.clog import log_fail, log_ok, log_task
+from utils.clog import log_fail, log_ok, log_task, log_info
 
 
 def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str) -> dict:
-    print()
+    """Build the LLM instance & calls the API sending the prompts in."""
+    log_info()
 
     prompt_tokens = 0
     completion_tokens = 0
     error_counter = 0  # we tolerate max 2 errors, then give up
 
     # setting up LLM for analytics queries
-    # gpt5 = LLMConfig(
-    #     model_name = 'openai/gpt-5',
-    #     provider = 'openrouter',
-    #     superprompt = Path('llm/superprompt'),
-    #     response_schema = Path('llm/schemas/analytics_schema.json')
-    # )
+    _gpt5 = LLMConfig(
+        model_name = 'openai/gpt-5',
+        provider = 'openrouter',
+        superprompt = Path('llm/superprompt'),
+        response_schema = Path('llm/schemas/analytics_schema.json'),
+    )
 
     # setting up LLM for analytics queries
     o4mini = LLMConfig(
@@ -46,7 +53,7 @@ def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str
 
         if analytics_file_full_path.exists():
             try:
-                with open(analytics_file_full_path, encoding='utf-8') as f:
+                with Path.open(analytics_file_full_path, encoding='utf-8') as f:
                     dead_scores[coin_id] = json.load(f)['content']['dead_score']
                     log_ok(f'analytics already exists as {analytics_file_full_path} , loaded successfully')
             except Exception as e:
@@ -83,9 +90,9 @@ def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str
 
     log_task('Calculating LLM usage prices')
 
-    print(f'used {prompt_tokens=}')
-    print(f'used {completion_tokens=}')
-    print(
+    log_info(f'used {prompt_tokens=}')
+    log_info(f'used {completion_tokens=}')
+    log_info(
         'price of the move with gpt-5: ',
     )  # (w/o openrouter\'s margin of $0.0001 on every 1k tokens, which seems to be negligible...)
 
@@ -93,7 +100,7 @@ def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str
     price_prompt_tokens = 1.25 * prompt_tokens / 1_000_000
     price_completion_tokens = 10 * completion_tokens / 1_000_000
 
-    print(f'{price_prompt_tokens=}')
-    print(f'{price_completion_tokens=}')
+    log_info(f'{price_prompt_tokens=}')
+    log_info(f'{price_completion_tokens=}')
 
     return dead_scores

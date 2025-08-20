@@ -1,3 +1,9 @@
+"""Manage Pushover messages.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
+
 import os
 
 import urllib

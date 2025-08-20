@@ -1,8 +1,16 @@
+"""Filtering list of coins based on specific criteria.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
+
+# pypi
 import sys
 import json
 from pathlib import Path
 from operator import itemgetter
 
+# local
 from notifications import PushoverMessage
 from utils.clog import log_info, log_fail, log_ok
 

@@ -1,3 +1,9 @@
+"""Main entry point of the project; executes tasks in a sequence like getting data and working with it.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
+
 from pathlib import Path
 import datetime
 
@@ -10,6 +16,7 @@ from utils.display_rich_table import display_table
 
 
 def main() -> None:
+    """Execute the tasks of gathering data & processing it."""
     print(f"{' COINGECKO MARKET SCANNER ':*^66}")  # noqa: T201
 
     # creating directories

@@ -1,3 +1,9 @@
+"""Call various APIs to get crypto asset & market data.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
+
 from os import getenv
 import sys
 import time

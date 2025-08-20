@@ -1,6 +1,8 @@
-### author: Peter Karacsonyi
-### date:   8/15/2025
-### purpose: model specific settings stored in a custom class
+"""Manage model specific settings with a custom class.
+
+author: Peter Karacsonyi
+date:   8/20/2025
+"""
 
 #pypi
 import json
@@ -49,6 +51,7 @@ class LLMConfig:
                 superprompt: str | Path | None,
                 response_schema: dict | Path | None,   # if None, no structured output is enforced
                  ) -> None:
+        """Create an instance of LLM configuration with the model, superprompt & respons_schema."""
         self.model_name          = model_name
         self.provider            = provider
         # currently unused - planned to use it to change params e.g. openrouters openai SDK
@@ -96,7 +99,7 @@ class LLMConfig:
         self._superprompt = v
 
     @property
-    def response_schema(self):
+    def response_schema(self) -> NoReturn:
         raise AttributeError("get 'response_schema_dict'")
 
     @response_schema.setter
