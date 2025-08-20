@@ -37,7 +37,7 @@ def diver(fname: str, coins: list, min_dive_percentage: int) -> dict[tuple[str, 
     top_divers: dict = {k: (v1, v2) for k, v1, v2 in divers_sorted[:10]}
 
     try:
-        Path(fname).write_text(json.dumps(top_divers[:10], indent=2))
+        Path(fname).write_text(json.dumps(top_divers, indent=2))
         log_ok(f'success writing top 10 dives list into a file {fname}')
     except Exception as e:
         log_fail(f'failed writing top 10 dives list into a file: {e}')
