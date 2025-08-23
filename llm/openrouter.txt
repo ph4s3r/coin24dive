@@ -4,7 +4,7 @@ author: Peter Karacsonyi
 date:   8/15/2025
 """
 
-# pypi
+# stdlib
 import re
 import os
 import json
@@ -14,7 +14,7 @@ from typing import ClassVar
 from http import HTTPStatus
 from dotenv import dotenv_values
 
-# 3rd party
+# pypi
 from jsonschema import validate, ValidationError, SchemaError
 from tenacity import retry, stop_after_attempt, retry_if_exception_type
 

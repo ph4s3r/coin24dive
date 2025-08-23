@@ -4,12 +4,15 @@ author: Peter Karacsonyi
 date:   8/20/2025
 """
 
+# stdlib
 import os
 
+# pypi
 import urllib
 import http.client
 from dotenv import dotenv_values
 
+# local
 from utils.clog import log_ok, log_fail
 
 

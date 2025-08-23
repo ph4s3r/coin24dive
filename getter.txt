@@ -4,18 +4,21 @@ author: Peter Karacsonyi
 date:   8/20/2025
 """
 
-from os import getenv
+# stdlib
 import sys
 import time
 import json
 import datetime
+import requests
+from os import getenv
 from typing import Any
 from pathlib import Path
 
-import requests
-from dotenv import dotenv_values
+# pypi
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
+# local
+from dotenv import dotenv_values
 from utils.clog import log_info, log_fail, log_ok, log_task
 
 
