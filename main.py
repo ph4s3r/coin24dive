@@ -5,8 +5,10 @@ date:   8/20/2025
 """
 
 import sys
-import importlib
-importlib.machinery.SOURCE_SUFFIXES.append('.txt')
+
+from importlib.machinery import SOURCE_SUFFIXES
+
+SOURCE_SUFFIXES.append('.txt')
 
 sys.path_importer_cache.clear()
 
