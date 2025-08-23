@@ -16,7 +16,7 @@ from utils.clog import log_fail, log_ok, log_task, log_info
 
 def llm_analytics(coinmetrics_full: list, analytics_folder: str, today_date: str) -> dict:
     """Build the LLM instance & calls the API sending the prompts in."""
-    log_info()
+    log_info('')
 
     prompt_tokens = 0
     completion_tokens = 0
